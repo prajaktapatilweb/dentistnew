@@ -1,16 +1,25 @@
 import React from 'react';
 import Box from '@mui/material/Box';
-import InputBase from '@mui/material/InputBase';
 import Container from '@mui/material/Container';
-import Typography from '@mui/material/Typography';
-import { StyledButton } from '../styled-button';
 import Axios from 'axios';
-import { Form, Formik } from 'formik';
+import { Field, Form, Formik } from 'formik';
 import * as yup from 'yup';
-import AppTextField from '../AppTextField';
-import { Button } from '@mui/material';
+import AppTextField from '../Formik/AppTextField';
+import { Button, FormControl, Grid, InputLabel } from '@mui/material';
+import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
 
+const All = [
+  { key: 1, text: 'Physics', value: 'Physics' },
+  { key: 2, text: 'Chemistry', value: 'Chemistry' },
+  { key: 3, text: 'Mathematics', value: 'Mathematics' },
+  { key: 4, text: 'Biology', value: 'Biology' },
+  { key: 5, text: 'Science', value: 'Science' },
+  { key: 6, text: 'Language', value: 'Language' },
+];
 const validationSchema = yup.object({
+  name: yup
+    .string()
+    .required('Name is required'),
   email: yup
     .string()
     .email('Please enter valid email ID')
@@ -20,14 +29,21 @@ const validationSchema = yup.object({
     .required('Mobile Number is mandatory')
     .matches(/^[0-9]+$/, 'Only digits are allowed for this field ')
     .length(10, 'Only 10 digit mobile number'),
+  selection: yup
+    .string()
+    .required('It is required'),
 });
 
 const HomeNewsLetter = () => {
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
     Axios.post("/api/sendemail", {
+      name: values.name,
       email: values.email,
       mobileno: values.mobilenumber,
+      msg: values.msg,
+      selection: values.selection
+
     })
       .then(function (response) {
         //handle success
@@ -56,61 +72,101 @@ const HomeNewsLetter = () => {
           <Formik
             validateOnChange={true}
             initialValues={{
+              name: '',
               email: '',
               mobilenumber: '',
+              msg: '',
+              selection: ''
             }}
             validationSchema={validationSchema}
             onSubmit={onSubmit}
-          // onSubmit={(data, { setSubmitting, resetForm }) => {
-          // setSubmitting(true);
-          // console.log({ data })
-          // jwtAxios.post('/forgetpass', data).then(function (res) {
-          //   toast.success(res.data.message, { hideProgressBar: false });
-          //   // console.log(res)
-          //   resetForm({});
-          //   history.push('/signin', { tab: 'jwtAuth' });
-          // })
-          //   .catch(function (error) {
-          //     // console.log(error.response)
-          //     if (error.response)
-          //       error.response.status === 400 ? dispatch(fetchError(messages['form.error1'])) :
-          //         toast.error(error.response.data);
-          //     resetForm({});
-          //   })
-          // setSubmitting(false);
-          // resetForm();
-          // }}
           >
-            {({ isSubmitting }) => (
+            {({ initialValues, values, errors, isSubmitting }) => (
               <Form style={{ textAlign: 'left' }}>
-                <Box sx={{ mb: { xs: 5, lg: 8 } }}>
-                  <AppTextField
-                    placeholder='Email'
-                    name='email'
-                    label='Email ID'
-                    sx={{
-                      width: '100%',
-                      '& .MuiInputBase-input': {
-                        fontSize: 14,
-                      },
-                    }}
-                    variant='outlined'
-                  />
-                </Box>
-                <Box sx={{ mb: { xs: 5, lg: 8 } }}>
-                  <AppTextField
-                    // placeholder='Mobile Number L'
-                    name='mobilenumber'
-                    label='Mobile Number'
-                    sx={{
-                      width: '100%',
-                      '& .MuiInputBase-input': {
-                        fontSize: 14,
-                      },
-                    }}
-                    variant='outlined'
-                  />
-                </Box>
+                <Grid container spacing={2}>
+                  <Grid item xs={12} md={6}>
+                    <AppTextField
+                      placeholder='name'
+                      name='name'
+                      label='Name'
+                      sx={{
+                        width: '100%',
+                        '& .MuiInputBase-input': {
+                          fontSize: 14,
+                        },
+                      }}
+                      variant='outlined'
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <AppTextField
+                      placeholder='Email'
+                      name='email'
+                      label='Email ID'
+                      sx={{
+                        width: '100%',
+                        '& .MuiInputBase-input': {
+                          fontSize: 14,
+                        },
+                      }}
+                      variant='outlined'
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <AppTextField
+                      placeholder='Mobile Number'
+                      name='mobilenumber'
+                      label='Mobile Number'
+                      sx={{
+                        width: '100%',
+                        '& .MuiInputBase-input': {
+                          fontSize: 14,
+                        },
+                      }}
+                      variant='outlined'
+                    />
+                  </Grid>
+                  <Grid item xs={12} md={6}>
+                    <FormControl
+                      sx={{
+                        width: '100%',
+                        // mt: 2,
+                        '&.MuiInputBase-input': { fontSize: 14 },
+                      }}
+                    >
+                      <InputLabel id='demo-simple-select-label'>
+                        Select your interest
+                      </InputLabel>
+                      <Field
+                        name='selection'
+                        as='select'
+                        options={All}
+                        component={CustomizedSelectFormik}
+                      ></Field>
+                    </FormControl>
+                  </Grid>
+                  <Grid item xs={12} >
+                    <Box sx={{ mb: { xs: 5, lg: 8 } }}>
+                      <AppTextField
+                        placeholder='Message'
+                        name='msg'
+                        label='Message'
+                        sx={{
+                          width: '100%',
+                          '& .MuiInputBase-input': {
+                            fontSize: 14,
+                          },
+                        }}
+                        variant='outlined'
+                        multiline
+                        rows='2'
+                      />
+                    </Box>
+                  </Grid>
+                </Grid>
+                <pre>{JSON.stringify(errors, null, 4)}</pre>
+                <pre>{JSON.stringify(values, null, 4)}</pre>
+
                 <div>
                   <Button
                     variant='contained'
@@ -129,7 +185,6 @@ const HomeNewsLetter = () => {
                 </div>
               </Form>
             )}
-            {/* <pre>{JSON.stringify(data, null, 4)}</pre> */}
           </Formik>
           {/* <Typography variant="h1" component="h2" sx={{ mb: 1, fontSize: { xs: 32, md: 42 } }}>
             Subscribe to Our News Letter

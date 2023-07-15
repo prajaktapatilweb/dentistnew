@@ -15,10 +15,14 @@ export default async function handler(req, res) {
       try {
         console.log('Received Data', req.body)
         const msg = {
-          to: 'amolbhushan@gmail.com', // Change to your recipient
+          to: `${req.body.email}`, // Change to your recipient
           from: 'prajaktasendemail@gmail.com', // Change to your verified sender
-          subject: `Sending with SendGrid is Fun ${req.body.email}`,
-          text: 'and easy to do anywhere, even with Node.js',
+          subject: `New enquiry `,
+          text: `${req.body.name} has raise an inquiry on landing page. The details are as follows \n 
+          Email: ${req.body.email} \n
+          Mobile Number: ${req.body.mobileno} \n
+          Selection: ${req.body.selection}
+          Message: ${req.body.msg}`,
           html: '<strong>and easy to do anywhere, even with Node.js</strong>',
         }
         console.log('The msessag', msg)

@@ -11,7 +11,7 @@ class MyDocument extends Document {
         <Head>
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
-          {/* <meta name="viewport" content="initial-scale=1, width=device-width"/> */}
+          <meta name="viewport" content="initial-scale=1, width=device-width" />
 
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.background.paper} />
@@ -125,30 +125,30 @@ MyDocument.getInitialProps = async (ctx) => {
   const { extractCriticalToChunks } = createEmotionServer(cache);
 
   ctx.renderPage = () =>
-      originalRenderPage({
-          enhanceApp: (App) => (props) => <App emotionCache={cache} {...props} />,
-      });
+    originalRenderPage({
+      enhanceApp: (App) => (props) => <App emotionCache={cache} {...props} />,
+    });
 
   const initialProps = await Document.getInitialProps(ctx);
   // This is important. It prevents emotion to render invalid HTML.
   // See https://github.com/mui-org/material-ui/issues/26561#issuecomment-855286153
   const emotionStyles = extractCriticalToChunks(initialProps.html);
   const emotionStyleTags = emotionStyles.styles.map((style) => (
-      <style
-          data-emotion={`${style.key} ${style.ids.join(' ')}`}
-          key={style.key}
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{ __html: style.css }}
-      />
+    <style
+      data-emotion={`${style.key} ${style.ids.join(' ')}`}
+      key={style.key}
+      // eslint-disable-next-line react/no-danger
+      dangerouslySetInnerHTML={{ __html: style.css }}
+    />
   ));
 
   return {
-      ...initialProps,
-      // Styles fragment is rendered after the app and page rendering finish.
-      styles: [
-          ...React.Children.toArray(initialProps.styles),
-          ...emotionStyleTags,
-      ],
+    ...initialProps,
+    // Styles fragment is rendered after the app and page rendering finish.
+    styles: [
+      ...React.Children.toArray(initialProps.styles),
+      ...emotionStyleTags,
+    ],
   };
 };
 export default MyDocument
