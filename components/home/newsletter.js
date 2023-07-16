@@ -9,12 +9,13 @@ import { Button, FormControl, Grid, InputLabel } from '@mui/material';
 import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
 
 const All = [
-  { key: 1, text: 'Physics', value: 'Physics' },
-  { key: 2, text: 'Chemistry', value: 'Chemistry' },
-  { key: 3, text: 'Mathematics', value: 'Mathematics' },
-  { key: 4, text: 'Biology', value: 'Biology' },
-  { key: 5, text: 'Science', value: 'Science' },
-  { key: 6, text: 'Language', value: 'Language' },
+  { key: 1, text: 'Dental implants', value: 'Dental implants' },
+  { key: 2, text: 'Full mouth rehabilitation', value: 'Full mouth rehabilitation' },
+  { key: 3, text: 'Dental veneers (smile designing)', value: 'Dental veneers (smile designing)' },
+  { key: 4, text: 'Root canal', value: 'Root canal' },
+  { key: 5, text: 'Wisdom teeth extraction/ Teeth extraction', value: 'Wisdom teeth extraction/ Teeth extraction' },
+  { key: 6, text: 'Braces/ aligners', value: 'Braces/ aligners' },
+  { key: 7, text: 'Pediatric (kids dentistry)', value: 'Pediatric (kids dentistry)' },
 ];
 const validationSchema = yup.object({
   name: yup
@@ -37,7 +38,8 @@ const validationSchema = yup.object({
 const HomeNewsLetter = () => {
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
-    Axios.post("/api/sendemail", {
+    Axios.post("/api/nodemail", {
+      // Axios.post("/api/sendemail", {
       name: values.name,
       email: values.email,
       mobileno: values.mobilenumber,
@@ -164,8 +166,8 @@ const HomeNewsLetter = () => {
                     </Box>
                   </Grid>
                 </Grid>
-                <pre>{JSON.stringify(errors, null, 4)}</pre>
-                <pre>{JSON.stringify(values, null, 4)}</pre>
+                {/* <pre>{JSON.stringify(errors, null, 4)}</pre> */}
+                {/* <pre>{JSON.stringify(values, null, 4)}</pre> */}
 
                 <div>
                   <Button

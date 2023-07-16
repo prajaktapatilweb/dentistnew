@@ -21,7 +21,7 @@ export default async function handler(req, res) {
           text: `${req.body.name} has raise an inquiry on landing page. The details are as follows \n 
           Email: ${req.body.email} \n
           Mobile Number: ${req.body.mobileno} \n
-          Selection: ${req.body.selection}
+          Purpose: ${req.body.selection}
           Message: ${req.body.msg}`,
           html: '<strong>and easy to do anywhere, even with Node.js</strong>',
         }

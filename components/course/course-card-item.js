@@ -35,26 +35,26 @@ const CourseCardItem = ({ item }) => {
           layout='responsive' alt={'Course ' + item.id} />
       </Box>
       <Box sx={{ mb: 2 }}>
-        <Typography component="h2" variant="h5" sx={{ mb: 2, height: 56, overflow: 'hidden', fontSize: '1.2rem' }}>
+        <Typography component="h2" variant="h5" sx={{ color: "#127C71", overflow: 'hidden', fontSize: '1.2rem' }}>
           {item.title}
         </Typography>
-        <Box sx={{ display: 'flex', alignItems: 'center' }}>
+        {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>
           <Rating name="rating-course" value={item.rating} max={5} sx={{ color: '#ffce31', mr: 1 }} readOnly />
           <Typography component="span" variant="h5">
             ({item.ratingCount})
           </Typography>
-        </Box>
+        </Box> */}
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Typography variant="h5" color="primary.main">
-            {'$' + item.price}
+          <Typography component="span" variant="h5">
+            {item.price}
           </Typography>
-          <Typography variant="h6">/ course</Typography>
+          {/* <Typography variant="h6">/ course</Typography> */}
         </Box>
-        <IconButton color="primary" sx={{ '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' } }}>
+        {/* <IconButton color="primary" sx={{ '&:hover': { backgroundColor: 'primary.main', color: 'primary.contrastText' } }}>
           <ArrowForward />
-        </IconButton>
+        </IconButton> */}
       </Box>
     </Box>
   </Box>);

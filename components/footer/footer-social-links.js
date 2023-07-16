@@ -1,38 +1,48 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
+import FacebookIcon from '@mui/icons-material/Facebook';
+
 export const socialLinks = [
     {
         name: 'Instagram',
-        link: '#',
+        link: 'https://www.instagram.com/drakshaysdentavenue/',
         icon: '/images/icons/instagram.svg',
     },
     {
         name: 'YouTube',
-        link: '#',
+        link: 'https://www.youtube.com/channel/UCzTOsuUtM6GgJ6oUFEy5NvQ',
         icon: '/images/icons/youtube.svg',
     },
     {
         name: 'Twitter',
-        link: '#',
+        link: 'https://twitter.com/DentavenueM',
         icon: '/images/icons/twitter.svg',
     },
     {
-        name: 'Dribbble',
-        link: 'https://dribbble.com/shots/18114471-Coursespace-Online-Course-Landing-Page',
-        icon: '/images/icons/dribbble.svg',
+        name: 'Facebook',
+        link: 'https://www.facebook.com/profile.php?id=100082969286996',
+        icon: '/images/icons/facebbok3.png'
     },
     {
-        name: 'Github',
-        link: 'https://github.com/hiriski/coursespace-landing-page',
-        icon: '/images/icons/github.svg',
+        name: 'Linkedin',
+        link: 'https://www.linkedin.com/in/dr-akshay-s-dentavenue-282741255/',
+        icon: '/images/icons/linkedin.png',
     },
+    {
+        name: 'Googlemap',
+        link: 'https://goo.gl/maps/o1D6AEhtxDt19QLu5',
+        icon: '/images/icons/location.png',
+    },
+
+
+
 ];
 const SocialLinkItem = ({ item }) => (<Box component="li" sx={{
-        display: 'inline-block',
-        color: 'primary.contrastText',
-        mr: 0.5,
-    }}>
+    display: 'inline-block',
+    color: 'primary.contrastText',
+    mr: 0.5,
+}}>
     <Link target="_blank" sx={{
         lineHeight: 0,
         display: 'flex',
@@ -51,24 +61,25 @@ const SocialLinkItem = ({ item }) => (<Box component="li" sx={{
             height: 'auto',
         },
     }} href={item.link}>
-      {/* eslint-disable-next-line */}
-      <img src={item.icon} alt={item.name + 'icon'}/>
+        {/* eslint-disable-next-line */}
+        <img src={item.icon} alt={item.name + 'icon'} />
     </Link>
-  </Box>);
+</Box>);
 // default
 const SocialLinks = () => {
     return (<Box sx={{ ml: -1 }}>
-      <Box component="ul" sx={{
+        <Box component="ul" sx={{
             m: 0,
             p: 0,
             lineHeight: 0,
             borderRadius: 3,
             listStyle: 'none',
+
         }}>
-        {socialLinks.map((item) => {
-            return <SocialLinkItem key={item.name} item={item}/>;
-        })}
-      </Box>
+            {socialLinks.map((item) => {
+                return <SocialLinkItem key={item.name} item={item} />;
+            })}
+        </Box>
     </Box>);
 };
 export default SocialLinks;
