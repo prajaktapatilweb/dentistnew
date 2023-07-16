@@ -1,5 +1,6 @@
 import React from 'react';
 import Box from '@mui/material/Box';
+import { Grid } from '@mui/material';
 import Slider from 'react-slick';
 import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
@@ -42,7 +43,7 @@ const StyledDots = styled('ul')(({ theme }) => ({
 }));
 const HomeOurMentors = () => {
     const { breakpoints } = useTheme();
-    const matchMobileView = useMediaQuery(breakpoints.down('md'));
+    const matchMobileView = useMediaQuery(breakpoints.down('sm'));
     const sliderConfig = {
         infinite: true,
         // autoplay: true,
@@ -65,15 +66,21 @@ const HomeOurMentors = () => {
             md: 12,
         },
         backgroundColor: '#ecf3f3',
-    }}>
-        <Container maxWidth="lg">
+    }}
+
+    >
+        <Container maxWidth="lg" >
             <Typography variant="h1" sx={{ fontSize: 40 }}>
                 What Our Clients Say
             </Typography>
 
-            <Slider {...sliderConfig}>
+            <Slider {...sliderConfig} >
+
                 {data.map((item) => (<MentorCardItem key={String(item.id)} item={item} />))}
+
             </Slider>
+
+
         </Container>
     </Box>);
 };

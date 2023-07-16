@@ -1,39 +1,39 @@
 export const data = [
     {
         id: 1,
-        cover: '/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg',
+        cover: '/images/patients/patients1.jpeg',
 
 
     },
     {
         id: 2,
-        cover: '/images/courses/alvaro-reyes-qWwpHwip31M-unsplash.jpg',
+        cover: '/images/patients/patients2.jpeg',
 
 
     },
     {
         id: 3,
-        cover: '/images/courses/christopher-gower-m_HRfLhgABo-unsplash.jpg',
+        cover: '/images/patients/patients3.jpeg',
 
     },
     {
         id: 4,
-        cover: '/images/courses/true-agency-o4UhdLv5jbQ-unsplash.jpg',
+        cover: '/images/patients/patients4.jpeg',
 
     },
     {
         id: 5,
-        cover: '/images/courses/stillness-inmotion-Jh6aQX-25Uo-unsplash.jpg',
+        cover: '/images/patients/patients5.jpeg',
 
     },
     {
         id: 6,
-        cover: '/images/courses/stillness-inmotion-YSCCnRGrD-4-unsplash.jpg',
+        cover: '/images/patients/patients6.jpeg',
 
     },
     {
         id: 7,
-        cover: '/images/courses/grovemade-RvPDe41lYBA-unsplash.jpg',
+        cover: '/images/patients/patients7.jpeg',
 
     },
 ];

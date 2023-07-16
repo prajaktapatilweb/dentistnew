@@ -17,7 +17,7 @@ export default function Drsudnya() {
             <Box id="feature" sx={{ py: { xs: 1, md: 1 }, backgroundColor: 'background.paper' }}>
                 <Container>
                     <Grid container spacing={3}>
-                        <Grid item xs={12} md={7}>
+                        <Grid item xs={12} sm={7}>
                             <Typography
                                 component="h2"
                                 sx={{
@@ -88,7 +88,7 @@ export default function Drsudnya() {
                             </List>
 
                         </Grid>
-                        <Grid item xs={12} md={5}>
+                        <Grid item xs={12} sm={5}>
                             <Box sx={{ position: 'relative' }}>
                                 <Image
                                     src="/images/dr/dr1.jpg"

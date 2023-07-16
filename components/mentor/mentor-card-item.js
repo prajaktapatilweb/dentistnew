@@ -6,11 +6,15 @@ const MentorCardItem = ({ item }) => {
   return (<Box sx={{
     px: 1.5,
     py: 5,
+
+
   }}>
     <Box sx={{
       p: 2,
       backgroundColor: 'background.paper',
       borderRadius: 4,
+
+
       transition: (theme) => theme.transitions.create(['box-shadow']),
       '&:hover': {
         boxShadow: 2,
@@ -20,7 +24,6 @@ const MentorCardItem = ({ item }) => {
         lineHeight: 0,
         overflow: 'hidden',
         borderRadius: 3,
-        height: 200,
         mb: 2,
       }}>
         <Image src={item.photo} width={100} height={100} layout='responsive' alt={'Mentor ' + item.id} />
@@ -33,10 +36,10 @@ const MentorCardItem = ({ item }) => {
         <Typography sx={{ mb: 2, color: 'text.secondary' }} variant="subtitle1">
           {item.description}
         </Typography>
-        <Box sx={{ '& img': { height: 26 } }}>
-          {/* eslint-disable-next-line */}
-          <img src={item.company?.logo} alt={item.company?.name + ' logo'} />
-        </Box>
+        {/* <Box sx={{ '& img': { height: 26 } }}> */}
+        {/* eslint-disable-next-line */}
+        {/* <img src={item.company?.logo} alt={item.company?.name + ' logo'} /> */}
+        {/* </Box> */}
       </Box>
     </Box>
   </Box>);

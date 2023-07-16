@@ -42,7 +42,7 @@ const HomeFeature = () => {
     <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'background.paper' }}>
       <Container>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={5}>
+          <Grid item xs={12} sm={5}>
             <Box sx={{ position: 'relative' }}>
               <Image
                 src="/images/dr/dr2.jpg"
@@ -55,7 +55,7 @@ const HomeFeature = () => {
               </Image>
             </Box>
           </Grid>
-          <Grid item xs={12} md={7}>
+          <Grid item xs={12} sm={7}>
             <Typography
               component="h2"
               sx={{

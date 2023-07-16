@@ -8,7 +8,7 @@ import { useTheme, styled } from '@mui/material/styles';
 import { IconButton, useMediaQuery } from '@mui/material';
 import IconArrowBack from '@mui/icons-material/ArrowBack';
 import IconArrowForward from '@mui/icons-material/ArrowForward';
-import { data } from './popular-course.data';
+import { data } from './photo-gallery.data';
 import PhotoCardItem from '../course/photo-card-item';
 const SliderArrow = (props) => {
   const { onClick, type, className } = props;
@@ -46,6 +46,7 @@ const Photogallery = () => {
   const sliderConfig = {
     infinite: true,
     autoplay: true,
+    adaptiveheight: false,
     speed: 300,
     slidesToShow: matchMobileView ? 1 : 3,
     slidesToScroll: 1,
@@ -53,7 +54,7 @@ const Photogallery = () => {
     nextArrow: <SliderArrow type="next" />,
     dots: true,
     appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
-    customPaging: () => (<Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} />),
+    customPaging: () => (<Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'flex', borderRadius: 4 }} />),
   };
   return (<Box id="popular-course" sx={{
     pt: {
@@ -62,29 +63,27 @@ const Photogallery = () => {
     },
     pb: 14,
     backgroundColor: '#fafafa',
+
   }}>
     <Container maxWidth="lg">
-      <Grid container spacing={2}>
-        <Grid item xs={12} md={12}>
-          <Box sx={{
-            height: '100%',
-            width: { xs: '100%', md: '90%' },
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: { xs: 'center', md: 'flex-start' },
-          }}>
-            <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
-              Photo Gallery
-            </Typography>
-          </Box>
-        </Grid>
 
-        <Grid item xs={12} md={12}>
-          <Slider {...sliderConfig}>
-            {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))}
-          </Slider>
-        </Grid>
-      </Grid>
+      <Box sx={{
+        height: '100%',
+        width: { xs: '100%', md: '90%' },
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: { xs: 'center', md: 'flex-start' },
+      }}>
+        <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
+          Photo Gallery
+        </Typography>
+      </Box>
+
+      <Slider {...sliderConfig}>
+        {/* {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))} */}
+        {[...Array(18)].slice(0).map((e, i) => (<PhotoCardItem key={i} item={i + 1} />))}
+      </Slider>
+
     </Container>
   </Box>);
 };

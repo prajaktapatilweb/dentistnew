@@ -8,11 +8,11 @@ import CountUp from 'react-countup'
 export default function Countdown() {
 
     var Details = [
-        {
-            numbers: "2000",
-            title: "Happy Patients"
+        // {
+        //     numbers: "2000",
+        //     title: "Happy Patients"
 
-        },
+        // },
         {
             numbers: "3500",
             title: "Dental Implant"
@@ -53,13 +53,13 @@ export default function Countdown() {
 
                     <Grid container spacing={2} sx={{ flexDirection: { xs: 'column', md: 'unset' } }}>
                         {Details.map((item, i) => (
-                            <Grid item xs={12} md={2} key={i}>
+                            <Grid item xs={12} sm={12} md={3} key={i}>
                                 <Card sx={{ textAlign: 'center', mb: { xs: 1, md: 0 }, padding: 3, borderRadius: 5, background: "#127c71" }}>
 
                                     <Typography
                                         sx={{ color: 'secondary.main', mb: { xs: 1, md: 2 }, fontSize: { xs: 34, md: 44 }, fontWeight: 'bold' }}
                                     >
-                                        <CountUp end={item.numbers} duration={5} />+
+                                        <CountUp end={item.numbers} duration={5} start={200} />+
                                     </Typography>
                                     <Typography color="white" variant="h5">
                                         {item.title}

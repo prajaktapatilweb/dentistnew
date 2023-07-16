@@ -1,38 +1,53 @@
 import React from 'react';
 import Image from 'next/image';
 import Box from '@mui/material/Box';
-import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
-import IconButton, { iconButtonClasses } from '@mui/material/IconButton';
-import ArrowForward from '@mui/icons-material/ArrowForward';
+import { iconButtonClasses } from '@mui/material/IconButton';
 const PhotoCardItem = ({ item }) => {
-  return (<Box sx={{
-    px: 1,
-    py: 4,
-  }}>
+  return (
     <Box sx={{
-      p: 1,
-      backgroundColor: 'background.paper',
-      borderRadius: 4,
-      transition: (theme) => theme.transitions.create(['box-shadow']),
-      '&:hover': {
-        boxShadow: 2,
-        [`& .${iconButtonClasses.root}`]: {
-          backgroundColor: 'primary.main',
-          color: 'primary.contrastText',
-          boxShadow: 2,
-        },
-      },
+      px: 1,
+      py: 4,
     }}>
       <Box sx={{
-        lineHeight: 0,
-        overflow: 'hidden',
-        borderRadius: 3,
-        mb: 2,
+        p: 1,
+        // backgroundColor: 'background.paper',
+        borderRadius: 4,
+        transition: (theme) => theme.transitions.create(['box-shadow']),
+        '&:hover': {
+          boxShadow: 2,
+          [`& .${iconButtonClasses.root}`]: {
+            backgroundColor: 'primary.main',
+            color: 'primary.contrastText',
+            boxShadow: 2,
+          },
+        },
       }}>
-        <Image src={item.cover} width={100} height={100} layout='responsive' alt={'Course ' + item.id} />
-      </Box>
-      {/* <Box sx={{ mb: 2 }}>
+        <Box sx={{
+          minHeight: '400',
+          maxHeight: 'auto',
+          lineHeight: 2,
+          overflow: 'hidden',
+          // borderRadius: 3,
+          // height: 400,
+          // objectFit: 'contain',
+          position: 'relative'
+        }}>
+          <Image
+            alt={'Course ' + item.id}
+            src={`/images/patients/patients${item}.jpeg`}
+            maxWidth="100"
+            width="400"
+            height="400"
+          // src={item.cover}
+          // layout='fill'
+          // objectFit='contain'
+          />
+
+
+          {/* <Image src={item.cover} width={0} height={0} layout='responsive' sizes='100vw' objectFit='cotain' style={{ width: '100%', height: 'auto' }} alt={'Course ' + item.id} /> */}
+          {/* <Image src={item.cover} width={100} height={100} layout='responsive' alt={'Course ' + item.id} /> */}
+        </Box>
+        {/* <Box sx={{ mb: 2 }}>
           <Typography component="h2" variant="h5" sx={{ mb: 2, height: 56, overflow: 'hidden', fontSize: '1.2rem' }}>
             {item.title}
           </Typography>
@@ -43,7 +58,7 @@ const PhotoCardItem = ({ item }) => {
             </Typography>
           </Box>
         </Box> */}
-      {/* <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+        {/* <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <Box sx={{ display: 'flex', alignItems: 'center' }}>
             <Typography variant="h5" color="primary.main">
               {'$' + item.price}
@@ -54,7 +69,7 @@ const PhotoCardItem = ({ item }) => {
             <ArrowForward />
           </IconButton>
         </Box> */}
-    </Box>
-  </Box>);
+      </Box>
+    </Box>);
 };
 export default PhotoCardItem;

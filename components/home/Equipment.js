@@ -9,19 +9,19 @@ import { Typography } from '@mui/material';
 export default function Equipment() {
     var Details = [
         {
-            img: "/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg",
-            altitle: "retrete",
-            desc: " gfgh j kgr jkl jjrtyl jtkly gnfkj nkftg hnkj hjnk hnkfjtnh"
+            img: "/images/equip/equip1.jpeg",
+            altitle: "Dental Scanner",
+            desc: "Dental Scanner"
         },
         {
-            img: "/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg",
-            altitle: "retrete",
-            desc: " gfgh j kgr jkl jjrtyl jtkly gnfkj nkftg hnkj hjnk hnkfjtnh"
+            img: "/images/equip/equip2.jpeg",
+            altitle: "Digital X Ray",
+            desc: "Digital X Ray"
         },
         {
-            img: "/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg",
-            altitle: "retrete",
-            desc: " gfgh j kgr jkl jjrtyl jtkly gnfkj nkftg hnkj hjnk hnkfjtnh"
+            img: "/images/equip/equip3.jpeg",
+            altitle: "Dental Loupes",
+            desc: "Dental Loupes"
         }
     ]
     return (

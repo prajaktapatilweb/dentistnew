@@ -114,8 +114,6 @@ const Clinicinfo = () => {
                                     />
                                 </Box>
                             </Box>
-
-
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={7}>
@@ -162,12 +160,17 @@ const Clinicinfo = () => {
                         <Typography
                             sx={{ color: "text.secondary", mb: 2, ml: { xs: 0, md: 4 } }}
                         >
-                            Welcome to Dr. Akshay's DentAvenue Dental Clinic, where your smile
-                            is our top priority. Our skilled team of dental professionals is
-                            dedicated to delivering exceptional oral care in a comfortable and
-                            friendly environment. With advanced technology and a
-                            patient-centered approach, we are committed to helping you achieve
-                            optimal dental health.
+                            Welcome to Dr. Akshay's DentAvenue Dental Clinic, your premier
+                            destination for high-quality dental care. Our experienced team of
+                            dental professionals is passionate about improving and maintaining
+                            your oral health. We offer a comprehensive range of services, from
+                            preventive dentistry to cosmetic and restorative treatments, all
+                            tailored to meet your unique needs. Using the latest advancements
+                            in dental technology, we ensure precise diagnoses and efficient
+                            treatments. We pride ourselves on creating a warm and welcoming
+                            environment, where our patients feel comfortable and relaxed.
+                            Trust us to provide you with exceptional dental care and help you
+                            achieve a healthy, beautiful smile that lasts a lifetime.
                         </Typography>
 
                         <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>

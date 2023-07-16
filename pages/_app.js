@@ -18,7 +18,7 @@ export default function MyApp(props) {
         <CacheProvider value={emotionCache}>
             <Head>
                 <meta name="viewport" content="initial-scale=1, width=device-width" />
-                <title>React Coursespace</title>
+                <title>Dentist in Chembur | Dental Clinic Chembur - Dr. Akshay's DentAvenue</title>
             </Head>
             <MUIProvider>
                 {/* CssBaseline kickstart an elegant, consistent, and simple baseline to build upon. */}
