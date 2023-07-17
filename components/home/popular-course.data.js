@@ -2,35 +2,35 @@ export const data = [
 
     {
         id: 1,
-        cover: '/images/courses/a9e7b27a0c5e986a22416d79e2e9dba9.jpg',
+        cover: '/images/services/rootcanal4.jpg',
         title: 'Root Canal:',
         price: "Relieve pain and save your natural tooth with our expert root canal treatments"
 
     },
     {
         id: 2,
-        cover: '/images/courses/alvaro-reyes-qWwpHwip31M-unsplash.jpg',
+        cover: '/images/services/teethimplant2.jpg',
         title: 'Dental Implant:',
         price: 'Restore your smile with confidence through our advanced dental implant solutions.',
 
     },
     {
         id: 3,
-        cover: '/images/courses/christopher-gower-m_HRfLhgABo-unsplash.jpg',
+        cover: '/images/services/fullconstr1.jpg',
         title: 'Full Mouth Reconstruction:',
         price: "Regain optimal oral health and function with our comprehensive full mouth reconstruction treatments.",
 
     },
     {
         id: 4,
-        cover: '/images/courses/true-agency-o4UhdLv5jbQ-unsplash.jpg',
+        cover: '/images/services/braces1.jpg',
         title: 'Braces & Aligners:',
         price: 'Achieve a straighter smile and improved bite with our customized braces and aligner options.',
 
     },
     {
         id: 5,
-        cover: '/images/courses/stillness-inmotion-Jh6aQX-25Uo-unsplash.jpg',
+        cover: '/images/services/bridges.jpg',
         title: 'Crown & Bridges:',
 
         price: 'Regain the strength, function, and aesthetics of your teeth with our high-quality crown and bridge treatments.',
@@ -38,7 +38,7 @@ export const data = [
     },
     {
         id: 6,
-        cover: '/images/courses/stillness-inmotion-YSCCnRGrD-4-unsplash.jpg',
+        cover: '/images/services/dentistry1.jpg',
         title: 'Pediatric Dentistry:',
 
         price: ' Ensure your childs dental health with our gentle and specialized pediatric dental care.',
@@ -46,7 +46,7 @@ export const data = [
     },
     {
         id: 7,
-        cover: '/images/courses/grovemade-RvPDe41lYBA-unsplash.jpg',
+        cover: '/images/services/teethwhite1.jpg',
         title: 'Teeth Whitening:',
         price: 'Enhance your smiles brilliance and beauty with our effective teeth whitening solutions.',
 

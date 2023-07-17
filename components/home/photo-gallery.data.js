@@ -1,13 +1,13 @@
 export const data = [
     {
         id: 1,
-        cover: '/images/patients/patients1.jpeg',
+        cover: '/images/patients/patients11.jpg',
 
 
     },
     {
         id: 2,
-        cover: '/images/patients/patients2.jpeg',
+        cover: '/images/patients/patients22.jpg',
 
 
     },

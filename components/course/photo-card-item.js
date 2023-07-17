@@ -22,7 +22,8 @@ const PhotoCardItem = ({ item }) => {
           },
         },
       }}>
-        <Box sx={{
+        <Box>
+          {/* <Box sx={{
           minHeight: '400',
           maxHeight: 'auto',
           lineHeight: 2,
@@ -31,17 +32,24 @@ const PhotoCardItem = ({ item }) => {
           // height: 400,
           // objectFit: 'contain',
           position: 'relative'
-        }}>
+        }}> */}
+
           <Image
+            alt={'Course ' + item.id}
+            src={`/images/clinicphotos/clinicphoto${item}.jpg`}
+            width={100}
+            height={100}
+            layout='responsive'></Image>
+          {/* <Image
             alt={'Course ' + item.id}
             src={`/images/patients/patients${item}.jpeg`}
             maxWidth="100"
             width="400"
-            height="400"
-          // src={item.cover}
+            height="400" */}
+          {/* // src={item.cover}
           // layout='fill'
           // objectFit='contain'
-          />
+          /> */}
 
 
           {/* <Image src={item.cover} width={0} height={0} layout='responsive' sizes='100vw' objectFit='cotain' style={{ width: '100%', height: 'auto' }} alt={'Course ' + item.id} /> */}
