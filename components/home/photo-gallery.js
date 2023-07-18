@@ -56,7 +56,7 @@ const Photogallery = () => {
     appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
     customPaging: () => (<Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'flex', borderRadius: 4 }} />),
   };
-  return (<Box id="popular-course" sx={{
+  return (<Box id="gallery" sx={{
     pt: {
       xs: 6,
       md: 8,

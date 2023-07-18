@@ -113,13 +113,14 @@ const HomeHero = () => {
               </Typography>
             </Box>
             <Box sx={{ '& button': { mr: 2 } }}>
-              <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
-                <StyledButton color="primary" size="large" variant="contained">
+              <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}>
+
+                <StyledButton color="primary" size="large" variant="contained" >
                   Enquire Now
                 </StyledButton>
               </ScrollLink>
-
-              <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
+              <ScrollLink spy={true} smooth={true} offset={0} duration={350}>
+                {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
                 <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrow />} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
                   Watch Video
                 </StyledButton>

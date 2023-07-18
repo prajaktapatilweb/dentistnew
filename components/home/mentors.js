@@ -56,7 +56,7 @@ const HomeOurMentors = () => {
         appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
         customPaging: () => (<Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} />),
     };
-    return (<Box id="mentors" sx={{
+    return (<Box id="testimonials" sx={{
         pt: {
             xs: 6,
             md: 8,

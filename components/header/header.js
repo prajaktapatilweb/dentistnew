@@ -39,7 +39,7 @@ const Header = () => {
         }}>
           <Box /> {/* Magic space */}
           <Navigation />
-          <AuthNavigation />
+          {/* <AuthNavigation /> */}
           {visibleMenu && matchMobileView && (<IconButton sx={{
             position: 'fixed',
             top: 10,

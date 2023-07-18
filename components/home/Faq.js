@@ -7,11 +7,10 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Container, Box } from '@mui/material';
 
 export default function Faq() {
-  
-    
+
     return (
         <div>
-            <Box sx={{
+            <Box id="faq" sx={{
                 boxShadow: 2, pt: {
                     xs: 6,
                     md: 8,
@@ -35,7 +34,7 @@ export default function Faq() {
                             aria-controls="panel1a-content"
                             id="panel1a-header"
                         >
-                            <Typography> How often should I visit the dentist for a regular check-up and cleaning?</Typography>
+                            <Typography fontWeight='bold'> How often should I visit the dentist for a regular check-up and cleaning?</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -49,7 +48,7 @@ export default function Faq() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                         >
-                            <Typography> Can you provide options for replacing missing teeth, such as dental implants or dentures?</Typography>
+                            <Typography fontWeight='bold'> Can you provide options for replacing missing teeth, such as dental implants or dentures?</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -63,7 +62,7 @@ export default function Faq() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                         >
-                            <Typography>  Do you offer cosmetic dentistry services such as teeth whitening or veneers?</Typography>
+                            <Typography fontWeight='bold'>  Do you offer cosmetic dentistry services such as teeth whitening or veneers?</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>
@@ -77,7 +76,7 @@ export default function Faq() {
                             aria-controls="panel2a-content"
                             id="panel2a-header"
                         >
-                            <Typography>What payment options do you accept, and do you offer any dental financing or insurance options?</Typography>
+                            <Typography fontWeight='bold'>What payment options do you accept, and do you offer any dental financing or insurance options?</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
                             <Typography>

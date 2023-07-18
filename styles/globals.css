@@ -54,3 +54,11 @@ body {
   }
 }
 
+.footermenu{
+  color: white;
+ 
+  font-weight: 400;
+  font-size:17px;
+  text-decoration: none;
+
+}

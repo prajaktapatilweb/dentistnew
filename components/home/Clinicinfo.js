@@ -38,7 +38,7 @@ const BorderLinearProgress = styled(LinearProgress, {
 const Clinicinfo = () => {
     return (
         <Box
-            id="feature"
+            id="aboutus"
             sx={{ py: { xs: 10, md: 14 }, backgroundColor: "background.paper" }}
         >
             <Container>

@@ -22,7 +22,13 @@ export default function Equipment() {
             img: "/images/equip/equip3.jpeg",
             altitle: "Dental Loupes",
             desc: "Dental Loupes"
+        },
+        {
+            img: "/images/equip/equip6.jpg",
+            altitle: "Portable X Ray",
+            desc: "Portable X Ray"
         }
+
     ]
     return (
         <div>
@@ -38,18 +44,15 @@ export default function Equipment() {
                 }}
             >
                 <Container maxWidth="lg">
-                    <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
+                    <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, pb: 3, fontSize: { xs: 30, md: 48 } }}>
                         Equipments
                     </Typography>
                     <Grid container spacing={2}>
                         {Details.map((item, i) => (
-                            <Grid item xs={12} md={4} key={i}>
-                                <Box sx={{
-                                    px: 1,
-                                    py: 4,
-                                }}>
+                            <Grid item xs={12} md={3} key={i}>
+                                <Box>
                                     <Box sx={{
-                                        p: 2,
+                                        p: 1,
                                         backgroundColor: 'background.paper',
                                         borderRadius: 4,
                                         transition: (theme) => theme.transitions.create(['box-shadow']),

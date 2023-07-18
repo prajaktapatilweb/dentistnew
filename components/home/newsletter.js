@@ -9,13 +9,14 @@ import { Button, FormControl, Grid, InputLabel } from '@mui/material';
 import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
 
 const All = [
-  { key: 1, text: 'Dental implants', value: 'Dental implants' },
-  { key: 2, text: 'Full mouth rehabilitation', value: 'Full mouth rehabilitation' },
+  { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
+  { key: 2, text: 'Dental implants', value: 'Dental implants' },
   { key: 3, text: 'Dental veneers (smile designing)', value: 'Dental veneers (smile designing)' },
-  { key: 4, text: 'Root canal', value: 'Root canal' },
-  { key: 5, text: 'Wisdom teeth extraction/ Teeth extraction', value: 'Wisdom teeth extraction/ Teeth extraction' },
-  { key: 6, text: 'Braces/ aligners', value: 'Braces/ aligners' },
-  { key: 7, text: 'Pediatric (kids dentistry)', value: 'Pediatric (kids dentistry)' },
+  { key: 4, text: 'Full mouth rehabilitation', value: 'Full mouth rehabilitation' },
+  { key: 5, text: 'Pediatric (kids dentistry)', value: 'Pediatric (kids dentistry)' },
+  { key: 6, text: 'Root canal', value: 'Root canal' },
+  { key: 7, text: 'Wisdom teeth extraction/ Teeth extraction', value: 'Wisdom teeth extraction/ Teeth extraction' },
+  { key: 8, text: 'Other', value: 'Other' }
 ];
 const validationSchema = yup.object({
   name: yup
@@ -62,7 +63,7 @@ const HomeNewsLetter = () => {
   };
 
   return (
-    <Box sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
+    <Box id='contactform' sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
       <Container >
         <Box sx={{
           backgroundColor: 'secondary.main',

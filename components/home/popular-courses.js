@@ -55,7 +55,7 @@ const HomePopularCourse = () => {
     appendDots: (dots) => <StyledDots>{dots}</StyledDots>,
     customPaging: () => (<Box sx={{ height: 8, width: 30, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} />),
   };
-  return (<Box id="popular-course" sx={{
+  return (<Box id="treatments" sx={{
     pt: {
       xs: 6,
       md: 8,
@@ -65,7 +65,7 @@ const HomePopularCourse = () => {
   }}>
     <Container maxWidth="lg">
       <Grid container spacing={2}>
-        <Grid item xs={12} md={3}>
+        <Grid item xs={12} md={12}>
           <Box sx={{
             height: '100%',
             width: { xs: '100%', md: '90%' },
@@ -73,13 +73,13 @@ const HomePopularCourse = () => {
             alignItems: 'center',
             justifyContent: { xs: 'center', md: 'flex-start' },
           }}>
-            <Typography variant="h1" sx={{ mt: { xs: 0, md: -5 }, fontSize: { xs: 30, md: 48 } }}>
-              Our Popular Servises
+            <Typography variant="h1" sx={{ fontSize: { xs: 30, md: 48 } }}>
+              Our Comprehensive Dental Services
             </Typography>
           </Box>
         </Grid>
 
-        <Grid item xs={12} md={9}>
+        <Grid item xs={12} md={12}>
           <Slider {...sliderConfig}>
             {data.map((item) => (<CourseCardItem key={String(item.id)} item={item} />))}
           </Slider>

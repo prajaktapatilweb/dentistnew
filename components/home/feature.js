@@ -11,9 +11,9 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import StarIcon from '@mui/icons-material/Star'
-import CircularProgress from '@mui/material/CircularProgress'
+import { Link as ScrollLink } from 'react-scroll'
+import { StyledButton } from '../styled-button';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
-import { data } from './feature.data'
 
 
 const BorderLinearProgress = styled(LinearProgress, {
@@ -39,23 +39,24 @@ const BorderLinearProgress = styled(LinearProgress, {
 }))
 const HomeFeature = () => {
   return (
-    <Box id="feature" sx={{ py: { xs: 10, md: 14 }, backgroundColor: 'background.paper' }}>
+    <Box sx={{ py: { xs: 10, md: 7 }, backgroundColor: 'background.paper' }}>
       <Container>
-        <Grid container spacing={3}>
-          <Grid item xs={12} sm={5}>
-            <Box sx={{ position: 'relative' }}>
-              <Image
-                src="/images/dr/dr2.jpg"
-                height={90}
-                width={90}
-                layout='responsive'
-                alt="Feature img"
-                style={{ borderRadius: '30%' }}
-              >
-              </Image>
-            </Box>
+        <Grid container spacing={3} alignItems='center' justifyContent='center'>
+          <Grid item xs={12} sm={5} >
+
+            <Image
+              src="/images/dr/dr12.jpg"
+              height={100}
+              width={100}
+              layout='responsive'
+              alt="Feature img"
+              style={{ borderRadius: '50%' }}
+
+            >
+            </Image>
+
           </Grid>
-          <Grid item xs={12} sm={7}>
+          <Grid item xs={12} sm={7} >
             <Typography
               component="h2"
               sx={{
@@ -102,32 +103,59 @@ const HomeFeature = () => {
               Smile Designing, Implants, Complete and Partial Dentures, Laminates and Veneers. He was also an
               ex-assistant professor at Government Dental College, Mumbai
             </Typography>
-            <List sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }} aria-label="contacts">
-              <ListItem disablePadding>
-                <ListItemButton>
+            <List sx={{ bgcolor: 'background.paper' }} aria-label="contacts">
+
+              <ListItem sx={{ pb: 0, mb: 0 }}>
+                <ListItemButton sx={{ pb: 0, mb: 0 }}>
                   <ListItemIcon>
                     <StarIcon />
                   </ListItemIcon>
                   <ListItemText primary="10+ Years of experience" />
                 </ListItemButton>
               </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton>
+              <ListItem sx={{ pb: 0, mb: 0 }}>
+                <ListItemButton sx={{ pb: 0, mb: 0 }}>
                   <ListItemIcon>
                     <StarIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Highly Equipped Clinic" />
+                  <ListItemText primary="Experienced Prosthodontist" />
                 </ListItemButton>
               </ListItem>
-              <ListItem disablePadding>
-                <ListItemButton>
+              <ListItem sx={{ pb: 0, mb: 0 }}>
+                <ListItemButton sx={{ pb: 0, mb: 0 }}>
                   <ListItemIcon>
                     <StarIcon />
                   </ListItemIcon>
-                  <ListItemText primary="Good quality care & service" />
+                  <ListItemText primary="Government Dental College Alumni" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem sx={{ pb: 0, mb: 0 }}>
+                <ListItemButton sx={{ pb: 0, mb: 0 }}>
+                  <ListItemIcon>
+                    <StarIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Comprehensive Treatment Solutions" />
+                </ListItemButton>
+              </ListItem>
+              <ListItem sx={{ pb: 0, mb: 0 }}>
+                <ListItemButton sx={{ pb: 0, mb: 0 }}>
+                  <ListItemIcon>
+                    <StarIcon />
+                  </ListItemIcon>
+                  <ListItemText primary="Former Assistant Professor" />
                 </ListItemButton>
               </ListItem>
             </List>
+
+            <Box sx={{ '& button': { mr: 2, ml: 4, mt: 3 } }}>
+              <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}>
+
+                <StyledButton color="primary" size="large" variant="contained" >
+                  Book An Appointment
+                </StyledButton>
+              </ScrollLink>
+
+            </Box>
 
           </Grid>
         </Grid>

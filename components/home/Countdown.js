@@ -14,13 +14,14 @@ export default function Countdown() {
 
         // },
         {
-            numbers: "3500",
-            title: "Dental Implant"
-        },
-        {
             numbers: "4000",
             title: "Crown & Bridges"
         },
+        {
+            numbers: "3500",
+            title: "Dental Implant"
+        },
+
         {
             numbers: "1500",
             title: " Root Canal"

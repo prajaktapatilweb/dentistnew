@@ -4,15 +4,27 @@ export const navigations = [
         path: '#', // '/',
     },
     {
-        label: 'Courses',
-        path: 'popular-course', // '/popular-course',
+        label: 'About us',
+        path: 'aboutus', // '/popular-course',
     },
     {
-        label: 'Testimonial',
-        path: 'testimonial', // '/testimonial',
+        label: 'Treatments',
+        path: 'treatments', // '/testimonial',
     },
     {
-        label: 'Mentor',
-        path: 'mentors', // '/mentors',
+        label: 'Testimonials',
+        path: 'testimonials', // '/mentors',
     },
+    {
+        label: 'Gallery',
+        path: 'gallery'
+    },
+    {
+        label: 'FAQs',
+        path: 'faq'
+    },
+    {
+        label: 'Contact',
+        path: 'contactform'
+    }
 ];
