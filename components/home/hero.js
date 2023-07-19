@@ -18,7 +18,7 @@ const HomeHero = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url("/images/mainsmile.png")`,
+        backgroundImage: `url("/images/mainsmile2.jpg")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         width: '100%',
