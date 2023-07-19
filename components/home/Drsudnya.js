@@ -24,7 +24,7 @@ export default function Drsudnya() {
                                 component="h2"
                                 sx={{
                                     position: "relative",
-                                    fontSize: { xs: 40, md: 50 },
+                                    fontSize: { xs: 40, md: 45 },
                                     ml: { xs: 0, md: 4 },
                                     mt: 2,
                                     mb: 3,
@@ -64,7 +64,7 @@ export default function Drsudnya() {
 
                             <Typography
                                 variant="body1"
-                                sx={{ color: "text.secondary", mb: 2, ml: { xs: 0, md: 4 } }}
+                                sx={{ color: "text.secondary", textAlign: 'justify', mb: 2, ml: { xs: 0, md: 4 } }}
                             >
                                 Meet Dr. Saudnya, the Co- founder of DentAvenue Dental Clinic in
                                 Chembur. She is an expert in Root Canals, Crown, Bridges,
@@ -150,7 +150,7 @@ export default function Drsudnya() {
                                 layout="responsive"
                                 quality={97}
                                 alt="Feature img"
-                                style={{ borderRadius: "50%" }}
+                                style={{ borderRadius: "50%", border: '5px  black outset' }}
                             ></Image>
 
                         </Grid>

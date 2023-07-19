@@ -18,12 +18,12 @@ const HomeHero = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url("/images/dr/smilegirl.jpg")`,
+        backgroundImage: `url("/images/mainsmile.png")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         width: '100%',
-        height: '600px',
-        py: { xs: 10, md: 14 },
+
+        py: { xs: 7, md: 14 },
       }}
     >
       {/* <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}> */}
@@ -44,7 +44,7 @@ const HomeHero = () => {
                 }}
               >
                 {' '}
-                Let your
+                Unleash your best
                 <Typography
                   component="mark"
                   sx={{
@@ -55,7 +55,7 @@ const HomeHero = () => {
                     backgroundColor: 'unset',
                   }}
                 >
-                  Smile{' '}
+                  &nbsp;Smile{' '}
                   <Box
                     sx={{
                       position: 'absolute',
@@ -69,7 +69,7 @@ const HomeHero = () => {
                     <img src="/images/headline-curve.svg" alt="Headline curve" />
                   </Box>
                 </Typography>
-                be a reflection of your happiness with our top-notch dental treatments.{' '}
+                with our expert team of dental professionals.
                 <Typography
                   component="span"
                   sx={{
@@ -108,20 +108,20 @@ const HomeHero = () => {
             <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
               <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
                 {
-                  'Experience the personalized care and attention you deserve at our leading dental clinic. We are passionate about helping you achieve a smile that not only looks great but also feels amazing.'
+                  'Your smile is unique, and so is our approach to dental care. With a compassionate team and state-of-the-art techniques, we are dedicated to helping you achieve a smile that lights up every room.'
                 }
               </Typography>
             </Box>
             <Box sx={{ '& button': { mr: 2 } }}>
-              <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}>
+              <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350} >
 
-                <StyledButton color="primary" size="large" variant="contained" >
+                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 } }}>
                   Enquire Now
                 </StyledButton>
               </ScrollLink>
               <ScrollLink spy={true} smooth={true} offset={0} duration={350}>
                 {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
-                <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrow />} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
+                <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 } }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
                   Watch Video
                 </StyledButton>
               </ScrollLink>

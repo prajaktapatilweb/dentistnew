@@ -1,4 +1,5 @@
 import React from 'react';
+import { Typography, Card } from '@mui/material';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
 import Axios from 'axios';
@@ -63,15 +64,34 @@ const HomeNewsLetter = () => {
   };
 
   return (
-    <Box id='contactform' sx={{ backgroundColor: 'background.paper', py: { xs: 8, md: 10 } }}>
+    <Box id='contactform' sx={{ backgroundColor: '#ecf3f3', py: { xs: 7, md: 7 } }}>
       <Container >
-        <Box sx={{
-          backgroundColor: 'secondary.main',
+        <Typography variant="h1" sx={{
+          fontSize: { xs: 30, md: 35 }, pb: {
+            xs: 3,
+            md: 3,
+          },
+        }} gutterBottom>
+          Get in Touch with Our Dentists
+        </Typography>
+        <Card
+          className='box2'
+          sx={{
+            backgroundColor: 'white',
+
+            borderRadius: 10,
+            py: { xs: 4, md: 10 },
+            px: { xs: 4, md: 8 },
+            textAlign: 'center',
+          }}>
+
+          {/* <Box sx={{
+          // backgroundColor: 'secondary.main',
           borderRadius: 10,
           py: { xs: 4, md: 10 },
           px: { xs: 4, md: 8 },
           textAlign: 'center',
-        }}>
+        }}> */}
           <Formik
             validateOnChange={true}
             initialValues={{
@@ -218,7 +238,8 @@ const HomeNewsLetter = () => {
               </StyledButton>
             </Box>
           </Box> */}
-        </Box>
+          {/* </Box> */}
+        </Card>
       </Container>
     </Box>
   );

@@ -39,7 +39,7 @@ const BorderLinearProgress = styled(LinearProgress, {
 }))
 const HomeFeature = () => {
   return (
-    <Box sx={{ py: { xs: 10, md: 7 }, backgroundColor: 'background.paper' }}>
+    <Box sx={{ py: { xs: 7, md: 7 }, backgroundColor: 'background.paper' }}>
       <Container>
         <Grid container spacing={3} alignItems='center' justifyContent='center'>
           <Grid item xs={12} sm={5} >
@@ -50,7 +50,7 @@ const HomeFeature = () => {
               width={100}
               layout='responsive'
               alt="Feature img"
-              style={{ borderRadius: '50%' }}
+              style={{ borderRadius: '50%', border: '5px  black outset' }}
 
             >
             </Image>
@@ -61,7 +61,7 @@ const HomeFeature = () => {
               component="h2"
               sx={{
                 position: 'relative',
-                fontSize: { xs: 40, md: 50 },
+                fontSize: { xs: 40, md: 45 },
                 ml: { xs: 0, md: 4 },
                 mt: 2,
                 mb: 3,
@@ -96,7 +96,7 @@ const HomeFeature = () => {
               </Typography>
             </Typography>
 
-            <Typography variant="body1" sx={{ color: 'text.secondary', mb: 2, ml: { xs: 0, md: 4 } }}>
+            <Typography variant="body1" sx={{ color: 'text.secondary', textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}>
               Meet Dr. Akshay, Founder of DentAvenue Dental Clinic in Chembur. He has more then 10 years of experience
               in the field of Dentistry. Dr. Akshay has completed his MDS Prosthodontics ( Crown, Bridge And
               Implantology) from Government Dental College, Mumbai. He is a specialist in Full Mouth Rehabilitation,

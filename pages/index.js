@@ -11,6 +11,7 @@ import HomeOurMentors from '../components/home/mentors';
 import Photogallery from '../components/home/photo-gallery';
 import Equipment from '../components/home/Equipment';
 import Faq from '../components/home/Faq';
+import Degreesection from '../components/home/Degreesection';
 // import styles from '../styles-1/Home.module.css';
 
 export default function Home() {
@@ -27,6 +28,7 @@ export default function Home() {
       <Equipment />
       <Faq />
       <HomeNewsLetter />
+      <Degreesection />
 
 
     </>

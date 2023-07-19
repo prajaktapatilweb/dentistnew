@@ -39,20 +39,20 @@ const Clinicinfo = () => {
     return (
         <Box
             id="aboutus"
-            sx={{ py: { xs: 10, md: 14 }, backgroundColor: "background.paper" }}
+            sx={{ py: { xs: 10, md: 10 }, backgroundColor: "background.paper" }}
         >
             <Container>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={5}>
-                        <Box sx={{ position: "relative", border: "3px solid black" }}>
+                        <Box sx={{ position: "relative" }}>
                             <Image
-                                src="/images/clinicphoto2.png"
+                                src="/images/herodental2.jpg"
                                 height={100}
                                 width={100}
                                 layout="responsive"
                                 alt="Feature img"
                             />
-                            <Box
+                            {/* <Box
                                 sx={{
                                     position: "absolute",
                                     top: -39,
@@ -113,7 +113,7 @@ const Clinicinfo = () => {
                                         order={4}
                                     />
                                 </Box>
-                            </Box>
+                            </Box> */}
                         </Box>
                     </Grid>
                     <Grid item xs={12} md={7}>
@@ -158,7 +158,7 @@ const Clinicinfo = () => {
                         </Typography>
 
                         <Typography
-                            sx={{ color: "text.secondary", mb: 2, ml: { xs: 0, md: 4 } }}
+                            sx={{ color: "text.secondary", textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}
                         >
                             Welcome to Dr. Akshay's DentAvenue Dental Clinic, your premier
                             destination for high-quality dental care. Our experienced team of

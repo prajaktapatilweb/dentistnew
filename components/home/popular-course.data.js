@@ -38,17 +38,33 @@ export const data = [
     },
     {
         id: 6,
+        cover: '/images/services/teethwhite1.jpg',
+        title: 'Teeth Whitening:',
+        price: 'Enhance your smiles brilliance and beauty with our effective teeth whitening solutions.',
+
+    },
+    {
+        id: 7,
         cover: '/images/services/dentistry1.jpg',
         title: 'Pediatric Dentistry:',
 
         price: ' Ensure your childs dental health with our gentle and specialized pediatric dental care.',
 
     },
+
+
     {
-        id: 7,
-        cover: '/images/services/teethwhite1.jpg',
-        title: 'Teeth Whitening:',
-        price: 'Enhance your smiles brilliance and beauty with our effective teeth whitening solutions.',
+        id: 8,
+        cover: '/images/services/veeners.jpg',
+        title: 'Dental Veneers:',
+        price: 'Dental Veneers Transform your smile with dental veneers, the perfect solution for a stunning and confident appearance.',
+
+    },
+    {
+        id: 9,
+        cover: '/images/services/wisdomteeth.jpg',
+        title: 'Wisdom Teeth Extraction:',
+        price: 'Wisdom Teeth Extraction Trust our experienced team for safe and comfortable wisdom teeth extraction or any other tooth extraction needs.',
 
     },
 ];

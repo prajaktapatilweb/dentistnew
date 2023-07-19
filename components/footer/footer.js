@@ -5,9 +5,12 @@ import Container from '@mui/material/Container';
 import Typography from '@mui/material/Typography';
 import Image from "next/image";
 
-import { FooterNavigation, FooterSocialLinks } from '../footer';
+import { FooterSocialLinks } from '../footer';
 import Link from 'next/link';
+import Whatsappnew from './Whatsappnew';
 const Footer = () => {
+  const contactno1 = "+917900074487";
+
   return (<Box component="footer" sx={{ backgroundColor: 'primary.main', py: { xs: 6, md: 10 }, color: 'primary.contrastText' }}>
     <Container sx={{ textAlign: { xs: 'center', md: 'left' } }}>
       <Grid container spacing={3} alignItems='center'>
@@ -35,11 +38,28 @@ const Footer = () => {
           <Typography variant='h5' sx={{ mb: 1 }}><Link href="#gallery" className='footermenu'>Gallery</Link></Typography>
           <Typography variant='h5' sx={{ mb: 1 }}> <Link href="#faq" className='footermenu'>FAQs</Link></Typography>
 
+          <Box sx={{
+
+            display: 'flex',
+            alignItems: "center",
+          }}>
+            <Image src="/images/phone.png" width={20} height={20} sx={{
+
+              overflow: "hidden"
+            }}></Image> &nbsp;&nbsp;
+            <Link href={`tel:${contactno1}`} target="_blank" className='footermenu' style={{ textDecoration: 'underline', display: 'inline-block' }} >
+
+              {contactno1}
+
+            </Link>
+          </Box>
+
           {/* <FooterNavigation /> */}
         </Grid>
         <Grid item xs={12} md={5}>
           <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15084.267627628198!2d72.8997529!3d19.0607957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c602cf4db0f7%3A0xd4992176e1672533!2sDr.%20Akshay&#39;s%20DentAvenue%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1689430175809!5m2!1sen!2sin" width="100%" height="250px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </Grid>
+        <Whatsappnew />
       </Grid>
     </Container>
   </Box>);

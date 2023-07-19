@@ -16,7 +16,7 @@ export default async function handler(req, res) {
         console.log('Received Data', req.body)
         const msg = {
           to: `${req.body.email}`, // Change to your recipient
-          from: 'prajaktasendemail@gmail.com', // Change to your verified sender
+          from: 'dentavenuemumbai@gmail.com', // Change to your verified sender
           subject: `New enquiry `,
           text: `${req.body.name} has raise an inquiry on landing page. The details are as follows \n 
           Email: ${req.body.email} \n

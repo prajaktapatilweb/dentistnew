@@ -11,21 +11,17 @@ export default function Faq() {
     return (
         <div>
             <Box id="faq" sx={{
-                boxShadow: 2, pt: {
-                    xs: 6,
-                    md: 8,
-                },
-                pb: 14, borderRadius: 4, backgroundColor: '#f8f8f8'
+                py: { xs: 7, md: 7 }, backgroundColor: '#f8f8f8'
             }}>
 
                 <Container maxWidth="lg" >
                     <Typography variant="h1" sx={{
-                        fontSize: 40, pb: {
-                            xs: 5,
-                            md: 5,
+                        fontSize: { xs: 30, md: 35 }, pb: {
+                            xs: 2,
+                            md: 2,
                         },
                     }} gutterBottom>
-                        FAQs :
+                        FAQs
                     </Typography>
 
                     <Accordion>
