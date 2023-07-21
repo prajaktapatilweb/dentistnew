@@ -13,7 +13,7 @@ export default function Degreesection() {
                     }}
                     gutterBottom
                 >
-                    360 Degree View of Clinic
+                    Step Inside Our Dental Clinic
                 </Typography>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={4}>

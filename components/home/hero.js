@@ -18,29 +18,34 @@ const HomeHero = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url("/images/mainsmile2.jpg")`,
+        backgroundImage: `url("/images/heroimg2.webp")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
-        width: '100%',
+        display: 'flex',
+        // width: '100%',
+        height: '83vh',
 
-        py: { xs: 7, md: 14 },
+        alignItems: 'center',
+        justifyItems: 'center'
+
+        // py: { xs: 7, md: 14 },
       }}
     >
       {/* <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}> */}
       <Container maxWidth="lg">
-        <Grid container>
+        <Grid container alignItems='center' justifyContent='center'>
           <Grid item xs={12} md={12}>
             <Box>
               <Typography
                 component="h2"
                 sx={{
-                  width: { md: 850 },
+                  // width: { md: 850 },
                   position: 'relative',
                   fontSize: { xs: 40, md: 50 },
                   letterSpacing: 1.5,
                   fontWeight: 'bold',
 
-                  lineHeight: 1.3,
+                  lineHeight: 1.6,
                 }}
               >
                 {' '}
@@ -78,9 +83,9 @@ const HomeHero = () => {
                     position: 'relative',
                     '& svg': {
                       position: 'absolute',
-                      top: -16,
-                      right: -21,
-                      width: { xs: 22, md: 30 },
+                      top: -7,
+                      right: -20,
+                      width: { xs: 22, md: 27 },
                       height: 'auto',
                     },
                   }}
@@ -105,8 +110,8 @@ const HomeHero = () => {
                 <br />
               </Typography>
             </Box>
-            <Box sx={{ mb: 4, width: { xs: '100%', md: '70%' } }}>
-              <Typography sx={{ color: 'text.secondary', lineHeight: 1.6 }}>
+            <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
+              <Typography variant='h4' sx={{ color: '#585858', lineHeight: 1.6 }}>
                 {
                   'Your smile is unique, and so is our approach to dental care. With a compassionate team and state-of-the-art techniques, we are dedicated to helping you achieve a smile that lights up every room.'
                 }

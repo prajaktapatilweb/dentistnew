@@ -28,7 +28,7 @@ const Header = () => {
           flexDirection: { xs: 'column', md: 'row' },
           transition: (theme) => theme.transitions.create(['top']),
           ...(matchMobileView && {
-            py: 6,
+            // py: 6,
             backgroundColor: 'background.paper',
             zIndex: 'appBar',
             position: 'fixed',

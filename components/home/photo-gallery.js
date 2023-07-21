@@ -96,7 +96,7 @@ const Photogallery = () => {
             fontSize: { xs: 30, md: 35 },
           }}
         >
-          Photo Gallery
+          Capturing Dental Care
         </Typography>
 
         <Slider {...sliderConfig}>
