@@ -18,7 +18,7 @@ const HomeHero = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url("/images/heroimg2.webp")`,
+        backgroundImage: `url("/images/heroimg4.webp")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         display: 'flex',
@@ -44,7 +44,7 @@ const HomeHero = () => {
                   fontSize: { xs: 40, md: 50 },
                   letterSpacing: 1.5,
                   fontWeight: 'bold',
-
+                  color: 'white',
                   lineHeight: 1.6,
                 }}
               >
@@ -54,7 +54,7 @@ const HomeHero = () => {
                   component="mark"
                   sx={{
                     position: 'relative',
-                    color: 'white',
+                    color: 'gold',
                     fontSize: 'inherit',
                     fontWeight: 'inherit',
                     backgroundColor: 'unset',
@@ -111,7 +111,7 @@ const HomeHero = () => {
               </Typography>
             </Box>
             <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
-              <Typography variant='h4' sx={{ color: '#585858', lineHeight: 1.6 }}>
+              <Typography variant='h4' sx={{ color: 'black', lineHeight: 1.6 }}>
                 {
                   'Your smile is unique, and so is our approach to dental care. With a compassionate team and state-of-the-art techniques, we are dedicated to helping you achieve a smile that lights up every room.'
                 }
@@ -120,13 +120,13 @@ const HomeHero = () => {
             <Box sx={{ '& button': { mr: 2 } }}>
               <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350} >
 
-                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "3px solid #ba7f32", backgroundColor: '#ba7f32', color: 'black' }}>
+                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "3px solid #ba7f32", backgroundColor: '#ba7f32', color: 'white' }}>
                   Enquire Now
                 </StyledButton>
               </ScrollLink>
               <ScrollLink spy={true} smooth={true} offset={0} duration={350}>
                 {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
-                <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "4px solid #ba7f32" }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
+                <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "4px solid #ba7f32", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
                   Watch Video
                 </StyledButton>
               </ScrollLink>

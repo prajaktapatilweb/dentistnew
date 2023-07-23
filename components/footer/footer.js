@@ -172,8 +172,8 @@ const Footer = () => {
             <FooterSocialLinks />
 
           </Grid>
-
-
+          <Box sx={{ textAlign: "center" }}>
+            Designed by Prajakta Bhushankumar Patil</Box>
           <Whatsappnew />
         </Grid>
       </Container>
