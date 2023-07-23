@@ -86,7 +86,7 @@ const HomePopularCourse = () => {
       sx={{
         py: { xs: 7, md: 7 },
 
-        backgroundColor: "background.default",
+        backgroundColor: "#f1efeb",
       }}
     >
       <Container maxWidth="lg">

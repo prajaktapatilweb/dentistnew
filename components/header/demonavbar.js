@@ -48,7 +48,7 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static">
+        <AppBar position="static" sx={{ backgroundColor: '#000000' }}>
             <Container maxWidth="xl">
                 <Toolbar disableGutters sx={{ p: 1 }}>
                     {/* <Image src='/images/logo1.jpg' width={200} height={120} ></Image> */}

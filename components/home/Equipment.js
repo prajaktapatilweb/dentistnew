@@ -34,7 +34,7 @@ export default function Equipment() {
             <Box
                 sx={{
                     py: { xs: 6, md: 6 },
-                    backgroundColor: "#ecf3f3",
+                    backgroundColor: "#f1efeb",
                 }}
             >
                 <Container maxWidth="lg">

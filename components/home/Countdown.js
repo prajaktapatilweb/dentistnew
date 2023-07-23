@@ -36,7 +36,7 @@ export default function Countdown() {
             <Box
                 sx={{
                     py: { xs: 6, md: 6 },
-                    backgroundColor: "#f8f8f8",
+                    backgroundColor: "#f1efeb",
                 }}
             >
                 <Container maxWidth="lg">
@@ -64,7 +64,8 @@ export default function Countdown() {
                                         mb: { xs: 1, md: 0 },
                                         padding: 3,
                                         borderRadius: 5,
-                                        background: "#127c71",
+                                        background: '#101112'
+                                        // background: "#127c71",
                                     }}
                                 >
                                     <Typography

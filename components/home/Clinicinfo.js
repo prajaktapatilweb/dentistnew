@@ -39,7 +39,7 @@ const Clinicinfo = () => {
     return (
         <Box
             id="aboutus"
-            sx={{ py: { xs: 10, md: 10 }, backgroundColor: "background.paper" }}
+            sx={{ py: { xs: 10, md: 10 }, backgroundColor: "#ffffff" }}
         >
             <Container>
                 <Grid container spacing={3}>
@@ -134,7 +134,8 @@ const Clinicinfo = () => {
                                 component="mark"
                                 sx={{
                                     position: "relative",
-                                    color: "primary.main",
+                                    color: '#0b1341',
+                                    // color: "primary.main",
                                     fontSize: "inherit",
                                     fontWeight: "inherit",
                                     backgroundColor: "unset",
@@ -158,7 +159,7 @@ const Clinicinfo = () => {
                         </Typography>
 
                         <Typography
-                            sx={{ color: "text.secondary", textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}
+                            sx={{ color: "#000000", textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}
                         >
                             Welcome to Dr. Akshay's DentAvenue Dental Clinic, your premier
                             destination for high-quality dental care. Our experienced team of
@@ -182,6 +183,7 @@ const Clinicinfo = () => {
                                             py: 1.5,
                                             boxShadow: 1,
                                             borderRadius: 4,
+                                            border: '1px solid #E0E0E0',
                                             display: "flex",
                                             alignItems: "center",
                                         }}
@@ -189,7 +191,8 @@ const Clinicinfo = () => {
                                         <Box
                                             sx={{
                                                 mr: 1,
-                                                backgroundColor: "primary.main",
+                                                background: "#000000",
+                                                // backgroundColor: "primary.main",
                                                 borderRadius: "50%",
                                                 height: 36,
                                                 width: 36,
@@ -218,7 +221,8 @@ const Clinicinfo = () => {
                                                 {title}
                                             </Typography>
                                             <Typography
-                                                sx={{ lineHeight: 1.3, color: "text.secondary" }}
+                                                // sx={{ lineHeight: 1.3, color: "text.secondary" }}
+                                                sx={{ lineHeight: 1.3, color: "#000000" }}
                                                 variant="subtitle1"
                                             >
                                                 {description}

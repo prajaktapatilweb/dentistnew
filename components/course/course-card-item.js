@@ -35,7 +35,7 @@ const CourseCardItem = ({ item }) => {
           layout='responsive' alt={'Course ' + item.id} />
       </Box>
       <Box sx={{ mb: 2 }}>
-        <Typography component="h2" variant="h5" sx={{ color: "#127C71", overflow: 'hidden', fontSize: '1.2rem' }}>
+        <Typography component="h2" variant="h5" sx={{ color: "#0b1341", overflow: 'hidden', fontSize: '1.2rem' }}>
           {item.title}
         </Typography>
         {/* <Box sx={{ display: 'flex', alignItems: 'center' }}>

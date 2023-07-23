@@ -64,7 +64,7 @@ const HomeNewsLetter = () => {
   };
 
   return (
-    <Box id='contactform' sx={{ backgroundColor: '#ecf3f3', py: { xs: 7, md: 7 } }}>
+    <Box id='contactform' sx={{ backgroundColor: '#f1efeb', py: { xs: 7, md: 7 } }}>
       <Container >
         <Typography variant="h1" sx={{
           fontSize: { xs: 30, md: 35 }, pb: {

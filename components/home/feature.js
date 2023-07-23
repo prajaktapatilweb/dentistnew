@@ -74,7 +74,8 @@ const HomeFeature = () => {
                 component="mark"
                 sx={{
                   position: 'relative',
-                  color: 'primary.main',
+                  color: '#0b1341',
+                  // color: 'primary.main',
                   fontSize: 'inherit',
                   fontWeight: 'inherit',
                   backgroundColor: 'unset',
@@ -96,7 +97,7 @@ const HomeFeature = () => {
               </Typography>
             </Typography>
 
-            <Typography variant="body1" sx={{ color: 'text.secondary', textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}>
+            <Typography variant="body1" sx={{ color: 'black', textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}>
               Meet Dr. Akshay, Founder of DentAvenue Dental Clinic in Chembur. He has more then 10 years of experience
               in the field of Dentistry. Dr. Akshay has completed his MDS Prosthodontics ( Crown, Bridge And
               Implantology) from Government Dental College, Mumbai. He is a specialist in Full Mouth Rehabilitation,

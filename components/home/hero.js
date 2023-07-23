@@ -54,7 +54,7 @@ const HomeHero = () => {
                   component="mark"
                   sx={{
                     position: 'relative',
-                    color: 'primary.main',
+                    color: 'white',
                     fontSize: 'inherit',
                     fontWeight: 'inherit',
                     backgroundColor: 'unset',
@@ -90,22 +90,22 @@ const HomeHero = () => {
                     },
                   }}
                 >
-                  <svg version="1.1" viewBox="0 0 3183 3072">
+                  {/* <svg version="1.1" viewBox="0 0 3183 3072">
                     <g id="Layer_x0020_1">
                       <path
-                        fill="#127C71"
+                        fill="#ffc221"
                         d="M2600 224c0,0 0,0 0,0 236,198 259,562 52,809 -254,303 -1849,2089 -2221,1776 -301,-190 917,-1964 1363,-2496 207,-247 570,-287 806,-89z"
                       />
                       <path
-                        fill="#127C71"
+                        fill="#ffc221"
                         d="M3166 2190c0,0 0,0 0,0 64,210 -58,443 -270,516 -260,90 -1848,585 -1948,252 -104,-230 1262,-860 1718,-1018 212,-73 437,39 500,250z"
                       />
                       <path
-                        fill="#127C71"
+                        fill="#ffc221"
                         d="M566 3c0,0 0,0 0,0 -219,-26 -427,134 -462,356 -44,271 -255,1921 90,1962 245,62 628,-1392 704,-1869 36,-221 -114,-424 -332,-449z"
                       />
                     </g>
-                  </svg>
+                  </svg> */}
                 </Typography>{' '}
                 <br />
               </Typography>
@@ -120,13 +120,13 @@ const HomeHero = () => {
             <Box sx={{ '& button': { mr: 2 } }}>
               <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350} >
 
-                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 } }}>
+                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "3px solid #ba7f32", backgroundColor: '#ba7f32', color: 'black' }}>
                   Enquire Now
                 </StyledButton>
               </ScrollLink>
               <ScrollLink spy={true} smooth={true} offset={0} duration={350}>
                 {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
-                <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 } }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
+                <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "4px solid #ba7f32" }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
                   Watch Video
                 </StyledButton>
               </ScrollLink>
