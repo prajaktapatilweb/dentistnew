@@ -143,6 +143,15 @@ const HomeFeature = () => {
                   <ListItemIcon>
                     <StarIcon />
                   </ListItemIcon>
+                  <ListItemText primary="Specialized in Implants and FMR" />
+                </ListItemButton>
+              </ListItem>
+
+              <ListItem sx={{ pb: 0, mb: 0 }}>
+                <ListItemButton sx={{ pb: 0, mb: 0 }}>
+                  <ListItemIcon>
+                    <StarIcon />
+                  </ListItemIcon>
                   <ListItemText primary="Former Assistant Professor" />
                 </ListItemButton>
               </ListItem>
