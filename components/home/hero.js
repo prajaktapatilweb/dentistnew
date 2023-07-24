@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography'
 import { Link as ScrollLink } from 'react-scroll'
 import { StyledButton } from '../styled-button';
 import { PlayArrow } from '@mui/icons-material'
-import ModalVideo from 'react-modal-video'
+import Hidden from '@mui/material/Hidden';
 
 
 const HomeHero = () => {
@@ -42,10 +42,11 @@ const HomeHero = () => {
                   // width: { md: 850 },
                   position: 'relative',
                   fontSize: { xs: 40, md: 50 },
+                  mb: { xs: 3, sm: 0 },
                   letterSpacing: 1.5,
                   fontWeight: 'bold',
                   color: 'white',
-                  lineHeight: 1.6,
+                  lineHeight: 1.5,
                 }}
               >
                 {' '}
@@ -64,10 +65,10 @@ const HomeHero = () => {
                   <Box
                     sx={{
                       position: 'absolute',
-                      top: { xs: 24, md: 34 },
+                      top: { xs: 24, md: 25 },
                       left: 2,
                       transform: 'rotate(3deg)',
-                      '& img': { width: { xs: 146, md: 210 }, height: 'auto' },
+                      '& img': { width: { xs: 146, md: 160 }, height: 'auto' },
                     }}
                   >
                     {/* eslint-disable-next-line */}
@@ -110,23 +111,25 @@ const HomeHero = () => {
                 <br />
               </Typography>
             </Box>
-            <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
-              <Typography variant='h4' sx={{ color: 'black', lineHeight: 1.6 }}>
-                {
-                  'Your smile is unique, and so is our approach to dental care. With a compassionate team and state-of-the-art techniques, we are dedicated to helping you achieve a smile that lights up every room.'
-                }
-              </Typography>
-            </Box>
+            <Hidden smDown>
+              <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
+                <Typography variant='p' sx={{ color: 'white', lineHeight: 1.6, fontSize: 18 }} >
+                  {
+                    'Your smile is unique, and so is our approach to dental care. With a compassionate team and state-of-the-art techniques, we are dedicated to helping you achieve a smile that lights up every room.'
+                  }
+                </Typography>
+              </Box>
+            </Hidden>
             <Box sx={{ '& button': { mr: 2 } }}>
               <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350} >
 
-                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "3px solid #ba7f32", backgroundColor: '#ba7f32', color: 'white' }}>
+                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 }, fontSize: 17, border: "3px solid", borderColor: "secondary.main", backgroundColor: 'secondary.main', color: 'white' }}>
                   Enquire Now
                 </StyledButton>
               </ScrollLink>
               <ScrollLink spy={true} smooth={true} offset={0} duration={350}>
                 {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
-                <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, border: "4px solid #ba7f32", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
+                <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, fontSize: 17, border: "4px solid", borderColor: "secondary.main", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
                   Watch Video
                 </StyledButton>
               </ScrollLink>
