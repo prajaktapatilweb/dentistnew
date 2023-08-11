@@ -3,16 +3,35 @@ import theme from '../config/theme'
 import { createEmotionCache } from '../utils'
 import createEmotionServer from '@emotion/server/create-instance'
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import Script from 'next/script'
 
 class MyDocument extends Document {
   render() {
     return (
       <Html lang="en">
         <Head>
+          <script
+            type="text/javascript"
+            async
+            dangerouslySetInnerHTML={{
+              __html: `
+              (function(w, d, s, l, i) {
+                    w[l] = w[l] || []
+                    w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" })
+                    const f = d.getElementsByTagName(s)[0],
+                      j = d.createElement(s),
+                      dl = l != "dataLayer" ? "&l=" + l : ""
+                    j.async = true
+                    j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
+                    f.parentNode.insertBefore(j, f)
+                  })(window,document,'script','dataLayer',"GTM-W3MMK948")`,
+            }}
+          />
+
           <meta charSet="utf-8" />
           <link rel="icon" href="/favicon.ico" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
-
+          <meta name="google-site-verification" content="4GKM3x2UsEDZaIUgwspCYDUJwYNK0YBE80HfNGgJ77U" />
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.background.paper} />
 
@@ -30,7 +49,26 @@ class MyDocument extends Document {
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStylesTags}
         </Head>
+        <Script src="https://www.googletagmanager.com/gtag/js?id=G-YZSBD74SC9" />
+        <Script id="google-analytics">
+          {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+ 
+          gtag('config', 'GA_MEASUREMENT_ID');
+        `}
+        </Script>
         <body>
+          <noscript>
+            <iframe
+              src={`https://www.googletagmanager.com/ns.html?id=GTM-W3MMK948`}
+              height="0"
+              width="0"
+              style={{ display: "none", visibility: "hidden" }}
+            ></iframe>
+          </noscript>
+
           <Main />
           <NextScript />
         </body>

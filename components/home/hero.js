@@ -18,7 +18,7 @@ const HomeHero = () => {
   return (
     <Box
       sx={{
-        backgroundImage: `url("/images/heroimg4.webp")`,
+        backgroundImage: `url("/images/heroimg3.webp")`,
         backgroundRepeat: 'no-repeat',
         backgroundSize: 'cover',
         display: 'flex',

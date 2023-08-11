@@ -57,12 +57,13 @@ const StyledDots = styled("ul")(({ theme }) => ({
 }));
 const HomePopularCourse = () => {
   const { breakpoints } = useTheme();
-  const matchMobileView = useMediaQuery(breakpoints.down("md"));
+  const matchMobileView = useMediaQuery(breakpoints.down("sm"));
+  const matchMobileView1 = useMediaQuery(breakpoints.down("md"));
   const sliderConfig = {
     infinite: true,
     autoplay: true,
     speed: 300,
-    slidesToShow: matchMobileView ? 1 : 3,
+    slidesToShow: matchMobileView ? 1 : matchMobileView1 ? 2 : 3,
     slidesToScroll: 1,
     prevArrow: <SliderArrow type="prev" />,
     nextArrow: <SliderArrow type="next" />,
