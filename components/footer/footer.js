@@ -193,7 +193,7 @@ const Footer = () => {
           <Whatsappnew />
           <Grid item xs={12} sx={{ textAlign: 'center' }}>
 
-            Designed by <b>Prajakta Bhushankumar Patil</b>
+            {/* Designed by <b>Prajakta Bhushankumar Patil</b> */}
           </Grid>
         </Grid>
       </Container>
