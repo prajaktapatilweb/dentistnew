@@ -81,7 +81,7 @@ const HomeFeature = () => {
                   backgroundColor: 'unset',
                 }}
               >
-                Dr. Akshay <br />
+                Dr. Akshay Bandewar <br />
                 <Box
                   sx={{
                     position: 'absolute',
@@ -98,11 +98,7 @@ const HomeFeature = () => {
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'black', textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}>
-              Meet Dr. Akshay, Founder of DentAvenue Dental Clinic in Chembur. He has more then 10 years of experience
-              in the field of Dentistry. Dr. Akshay has completed his MDS Prosthodontics ( Crown, Bridge And
-              Implantology) from Government Dental College, Mumbai. He is a specialist in Full Mouth Rehabilitation,
-              Smile Designing, Implants, Complete and Partial Dentures, Laminates and Veneers. He was also an
-              ex-assistant professor at Government Dental College, Mumbai
+              Meet Dr. Akshay, the Founder of Dr. Akshay's DentAvenue Dental Clinic in Chembur. With more than 10 years of experience in the field of Dentistry, Dr. Akshay has completed his MDS in Prosthodontics (Crown, Bridge, and Implantology) from Government Dental College, Mumbai. He specializes in Full Mouth Rehabilitation, Smile Designing, Implants, Complete and Partial Dentures, Laminates, and Veneers. Dr. Akshay also served as an ex-assistant professor at Government Dental College, Mumbai.
             </Typography>
             <List sx={{ bgcolor: 'background.paper' }} aria-label="contacts">
 

@@ -29,7 +29,7 @@ class MyDocument extends Document {
           />
 
           <meta charSet="utf-8" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/dentavenue1.ico" />
           <meta name="viewport" content="initial-scale=1, width=device-width" />
           <meta name="google-site-verification" content="4GKM3x2UsEDZaIUgwspCYDUJwYNK0YBE80HfNGgJ77U" />
           {/* PWA primary color */}

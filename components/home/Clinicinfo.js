@@ -161,17 +161,9 @@ const Clinicinfo = () => {
                         <Typography
                             sx={{ color: "#000000", textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}
                         >
-                            Welcome to Dr. Akshay's DentAvenue Dental Clinic, your premier
-                            destination for high-quality dental care. Our experienced team of
-                            dental professionals is passionate about improving and maintaining
-                            your oral health. We offer a comprehensive range of services, from
-                            preventive dentistry to cosmetic and restorative treatments, all
-                            tailored to meet your unique needs. Using the latest advancements
-                            in dental technology, we ensure precise diagnoses and efficient
-                            treatments. We pride ourselves on creating a warm and welcoming
-                            environment, where our patients feel comfortable and relaxed.
-                            Trust us to provide you with exceptional dental care and help you
-                            achieve a healthy, beautiful smile that lasts a lifetime.
+                            Welcome to Dr. Akshay's DentAvenue Dental Clinic, your premier destination for high-quality dental care. Our experienced team of dentist in Chembur professionals is passionate about improving and maintaining your oral health. We offer a comprehensive range of services, from preventive dentistry to root canal treatment and dental implant clinic procedures, all tailored to meet your unique needs. Using the latest advancements in dental technology, we ensure precise diagnoses and efficient treatments. We pride ourselves on creating a warm and welcoming dental clinic near my location, where our patients feel comfortable and relaxed. Trust us to provide you with exceptional dental care, including full mouth implant solutions, and help you achieve a healthy, beautiful smile that lasts a lifetime.
+                            <br></br><br></br>
+                            For your convenience, our dental clinic is open on Sunday as well.
                         </Typography>
 
                         <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>

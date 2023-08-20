@@ -43,7 +43,7 @@ export default function Drsudnya() {
                                         backgroundColor: "unset",
                                     }}
                                 >
-                                    Dr. Saudnya <br />
+                                    Dr. Saudnya Rudrawar<br />
                                     <Box
                                         sx={{
                                             position: "absolute",
@@ -66,12 +66,7 @@ export default function Drsudnya() {
                                 variant="body1"
                                 sx={{ color: "black", textAlign: 'justify', mb: 2, ml: { xs: 0, md: 4 } }}
                             >
-                                Meet Dr. Saudnya, the Co- founder of DentAvenue Dental Clinic in
-                                Chembur. She is an expert in Root Canals, Crown, Bridges,
-                                Cosmetic Dentistry, Dentures and other dental treatments. Dr.
-                                Saudnya has been providing her patients with the finest dental
-                                care and giving them the perfect smile they deserve for the past
-                                8 years.
+                                Meet Dr. Saudnya, the Co-founder of Dr. Akshay's DentAvenue Dental Clinic in Chembur. She is an expert female dentist in Chembur specializing in Root Canals, Crowns, Bridges, Cosmetic Dentistry, Dentures, and other dental treatments. For the past 8 years, Dr. Saudnya has been providing her patients with the finest dental care, helping them achieve the perfect smile they deserve.
                             </Typography>
                             <List sx={{ bgcolor: "background.paper" }} aria-label="contacts">
                                 <ListItem sx={{ pb: 0, mb: 0 }}>
