@@ -35,11 +35,25 @@ class MyDocument extends Document {
           {/* PWA primary color */}
           <meta name="theme-color" content={theme.palette.background.paper} />
 
-          <meta content="#fbfbfb" name="theme-color" />
+          {/* <meta content="#fbfbfb" name="theme-color" />
           <meta content="#fbfbfb" name="msapplication-navbutton-color" />
           <meta content="#fbfbfb" name="apple-mobile-web-app-status-bar-style" />
-          <meta content="yes" name="apple-mobile-web-app-capable" />
+          <meta content="yes" name="apple-mobile-web-app-capable" /> */}
+          <meta name='description' content="Searching for a trusted dentist in Chembur and nearby areas like Deonar, Trombay, Tilak Nagar, Amrit Nagar, Postal Colony, and Ghatkopar East? Look no further than Dr. Akshay's DentAvenue Dental Clinic. Our experienced team offers a range of comprehensive dental services including general dentistry, teeth whitening, dental implants, root canal treatments, and more. Achieve a healthy and radiant smile with us. Visit our clinic today!"></meta>
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Premier Dental Care in Chembur" />
+          <meta property="og:description" content="Experience premier dental care in Chembur for your brightest, healthiest smile." />
+          <meta property="og:site_name" content="Dr. Akshay's DentAvenue" />
+          <meta property="og:url" content="https://www.dentavenue.in/" />
+          <meta property="og:image" content="https://html.sammy-codes.com/images/large-profile.jpg" />
 
+          <meta name="twitter:card" content="summary_large_image" />
+          <meta name="twitter:site" content="@DentavenueM" />
+          <meta name="twitter:title" content="Dr. Akshay's DentAvenue" />
+          <meta name="twitter:description" content="Experience premier dental care in Chembur for your brightest, healthiest smile." />
+          <meta name="twitter:image" content="https://www.dentavenue.in/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" />
+
+          <link rel="canonical" href="https://www.dentavenue.in/"></link>
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link

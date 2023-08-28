@@ -46,11 +46,11 @@ const Clinicinfo = () => {
                     <Grid item xs={12} md={5}>
                         <Box sx={{ position: "relative" }}>
                             <Image
-                                src="/images/herodental2.jpg"
+                                src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp"
                                 height={100}
                                 width={100}
                                 layout="responsive"
-                                alt="Feature img"
+                                alt="dr-akshays-dentavenue-dental-clinic-chembur-mumbai"
                             />
                             {/* <Box
                                 sx={{
@@ -118,43 +118,34 @@ const Clinicinfo = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography
-                            component="h2"
+                            component="h1"
                             sx={{
                                 position: "relative",
-                                fontSize: { xs: 40, md: 50 },
+                                fontSize: { xs: 40, md: 45 },
                                 ml: { xs: 0, md: 4 },
                                 mt: 2,
                                 mb: 3,
-                                lineHeight: 1,
+                                lineHeight: 1.3,
                                 fontWeight: "bold",
+                                color: '#0b1341',
                             }}
                         >
-                            About{" "}
-                            <Typography
-                                component="mark"
+
+
+                            Dental Clinic in Chembur East <br />
+                            <Box
                                 sx={{
-                                    position: "relative",
-                                    color: '#0b1341',
-                                    // color: "primary.main",
-                                    fontSize: "inherit",
-                                    fontWeight: "inherit",
-                                    backgroundColor: "unset",
+                                    position: "absolute",
+                                    top: { xs: 20, md: 25 },
+                                    transform: "rotate(3deg)",
+                                    left: 2,
+                                    "& img": { width: { xs: 140, md: 175 }, height: "auto" },
                                 }}
                             >
-                                DentAvenue <br />
-                                <Box
-                                    sx={{
-                                        position: "absolute",
-                                        top: { xs: 20, md: 28 },
-                                        transform: "rotate(3deg)",
-                                        left: 2,
-                                        "& img": { width: { xs: 140, md: 175 }, height: "auto" },
-                                    }}
-                                >
-                                    {/* eslint-disable-next-line @next/next/no-img-element */}
-                                    <img src="/images/headline-curve.svg" alt="Headline curve" />
-                                </Box>
-                            </Typography>
+                                {/* eslint-disable-next-line @next/next/no-img-element */}
+                                <img src="/images/headline-curve.svg" alt="Headline curve" />
+                            </Box>
+
                             {/* Enjoyable */}
                         </Typography>
 
