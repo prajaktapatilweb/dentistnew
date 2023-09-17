@@ -72,7 +72,8 @@ const HomeNewsLetter = () => {
             md: 3,
           },
         }} gutterBottom>
-          Get in Touch with Our Dentists
+          Connect with Our Expert Dentists in Chembur
+
         </Typography>
         <Card
           className='box2'

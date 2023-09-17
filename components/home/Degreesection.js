@@ -13,7 +13,8 @@ export default function Degreesection() {
                     }}
                     gutterBottom
                 >
-                    Step Inside Our Dental Clinic
+                    Step Inside Our Chembur Dental Clinic
+
                 </Typography>
                 <Grid container spacing={3}>
                     <Grid item xs={12} md={4}>

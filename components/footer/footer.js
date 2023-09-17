@@ -17,12 +17,12 @@ const Footer = () => {
       component="footer"
       sx={{
         backgroundColor: "primary.main",
-        py: { xs: 6, md: 10 },
+        py: { xs: 6, md: 7 },
         color: "primary.contrastText",
       }}
     >
       <Container sx={{ textAlign: { xs: "center", md: "left" }, maxWidth: { xl: 1300 } }}>
-        <Grid container spacing={2}>
+        <Grid container spacing={2} alignItems='center' justifyContent='center'>
           <Grid item xs={12} md={3}>
             <Box sx={{ mb: { xs: 3, md: 0 } }}>
               {/* <img src="/images/logo1.jpg" width="200px" ></img> */}
@@ -32,10 +32,7 @@ const Footer = () => {
               Dr Akshay's
             </Typography> */}
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-                Experience exceptional dental care at Dr. Akshay's DentAvenue
-                Dental Clinic. Our passionate team offers personalized
-                treatments, helping you achieve a healthy, beautiful smile that
-                lasts a lifetime.
+                Discover top-notch dental care at the Dr. Akshay's DentAvenue Dental Clinic, conveniently located near you in Chembur. Led by Dr. Akshay, your trusted dentist in Chembur, our dedicated team is committed to providing tailored treatments, ensuring you attain a long-lasting, radiant smile. Whether you're seeking a dental clinic near me or a dental clinic in Chembur, we've got you covered.
               </Typography>
               <Box
                 sx={{

@@ -98,7 +98,7 @@ const HomeFeature = () => {
             </Typography>
 
             <Typography variant="body1" sx={{ color: 'black', textAlign: "justify", mb: 2, ml: { xs: 0, md: 4 } }}>
-              Meet Dr. Akshay, the Founder of Dr. Akshay's DentAvenue Dental Clinic in Chembur. With more than 10 years of experience in the field of Dentistry, Dr. Akshay has completed his MDS in Prosthodontics (Crown, Bridge, and Implantology) from Government Dental College, Mumbai. He specializes in Full Mouth Rehabilitation, Smile Designing, Implants, Complete and Partial Dentures, Laminates, and Veneers. Dr. Akshay also served as an ex-assistant professor at Government Dental College, Mumbai.
+              Meet Dr. Akshay, the Founder of Dr. Akshay's DentAvenue Dental Clinic in Chembur. With more than 10 years of experience in the field of Dentistry, Dr. Akshay has completed his MDS in Prosthodontics (Crown, Bridge, and Implantology) from Government Dental College, Mumbai. He specializes in Full Mouth Rehabilitation, Smile Designing, Implants, Complete and Partial Dentures, Laminates, and Veneers. If you're looking for a skilled dentist near me, Dr. Akshay is your go-to expert. He also served as an ex-assistant professor at Government Dental College, Mumbai.
             </Typography>
             <List sx={{ bgcolor: 'background.paper' }} aria-label="contacts">
 
@@ -154,12 +154,12 @@ const HomeFeature = () => {
             </List>
 
             <Box sx={{ '& button': { mr: 2, ml: 4, mt: 3 } }}>
-              <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}>
+              {/* <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}> */}
 
-                <StyledButton color="primary" size="large" variant="contained" >
-                  Book An Appointment
-                </StyledButton>
-              </ScrollLink>
+              <StyledButton color="primary" size="large" variant="contained" >
+                <a href="https://www.practo.com/mumbai/doctor/akshay-bandewar-dentist-2" style={{ color: 'white', textDecoration: 'none' }}> Book An Appointment </a>
+              </StyledButton>
+              {/* </ScrollLink> */}
 
             </Box>
 

@@ -128,21 +128,21 @@ export default function Drsudnya() {
                                 </ListItem>
                             </List>
                             <Box sx={{ "& button": { mr: 2, ml: 4, mt: 3 } }}>
-                                <ScrollLink
+                                {/* <ScrollLink
                                     to="contactform"
                                     spy={true}
                                     smooth={true}
                                     offset={0}
                                     duration={350}
+                                > */}
+                                <StyledButton
+                                    color="primary"
+                                    size="large"
+                                    variant="contained"
                                 >
-                                    <StyledButton
-                                        color="primary"
-                                        size="large"
-                                        variant="contained"
-                                    >
-                                        Book An Appointment
-                                    </StyledButton>
-                                </ScrollLink>
+                                    <a href="https://www.practo.com/mumbai/doctor/saudnya-rudrawar-dentist" style={{ color: 'white', textDecoration: 'none' }}>Book An Appointment</a>
+                                </StyledButton>
+                                {/* </ScrollLink> */}
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={5}>
