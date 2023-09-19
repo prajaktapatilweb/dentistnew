@@ -1,6 +1,7 @@
 import React from 'react';
 import Box from '@mui/material/Box';
 import Link from '@mui/material/Link';
+import Image from 'next/image';
 
 export const socialLinks = [
     {
@@ -61,7 +62,7 @@ const SocialLinkItem = ({ item }) => (<Box component="li" sx={{
         },
     }} href={item.link}>
         {/* eslint-disable-next-line */}
-        <img src={item.icon} alt={item.name + 'icon'} />
+        <Image src={item.icon} alt={item.name + 'icon'} width={22} height={22} />
     </Link>
 </Box>);
 // default

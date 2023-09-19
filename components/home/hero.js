@@ -127,12 +127,12 @@ const HomeHero = () => {
                   Enquire Now
                 </StyledButton>
               </ScrollLink>
-              <ScrollLink spy={true} smooth={true} offset={0} duration={350}>
-                {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
-                <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, fontSize: 17, border: "4px solid", borderColor: "secondary.main", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
-                  Watch Video
-                </StyledButton>
-              </ScrollLink>
+              {/* <ScrollLink spy={true} smooth={true} offset={0} duration={350}> */}
+              {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
+              <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, fontSize: 17, border: "4px solid", borderColor: "secondary.main", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
+                Watch Video
+              </StyledButton>
+              {/* </ScrollLink> */}
             </Box>
           </Grid>
         </Grid>

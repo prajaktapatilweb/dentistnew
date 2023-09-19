@@ -11,7 +11,6 @@ import ListItemButton from '@mui/material/ListItemButton'
 import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
 import StarIcon from '@mui/icons-material/Star'
-import { Link as ScrollLink } from 'react-scroll'
 import { StyledButton } from '../styled-button';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
 

@@ -102,9 +102,9 @@ function ResponsiveAppBar() {
                                 display: { xs: 'block', sm: 'block', md: 'block', lg: 'none' },
                             }}
                         >
-                            {pages.map((page) => {
+                            {pages.map((page, i) => {
                                 return (
-                                    < Link href={page.linkID} sx={{
+                                    < Link key={i} href={page.linkID} sx={{
                                         mr: 2,
                                         fontFamily: 'monospace',
 
@@ -153,10 +153,10 @@ function ResponsiveAppBar() {
                                 {page}
                             </Button>
                         ))} */}
-                        {pages.map((page) => {
+                        {pages.map((page, i) => {
 
                             return (
-                                <Link href={page.linkID} sx={{
+                                <Link key={i} href={page.linkID} sx={{
                                     mx: 2,
                                     display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex' },
                                     fontFamily: 'monospace',
