@@ -86,7 +86,7 @@ const Photogallery = () => {
       id="gallery"
       sx={{
         py: { xs: 7, md: 7 },
-        backgroundColor: "#fafafa",
+        backgroundColor: "#f1efeb",
       }}
     >
       <Container maxWidth="lg">

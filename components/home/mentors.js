@@ -86,7 +86,7 @@ const HomeOurMentors = () => {
             id="testimonials"
             sx={{
                 py: { xs: 7, md: 7 },
-                backgroundColor: "#f1efeb",
+                backgroundColor: "#fafafa",
             }}
         >
             <Container maxWidth="lg">

@@ -45,7 +45,7 @@ class MyDocument extends Document {
           <meta property="og:description" content="Experience premier dental care in Chembur for your brightest, healthiest smile." />
           <meta property="og:site_name" content="Dr. Akshay's DentAvenue" />
           <meta property="og:url" content="https://www.dentavenue.in/" />
-          <meta property="og:image" content="https://html.sammy-codes.com/images/large-profile.jpg" />
+          <meta property="og:image" content="https://www.dentavenue.in/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" />
 
           <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@DentavenueM" />

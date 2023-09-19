@@ -41,8 +41,8 @@ export default function Home() {
       <Drsudnya />
       <Suspense fallback=
         {<div>Component are loading please wait...</div>}>
-        <HomeOurMentors />
         <Photogallery />
+        <HomeOurMentors />
       </Suspense>
       <Equipment />
       <Faq />
