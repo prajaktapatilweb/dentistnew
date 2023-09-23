@@ -38,7 +38,7 @@ class MyDocument extends Document {
           <meta content="#fbfbfb" name="msapplication-navbutton-color" />
           <meta content="#fbfbfb" name="apple-mobile-web-app-status-bar-style" />
           <meta content="yes" name="apple-mobile-web-app-capable" /> */}
-          <meta name="keywords" content="Dentist in Chembur , Dental Clinic in Chembur Near Me"></meta>
+          <meta name="title" content="Dentist in Chembur | Dental Clinic in Chembur Near Me"></meta>
           <meta name='description' content="Are you in search of a trusted dentist in Chembur East? Your journey ends at Dr. Akshay's DentAvenue Dental Clinic in Chembur. With a team of seasoned professionals, we provide a wide array of dental services, encompassing general dentistry, teeth whitening, dental implants, root canal treatments, and more. Let's embark on the path to a healthy and radiant smile together. Pay a visit to our clinic today!"></meta>
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Premier Dental Care in Chembur" />
