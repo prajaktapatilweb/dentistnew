@@ -42,7 +42,7 @@ const HomeNewsLetter = () => {
   const router = useRouter()
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
-    router.push('/thankyou?submission=true')
+    router.push('/thankyou')
     // Axios.post("/api/nodemail", {
     //   // Axios.post("/api/sendemail", {
     //   name: values.name,

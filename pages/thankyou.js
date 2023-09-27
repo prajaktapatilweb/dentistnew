@@ -2,11 +2,8 @@ import React from 'react'
 import { MainLayout } from '../components/layout';
 import HomeHero from '../components/home/hero';
 import { Box, Button, Container, Grid, Link, Stack, Typography } from '@mui/material';
-import { useRouter } from 'next/router';
 
 export default function Thankyou() {
-    const router = useRouter()
-    const submission = router.query.submission
     return (
         <div>
             {/* <HomeHero /> */}
@@ -30,33 +27,29 @@ export default function Thankyou() {
                     <Grid container alignItems='center' justifyContent='center'>
                         <Grid item xs={12} md={12}>
                             <Box>
-                                {submission ?
-                                    <>
-                                        <Typography
-                                            component="h1"
-                                            sx={{
-                                                // width: { md: 850 },
-                                                position: 'relative',
-                                                fontSize: { xs: 20, md: 25 },
-                                                mb: { xs: 3, sm: 0 },
-                                                letterSpacing: 1.5,
-                                                fontWeight: 'bold',
-                                                color: 'white',
-                                                lineHeight: 1.5,
-                                                textAlign: 'center'
-                                            }}
-                                        >
-                                            Thank you for showing interest in <Link href="/" sx={{ color: 'white' }}>DentAvenue </Link>. We will contact you shortly.
-                                        </Typography>
-                                        <Stack direction='column' alignItems='center' >
-                                            <Button size="large" variant="contained" sx={{ mt: 2, fontSize: 17, backgroundColor: 'secondary.main', alignContent: 'center', color: 'white' }}>
-                                                <Link href="/#" >
-                                                    Home
-                                                </Link>
-                                            </Button>
-                                        </Stack>
-                                    </>
-                                    : null}
+                                <Typography
+                                    component="h1"
+                                    sx={{
+                                        // width: { md: 850 },
+                                        position: 'relative',
+                                        fontSize: { xs: 20, md: 25 },
+                                        mb: { xs: 3, sm: 0 },
+                                        letterSpacing: 1.5,
+                                        fontWeight: 'bold',
+                                        color: 'white',
+                                        lineHeight: 1.5,
+                                        textAlign: 'center'
+                                    }}
+                                >
+                                    Thank you for showing interest in <Link href="/" sx={{ color: 'white' }}>DentAvenue </Link>. We will contact you shortly.
+                                </Typography>
+                                <Stack direction='column' alignItems='center' >
+                                    <Button size="large" variant="contained" sx={{ mt: 2, fontSize: 17, backgroundColor: 'secondary.main', alignContent: 'center', color: 'white' }}>
+                                        <Link href="/#" >
+                                            Home
+                                        </Link>
+                                    </Button>
+                                </Stack>
                             </Box>
                         </Grid>
                     </Grid>
