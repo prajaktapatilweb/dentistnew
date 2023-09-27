@@ -8,6 +8,7 @@ import * as yup from 'yup';
 import AppTextField from '../Formik/AppTextField';
 import { Button, FormControl, Grid, InputLabel } from '@mui/material';
 import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
+import { useRouter } from 'next/router';
 
 const All = [
   { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
@@ -38,29 +39,31 @@ const validationSchema = yup.object({
 });
 
 const HomeNewsLetter = () => {
+  const router = useRouter()
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
-    Axios.post("/api/nodemail", {
-      // Axios.post("/api/sendemail", {
-      name: values.name,
-      email: values.email,
-      mobileno: values.mobilenumber,
-      msg: values.msg,
-      selection: values.selection
+    router.push('/thankyou?submission=true')
+    // Axios.post("/api/nodemail", {
+    //   // Axios.post("/api/sendemail", {
+    //   name: values.name,
+    //   email: values.email,
+    //   mobileno: values.mobilenumber,
+    //   msg: values.msg,
+    //   selection: values.selection
 
-    })
-      .then(function (response) {
-        //handle success
-        console.log('Success')
-        setModal(true);
-        setStudname(values.name);
-        submitProps.setSubmitting(false);
-        submitProps.resetForm();
-      })
-      .catch(function (response) {
-        //handle error
-        // alert("Error in submission. Please resubmit");
-      });
+    // })
+    //   .then(function (response) {
+    //     //handle success
+    //     console.log('Success')
+    //     setModal(true);
+    //     setStudname(values.name);
+    //     submitProps.setSubmitting(false);
+    //     submitProps.resetForm();
+    //   })
+    //   .catch(function (response) {
+    //     //handle error
+    //     // alert("Error in submission. Please resubmit");
+    //   });
   };
 
   return (

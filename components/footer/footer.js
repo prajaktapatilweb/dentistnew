@@ -91,33 +91,33 @@ const Footer = () => {
               Site Links
             </Typography>
             <Typography variant="h5" sx={{ mb: 1 }}>
-              <Link href="#" className="footermenu">
+              <Link href="/#" className="footermenu">
                 Home
               </Link>
             </Typography>
             <Typography variant="h5" sx={{ mb: 1 }}>
-              <Link href="#aboutus" className="footermenu">
+              <Link href="/#aboutus" className="footermenu">
                 About
               </Link>
             </Typography>
             <Typography variant="h5" sx={{ mb: 1 }}>
-              <Link href="#treatments" className="footermenu">
+              <Link href="/#treatments" className="footermenu">
                 Treatments
               </Link>
             </Typography>
             <Typography variant="h5" sx={{ mb: 1 }}>
-              <Link href="#testimonials" className="footermenu">
+              <Link href="/#testimonials" className="footermenu">
                 Testimonials
               </Link>
             </Typography>
             <Typography variant="h5" sx={{ mb: 1 }}>
-              <Link href="#gallery" className="footermenu">
+              <Link href="/#gallery" className="footermenu">
                 Gallery
               </Link>
             </Typography>
             <Typography variant="h5" sx={{ mb: 1 }}>
               {" "}
-              <Link href="#faq" className="footermenu">
+              <Link href="/#faq" className="footermenu">
                 FAQs
               </Link>
             </Typography>
@@ -163,7 +163,7 @@ const Footer = () => {
               width="100%"
               height="200px"
               loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
+              referrerPolicy="no-referrer-when-downgrade"
               style={{ marginBottom: 3, marginTop: 3 }}
             ></iframe>
 

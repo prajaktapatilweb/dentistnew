@@ -18,13 +18,13 @@ import Image from 'next/image';
 
 const pages = [
 
-    { linkID: '#home', label: 'Home' },
-    { linkID: '#aboutus', label: 'About Us' },
-    { linkID: '#treatments', label: 'Treatments' },
-    { linkID: '#testimonials', label: 'Testimonials' },
-    { linkID: '#gallery', label: 'Gallery' },
-    { linkID: '#faq', label: 'FAQ' },
-    { linkID: '#contactform', label: 'Contact' },
+    { linkID: '/#home', label: 'Home' },
+    { linkID: '/#aboutus', label: 'About Us' },
+    { linkID: '/#treatments', label: 'Treatments' },
+    { linkID: '/#testimonials', label: 'Testimonials' },
+    { linkID: '/#gallery', label: 'Gallery' },
+    { linkID: '/#faq', label: 'FAQ' },
+    { linkID: '/#contactform', label: 'Contact' },
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
