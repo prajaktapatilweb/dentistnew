@@ -42,28 +42,28 @@ const HomeNewsLetter = () => {
   const router = useRouter()
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
-    router.push('/thankyou')
-    // Axios.post("/api/nodemail", {
-    //   // Axios.post("/api/sendemail", {
-    //   name: values.name,
-    //   email: values.email,
-    //   mobileno: values.mobilenumber,
-    //   msg: values.msg,
-    //   selection: values.selection
+    Axios.post("/api/nodemail", {
+      // Axios.post("/api/sendemail", {
+      name: values.name,
+      email: values.email,
+      mobileno: values.mobilenumber,
+      msg: values.msg,
+      selection: values.selection
 
-    // })
-    //   .then(function (response) {
-    //     //handle success
-    //     console.log('Success')
-    //     setModal(true);
-    //     setStudname(values.name);
-    //     submitProps.setSubmitting(false);
-    //     submitProps.resetForm();
-    //   })
-    //   .catch(function (response) {
-    //     //handle error
-    //     // alert("Error in submission. Please resubmit");
-    //   });
+    })
+      .then(function (response) {
+        //handle success
+        console.log('Success')
+        setModal(true);
+        setStudname(values.name);
+        submitProps.setSubmitting(false);
+        submitProps.resetForm();
+        router.push('/thankyou')
+      })
+      .catch(function (response) {
+        // handle error
+        alert("Error in submission. Please resubmit");
+      });
   };
 
   return (
