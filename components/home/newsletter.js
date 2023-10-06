@@ -54,14 +54,13 @@ const HomeNewsLetter = () => {
       .then(function (response) {
         //handle success
         console.log('Success')
-        setModal(true);
-        setStudname(values.name);
         submitProps.setSubmitting(false);
         submitProps.resetForm();
         router.push('/thankyou')
       })
       .catch(function (response) {
         // handle error
+        console.log('Rrtt', response)
         alert("Error in submission. Please resubmit");
       });
   };
