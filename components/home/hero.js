@@ -115,7 +115,7 @@ const HomeHero = () => {
               <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
                 <Typography variant='p' sx={{ color: 'white', lineHeight: 1.6, fontSize: 18 }} >
                   {
-                    'Your smile is unique, and so is our approach to dental care in Chembur. With a compassionate team and state-of-the-art techniques, we are dedicated to helping you achieve a smile that lights up every room.'
+                    'Visit Dr. Akshay\'s DentAvenue, a leading dental clinic in Chembur. Our compassionate team and cutting-edge techniques are dedicated to brightening your smile and lighting up every room.'
                   }
                 </Typography>
               </Box>

@@ -53,10 +53,10 @@ const HomeNewsLetter = () => {
     })
       .then(function (response) {
         //handle success
-        console.log('Success')
+        // console.log('Success')
+        router.push('/thankyou')
         submitProps.setSubmitting(false);
         submitProps.resetForm();
-        router.push('/thankyou')
       })
       .catch(function (response) {
         // handle error
