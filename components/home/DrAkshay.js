@@ -21,7 +21,7 @@ const DrAkshay = () => {
   const Lists = motion(List);
   const ListItems = motion(ListItem);
   const explist = [
-    "10+ Years of experience",
+    "10+ Years of experience dfd er",
     "Experienced Prosthodontist",
     "Government Dental College Alumni",
     "Comprehensive Treatment Solutions",
