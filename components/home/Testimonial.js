@@ -1,6 +1,5 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
 import Slider from "react-slick";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
@@ -56,7 +55,7 @@ const StyledDots = styled("ul")(({ theme }) => ({
         },
     },
 }));
-const HomeOurMentors = () => {
+const Testimonial = () => {
     const { breakpoints } = useTheme();
     const matchMobileView = useMediaQuery(breakpoints.down("sm"));
     const sliderConfig = {
@@ -103,4 +102,4 @@ const HomeOurMentors = () => {
         </Box>
     );
 };
-export default HomeOurMentors;
+export default Testimonial;

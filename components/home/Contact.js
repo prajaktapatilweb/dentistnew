@@ -38,7 +38,7 @@ const validationSchema = yup.object({
     .required('It is required'),
 });
 
-const HomeNewsLetter = () => {
+const Contact = () => {
   const router = useRouter()
   const onSubmit = async (values, submitProps) => {
     console.log({ values })
@@ -247,4 +247,4 @@ const HomeNewsLetter = () => {
     </Box>
   );
 };
-export default HomeNewsLetter;
+export default Contact;

@@ -6,18 +6,34 @@ import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
 import List from "@mui/material/List";
 import ListItem from "@mui/material/ListItem";
-import ListItemButton from "@mui/material/ListItemButton";
-import ListItemIcon from "@mui/material/ListItemIcon";
-import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
 import { StyledButton } from "../styled-button";
+import { motion } from "framer-motion";
 
 export default function Drsudnya() {
+    const variants = {
+        visible: (i) => ({
+            opacity: 1,
+            transition: { delay: i * 0.3 },
+        }),
+        hidden: { opacity: 0 },
+    };
+    const Lists = motion(List);
+    const ListItems = motion(ListItem);
+    const explist = [
+        "8+ Years of experience",
+        "Skilled General Dentist",
+        "Exceptional Dental Care",
+        "Co-founder of DentAvenue Dental Clinic",
+        "RCT and Pediatric Dental Treatment",
+        "Commitment to Continuous Improvement",
+        "Paediatric Course",
+    ];
     return (
         <div>
             <Box id="feature" sx={{ backgroundColor: "background.paper" }}>
                 <Container>
-                    <Grid container spacing={3} alignItems='center'>
+                    <Grid container spacing={3} alignItems="center">
                         <Grid item xs={12} sm={7} sx={{ mb: 4 }}>
                             <Typography
                                 component="h2"
@@ -42,7 +58,8 @@ export default function Drsudnya() {
                                         backgroundColor: "unset",
                                     }}
                                 >
-                                    Dr. Saudnya Rudrawar<br />
+                                    Dr. Saudnya Rudrawar
+                                    <br />
                                     <Box
                                         sx={{
                                             position: "absolute",
@@ -63,69 +80,35 @@ export default function Drsudnya() {
 
                             <Typography
                                 variant="body1"
-                                sx={{ color: "black", textAlign: 'justify', mb: 2, ml: { xs: 0, md: 4 } }}
+                                sx={{
+                                    color: "black",
+                                    textAlign: "justify",
+                                    mb: 2,
+                                    ml: { xs: 0, md: 4 },
+                                }}
                             >
-                                Meet Dr. Saudnya, the Co-founder of Dr. Akshay's DentAvenue Dental Clinic in Chembur. She is an expert female dentist in Chembur specializing in Root Canals, Crowns, Bridges, Cosmetic Dentistry, Dentures, and other dental treatments. For the past 8 years, Dr. Saudnya has been providing her patients with the finest dental care, helping them achieve the perfect smile they deserve.
+                                Meet Dr. Saudnya, the Co-founder of Dr. Akshay's DentAvenue
+                                Dental Clinic in Chembur. She is an expert female dentist in
+                                Chembur specializing in Root Canals, Crowns, Bridges, Cosmetic
+                                Dentistry, Dentures, and other dental treatments. For the past 8
+                                years, Dr. Saudnya has been providing her patients with the
+                                finest dental care, helping them achieve the perfect smile they
+                                deserve.
                             </Typography>
-                            <List sx={{ bgcolor: "background.paper" }} aria-label="contacts">
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="8+ Years of experience" />
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="Skilled General Dentist" />
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="Exceptional Dental Care" />
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="Co-founder of DentAvenue Dental Clinic" />
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary=" RCT and Pediatric Dental Treatment" />
-                                    </ListItemButton>
-                                </ListItem>
+                            <Lists initial="hidden" animate="visible" variants={variants}>
+                                {explist.map((item, i) => (
+                                    <ListItems
+                                        variants={variants}
+                                        key={item}
+                                        custom={i}
+                                        sx={{ marginLeft: 3 }}
+                                    >
+                                        <StarIcon sx={{ fontSize: 15, marginRight: 2 }} />
+                                        {item}
+                                    </ListItems>
+                                ))}
+                            </Lists>
 
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="Commitment to Continuous Improvement" />
-                                    </ListItemButton>
-                                </ListItem>
-                                <ListItem sx={{ pb: 0, mb: 0 }}>
-                                    <ListItemButton sx={{ pb: 0, mb: 0 }}>
-                                        <ListItemIcon>
-                                            <StarIcon />
-                                        </ListItemIcon>
-                                        <ListItemText primary="Paediatric Course" />
-                                    </ListItemButton>
-                                </ListItem>
-                            </List>
                             <Box sx={{ "& button": { mr: 2, ml: 4, mt: 3 } }}>
                                 {/* <ScrollLink
                                     to="contactform"
@@ -134,18 +117,18 @@ export default function Drsudnya() {
                                     offset={0}
                                     duration={350}
                                 > */}
-                                <StyledButton
-                                    color="primary"
-                                    size="large"
-                                    variant="contained"
-                                >
-                                    <a href="https://www.practo.com/mumbai/doctor/saudnya-rudrawar-dentist" style={{ color: 'white', textDecoration: 'none' }}>Book An Appointment</a>
+                                <StyledButton color="primary" size="large" variant="contained">
+                                    <a
+                                        href="https://www.practo.com/mumbai/doctor/saudnya-rudrawar-dentist"
+                                        style={{ color: "white", textDecoration: "none" }}
+                                    >
+                                        Book An Appointment
+                                    </a>
                                 </StyledButton>
                                 {/* </ScrollLink> */}
                             </Box>
                         </Grid>
                         <Grid item xs={12} sm={5}>
-
                             <Image
                                 src="/images/dr/dr11.jpg"
                                 width={100}
@@ -153,9 +136,8 @@ export default function Drsudnya() {
                                 layout="responsive"
                                 quality={97}
                                 alt="Feature img"
-                                style={{ borderRadius: "50%", border: '5px  black outset' }}
+                                style={{ borderRadius: "50%", border: "5px  black outset" }}
                             ></Image>
-
                         </Grid>
                     </Grid>
                 </Container>

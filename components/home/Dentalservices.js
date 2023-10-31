@@ -55,7 +55,7 @@ const StyledDots = styled("ul")(({ theme }) => ({
     },
   },
 }));
-const HomePopularCourse = () => {
+const Dentalservices = () => {
   const { breakpoints } = useTheme();
   const matchMobileView = useMediaQuery(breakpoints.down("sm"));
   const matchMobileView1 = useMediaQuery(breakpoints.down("md"));
@@ -120,4 +120,4 @@ const HomePopularCourse = () => {
     </Box>
   );
 };
-export default HomePopularCourse;
+export default Dentalservices;
