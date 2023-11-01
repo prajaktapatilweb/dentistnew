@@ -22,14 +22,14 @@
   background: var(--color-background);
   border-radius: 10px;
 }
-/* /* html{
+ /* html{
   scroll-snap-type: y mandatory;
   scroll-behavior:smooth;
-}
-section{
+}  */
+/* section{ */
   /* height: 100vh; */
   /* scroll-snap-align: center; */
- */
+/* } */
 
 body {
   /* background-color: var(--color-background); */

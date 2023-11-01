@@ -10,6 +10,7 @@ import LinearProgress, {
     linearProgressClasses,
 } from "@mui/material/LinearProgress";
 import { data } from "./feature.data";
+import { motion } from "framer-motion";
 
 const BorderLinearProgress = styled(LinearProgress, {
     shouldForwardProp: (prop) => prop !== "color",
@@ -36,6 +37,42 @@ const BorderLinearProgress = styled(LinearProgress, {
     },
 }));
 const Clinicinfo = () => {
+
+    const text = " Dental Clinic in Chembur East";
+    const letters = Array.from(text);
+    // const words = text.split(" ");
+
+    const containers = {
+        hidden: { opacity: 0.5 },
+        visible: (i = 1) => ({
+            opacity: 1,
+            transition: { staggerChildren: 0.1, delayChildren: 0.07 * i },
+        }),
+    };
+
+    const child = {
+        visible: {
+            opacity: 1,
+            x: 0,
+            transition: {
+                type: "spring",
+
+                damping: 12,
+                stiffness: 100,
+            },
+        },
+        hidden: {
+            opacity: 0,
+            x: 20,
+            transition: {
+                type: "spring",
+
+                damping: 12,
+                stiffness: 100,
+            },
+        },
+    };
+
     return (
         <Box
             id="aboutus"
@@ -118,6 +155,47 @@ const Clinicinfo = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography
+                            component={motion.h2}
+                            sx={{
+                                position: "relative",
+                                fontSize: { xs: 40, md: 45 },
+                                ml: { xs: 0, md: 4 },
+                                mt: 0,
+                                // mb: 3,
+                                // lineHeight: 1.3,
+                                // fontWeight: "bold",
+                                // color: "#0b1341",
+                                // overflow: "hidden"
+                            }}
+
+
+
+                        >
+                            <Typography
+                                component={motion.h2}
+                                sx={{
+                                    position: "relative",
+                                    fontSize: { xs: 40, md: 45 },
+                                    ml: { xs: 0, md: 1 },
+                                    mt: 0,
+                                    mb: 3,
+                                    lineHeight: 1.3,
+                                    fontWeight: "bold",
+                                    color: "#0b1341",
+                                    overflow: "hidden"
+                                }}
+                                variants={containers}
+                                initial="hidden"
+                                whileInView="visible"
+                            >
+                                {letters.map((word, index) => (
+                                    <motion.span variants={child} key={index}>
+                                        {word}
+                                    </motion.span>
+                                ))}
+                            </Typography>
+                            {/* </Typography>
+                        <Typography
                             component="h1"
                             sx={{
                                 position: "relative",
@@ -130,14 +208,14 @@ const Clinicinfo = () => {
                                 color: "#0b1341",
                             }}
                         >
-                            Dental Clinic in Chembur East <br />
+                            Dental Clinic in Chembur East <br /> */}
                             <Box
                                 sx={{
                                     position: "absolute",
-                                    top: { xs: 20, md: 25 },
-                                    transform: "rotate(3deg)",
-                                    left: 2,
-                                    "& img": { width: { xs: 140, md: 175 }, height: "auto" },
+                                    top: { xs: 30, md: 30 },
+                                    transform: "rotate(184deg)",
+
+                                    "& img": { width: { xs: 120, md: 145 }, height: "auto" },
                                 }}
                             >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
