@@ -159,41 +159,25 @@ const Clinicinfo = () => {
                             sx={{
                                 position: "relative",
                                 fontSize: { xs: 40, md: 45 },
-                                ml: { xs: 0, md: 4 },
+                                ml: { xs: 0, md: 3 },
                                 mt: 0,
-                                // mb: 3,
-                                // lineHeight: 1.3,
-                                // fontWeight: "bold",
-                                // color: "#0b1341",
+                                mb: 3,
+                                lineHeight: 1.3,
+                                fontWeight: "bold",
+                                color: "#0b1341",
                                 // overflow: "hidden"
                             }}
-
-
-
+                            variants={containers}
+                            initial="hidden"
+                            whileInView="visible"
                         >
-                            <Typography
-                                component={motion.h2}
-                                sx={{
-                                    position: "relative",
-                                    fontSize: { xs: 40, md: 45 },
-                                    ml: { xs: 0, md: 1 },
-                                    mt: 0,
-                                    mb: 3,
-                                    lineHeight: 1.3,
-                                    fontWeight: "bold",
-                                    color: "#0b1341",
-                                    overflow: "hidden"
-                                }}
-                                variants={containers}
-                                initial="hidden"
-                                whileInView="visible"
-                            >
-                                {letters.map((word, index) => (
-                                    <motion.span variants={child} key={index}>
-                                        {word}
-                                    </motion.span>
-                                ))}
-                            </Typography>
+
+                            {letters.map((word, index) => (
+                                <motion.span variants={child} key={index}>
+                                    {word}
+                                </motion.span>
+                            ))}
+
                             {/* </Typography>
                         <Typography
                             component="h1"
@@ -212,10 +196,10 @@ const Clinicinfo = () => {
                             <Box
                                 sx={{
                                     position: "absolute",
-                                    top: { xs: 30, md: 30 },
+                                    top: { xs: 30, md: 33 },
                                     transform: "rotate(184deg)",
 
-                                    "& img": { width: { xs: 120, md: 145 }, height: "auto" },
+                                    "& img": { width: { xs: 120, md: 140 }, height: "auto" },
                                 }}
                             >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
