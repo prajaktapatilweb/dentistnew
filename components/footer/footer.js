@@ -10,7 +10,7 @@ import Link from "next/link";
 import Whatsappnew from "./Whatsappnew";
 import CallIcon from '@mui/icons-material/Call';
 const Footer = () => {
-  const contactno1 = "+917900074487";
+  const contactno1 = "+917045050650";
 
   return (
     <Box
@@ -26,11 +26,11 @@ const Footer = () => {
           <Grid item xs={12} md={3}>
             <Box sx={{ mb: { xs: 3, md: 0 } }}>
               {/* <img src="/images/logo1.jpg" width="200px" ></img> */}
-              <Image src="/images/logo1.jpg" width={180} height={100}></Image>
-              <br></br>
-              {/* <Typography component="h2" variant="h2" sx={{ mb: 2 }}>
-              Dr Akshay's
-            </Typography> */}
+              {/* <Image src="/images/logo1.jpg" width={180} height={100}></Image>
+              <br></br> */}
+              <Typography component="h2" variant="h2" sx={{ mb: 2 }}>
+                Family Dental Care
+              </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
                 Discover top-notch dental care at the Dr. Akshay's DentAvenue Dental Clinic, conveniently located near you in Chembur. Led by Dr. Akshay, your trusted dentist in Chembur, our dedicated team is committed to providing tailored treatments, ensuring you attain a long-lasting, radiant smile. Whether you're seeking a dental clinic near me or a dental clinic in Chembur, we've got you covered.
               </Typography>
@@ -42,7 +42,7 @@ const Footer = () => {
                 }}
               >
                 <Image
-                  src="/images/phone.png"
+                  src="/images/phone1.png"
                   width={20}
                   height={20}
                   sx={{
@@ -152,20 +152,16 @@ const Footer = () => {
             <Typography variant="h4" sx={{ fontWeight: "400" }} gutterBottom>
               Get In Touch
             </Typography>
-            <a href="https://www.google.com/maps/place/Dr.+Akshay%E2%80%99s+DentAvenue/@19.0607957,72.8997529,15z/data=!4m5!3m4!1s0x0:0xd4992176e1672533!8m2!3d19.0607957!4d72.8997529" target="blank" style={{ color: 'white' }}>
-              DentAvenue, 302, Third Floor, Abhishek Complex, Opposite to BMC M
-              WEST WARD OFFICE, 1st Road, Chembur, Mumbai-400071
+            <a href="https://maps.app.goo.gl/WuvPzWyBPAS2LFSf8" target="blank" style={{ color: 'white' }}>
+              Plot no, 109/112, New Nehru Nagar Co-Op housing society, 27, 90 Feet Rd, opposite to hindusthan co-operative bank, Dharavi, Mumbai, Maharashtra 400017
             </a>
-
-
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15084.267627628198!2d72.8997529!3d19.0607957!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c602cf4db0f7%3A0xd4992176e1672533!2sDr.%20Akshay&#39;s%20DentAvenue%20Dental%20Clinic!5e0!3m2!1sen!2sin!4v1689430175809!5m2!1sen!2sin"
-              width="100%"
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15085.636020985994!2d72.8594862!3d19.0457467!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c8d6aa3b217d%3A0xbe542701e50439f1!2sFamily%20Dental%20Care!5e0!3m2!1sen!2sin!4v1698059531158!5m2!1sen!2sin" width="100%"
               height="200px"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              style={{ marginBottom: 3, marginTop: 3 }}
-            ></iframe>
+              style={{ marginBottom: 3, marginTop: 3 }}></iframe>
+
+
 
             <FooterSocialLinks />
 

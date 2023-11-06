@@ -7,6 +7,28 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Container, Box } from '@mui/material';
 
 export default function Faq() {
+    var Details = [
+        {
+            quest: 'Do I need to schedule an appointment for a routine check-up?',
+            answ: 'Yes, we recommend scheduling an appointment in advance to ensure we can accommodate your visit.'
+        },
+        {
+            quest: 'How often should I have a dental check-up?',
+            answ: 'We generally recommend a dental check-up every six months, sometimes we suggest a different schedule based on your oral health.'
+        },
+        {
+            quest: 'What can I expect during a teeth cleaning?',
+            answ: 'We remove plaque and tartar, floss your teeth, and polish them for a sparkling clean feel.'
+        },
+        {
+            quest: 'Do you accept dental insurance?',
+            answ: 'No. '
+        },
+        {
+            quest: 'What should I do in case of a dental emergency?',
+            answ: 'Contact us immediately. We offer same-day emergency appointments to address your needs promptly.'
+        }
+    ]
 
     return (
         <div>
@@ -16,71 +38,32 @@ export default function Faq() {
 
                 <Container maxWidth="lg" >
                     <Typography variant="h1" sx={{
-                        fontSize: { xs: 30, md: 35 }, pb: {
-                            xs: 2,
-                            md: 2,
-                        },
+                        fontSize: { xs: 30, md: 35 },
                     }} gutterBottom>
-                        FAQs
+                        Frequently Asked Questions
                     </Typography>
+                    <Typography>
+                        Here are some common questions our patients ask.
 
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel1a-content"
-                            id="panel1a-header"
-                        >
-                            <Typography fontWeight='bold'> How often should I visit the dentist for a regular check-up and cleaning?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                It is generally recommended to visit the dentist for a regular check-up and cleaning every 4 months. However, the frequency may vary depending on your oral health needs. Your dentist will provide a personalized recommendation based on your specific dental condition.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel2a-content"
-                            id="panel2a-header"
-                        >
-                            <Typography fontWeight='bold'> Can you provide options for replacing missing teeth, such as dental implants or dentures?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                Absolutely. We specialize in dental implants and offer various options for replacing missing teeth, including dental implants, dentures, and dental bridges.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel2a-content"
-                            id="panel2a-header"
-                        >
-                            <Typography fontWeight='bold'>  Do you offer cosmetic dentistry services such as teeth whitening or veneers?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                Yes, we offer cosmetic dentistry services such as teeth whitening and veneers.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
-                    <Accordion>
-                        <AccordionSummary
-                            expandIcon={<ExpandMoreIcon />}
-                            aria-controls="panel2a-content"
-                            id="panel2a-header"
-                        >
-                            <Typography fontWeight='bold'>What payment options do you accept, and do you offer any dental financing or insurance options?</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                            <Typography>
-                                We accept various payment options, including cash, credit cards, debit cards, and UPI.
-                            </Typography>
-                        </AccordionDetails>
-                    </Accordion>
+                    </Typography>
+                    {Details.map((item, i) => (
+                        <Accordion>
+                            <AccordionSummary
+                                expandIcon={<ExpandMoreIcon />}
+                                aria-controls="panel1a-content"
+                                id="panel1a-header"
+                            >
+                                <Typography fontWeight='bold'>{item.quest}</Typography>
+                            </AccordionSummary>
+                            <AccordionDetails>
+                                <Typography>
+                                    {item.answ}
+                                </Typography>
+                            </AccordionDetails>
+                        </Accordion>
 
+
+                    ))}
                 </Container>
             </Box>
         </div>

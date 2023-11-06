@@ -47,7 +47,7 @@ const CourseCardItem = ({ item }) => {
       </Box>
       <Box sx={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
         <Box sx={{ display: 'flex', alignItems: 'center' }}>
-          <Typography component="span" variant="h5">
+          <Typography component="span" variant="h5" sx={{ textAlign: 'justify' }}>
             {item.price}
           </Typography>
           {/* <Typography variant="h6">/ course</Typography> */}

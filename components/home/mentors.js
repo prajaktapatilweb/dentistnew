@@ -91,7 +91,10 @@ const HomeOurMentors = () => {
         >
             <Container maxWidth="lg">
                 <Typography variant="h1" sx={{ fontSize: { xs: 30, md: 35 } }}>
-                    What Our Clients Say
+                    What Our Patients Say
+                </Typography>
+                <Typography>
+                    Read what our satisfied patients have to say about their experiences with us.
                 </Typography>
 
                 <Slider {...sliderConfig}>

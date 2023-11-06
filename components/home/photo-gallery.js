@@ -96,7 +96,12 @@ const Photogallery = () => {
             fontSize: { xs: 30, md: 35 },
           }}
         >
-          Capturing Dental Care
+          Before & After Gallery
+
+        </Typography>
+        <Typography>
+          Explore our gallery showcasing the transformative results we've achieved for our patients.
+
         </Typography>
 
         <Slider {...sliderConfig}>

@@ -1,70 +1,82 @@
 export const data = [
-
     {
         id: 1,
         cover: '/images/services/rootcanal4.jpg',
-        title: 'Root Canal:',
-        price: "Find relief from pain and preserve your natural tooth with our expert root canal treatments in Chembur."
+        title: 'General Dentistry:',
+        price: <span> From routine check-ups to gum disease treatment, our expert team ensures your oral health is in top shape.
 
+            <p style={{ fontSize: 16, fontWeight: 20 }}> Routine Check-ups & Cleanings<br></br>
+                Fillings & Sealants<br></br>
+                Gum Disease Treatment</p>
+        </span>
     },
     {
         id: 2,
-        cover: '/images/services/teethimplant2.jpg',
-        title: 'Dental Implant:',
-        price: 'Restore your smile with confidence through our advanced dental implant solutions near you.',
-
+        cover: '/images/services/teethwhite1.jpg',
+        title: 'Cosmetic Dentistry:',
+        price: <span> Brighten your smile with teeth whitening, veneers, and smile makeovers at our convenient locations.
+            <p style={{ fontSize: 16, fontWeight: 20 }}>
+                Teeth Whitening<br></br>
+                Veneers & Bonding<br></br>
+                Smile Makeovers'
+            </p>
+        </span>
     },
     {
         id: 3,
-        cover: '/images/services/fullconstr1.jpg',
-        title: 'Full Mouth Reconstruction:',
-        price: "Regain optimal oral health and function with our comprehensive full mouth reconstruction treatments in Chembur.",
+        cover: '/images/services/bridges.jpg',
+        title: ' Restorative Dentistry:',
+        price: <span>
+            Regain your smile's strength with our services including crowns, bridges, implants, and dentures.
+            <p style={{ fontSize: 16, fontWeight: 20 }}>
+                Crowns & Bridges<br></br>
+                Dental Implants<br></br>
+                Dentures
+            </p>
+        </span>
+
 
     },
     {
         id: 4,
         cover: '/images/services/braces1.jpg',
-        title: 'Braces & Aligners:',
-        price: 'Achieve a straighter smile and improved bite with our customized braces and aligner options near you.',
+        title: 'Orthodontics:',
+        price:
+            <span>Straighten your teeth with braces or Invisalign, conveniently available in Sion and Dharavi.
+                <p style={{ fontSize: 16, fontWeight: 20 }}>
+                    Braces<br></br>
+                    Invisalign
+                </p>
+            </span>
 
     },
+
     {
         id: 5,
-        cover: '/images/services/bridges.jpg',
-        title: 'Crown & Bridges:',
+        cover: '/images/services/dentistry1.jpg',
+        title: 'Emergency Dentistry:',
 
-        price: 'Regain the strength, function, and aesthetics of your teeth with our high-quality crown and bridge treatments in Chembur.',
+        price:
+            <span>
+                Experience prompt pain relief with our same-day appointments and effective pain management solutions.
+                <p style={{ fontSize: 16, fontWeight: 20 }}>
+                    Same-day Appointments<br></br>
+                    Pain Management
+                </p>
+            </span>
 
     },
     {
         id: 6,
-        cover: '/images/services/teethwhite1.jpg',
-        title: 'Teeth Whitening:',
-        price: 'Enhance your smile\'s brilliance and beauty with our effective teeth whitening solutions near you.',
-
-    },
-    {
-        id: 7,
-        cover: '/images/services/dentistry1.jpg',
-        title: 'Pediatric Dentistry:',
-
-        price: 'Ensure your child\'s dental health with our gentle and specialized pediatric dental care in Chembur.',
-
-    },
-
-
-    {
-        id: 8,
-        cover: '/images/services/veeners.jpg',
-        title: 'Dental Veneers:',
-        price: 'Transform your smile with dental veneers, the perfect solution for a stunning and confident appearance near you.',
-
-    },
-    {
-        id: 9,
         cover: '/images/services/wisdomteeth.jpg',
-        title: 'Wisdom Teeth Extraction:',
-        price: 'Trust our experienced team for safe and comfortable wisdom teeth extraction or any other tooth extraction needs in Chembur.',
+        title: 'Oral Surgery:',
+        price:
+            <span>  Our skilled team offers extractions and wisdom teeth removal services at our easily accessible locations.
+                <p style={{ fontSize: 16, fontWeight: 20 }}>
+                    Extractions<br></br>
+                    Wisdom Teeth Removal
+                </p>
+            </span>
 
     },
 ];

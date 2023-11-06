@@ -105,7 +105,12 @@ const HomePopularCourse = () => {
               <Typography variant="h1" sx={{ fontSize: { xs: 30, md: 35 } }}>
                 Our Comprehensive Dental Services
               </Typography>
+
             </Box>
+            <Typography>
+              We provide a wide range of dental services to cater to all your oral health needs.
+
+            </Typography>
           </Grid>
 
           <Grid item xs={12} md={12}>

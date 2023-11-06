@@ -121,7 +121,7 @@ const Clinicinfo = () => {
                             component="h1"
                             sx={{
                                 position: "relative",
-                                fontSize: { xs: 40, md: 45 },
+                                fontSize: { xs: 40, md: 30 },
                                 ml: { xs: 0, md: 4 },
                                 mt: 0,
                                 mb: 3,
@@ -130,14 +130,14 @@ const Clinicinfo = () => {
                                 color: "#0b1341",
                             }}
                         >
-                            Dental Clinic in Chembur East <br />
+                            Dr. Akshay's DentAvenue Dental Clinic, Chembur <br />
                             <Box
                                 sx={{
                                     position: "absolute",
                                     top: { xs: 20, md: 25 },
                                     transform: "rotate(3deg)",
                                     left: 2,
-                                    "& img": { width: { xs: 140, md: 175 }, height: "auto" },
+                                    "& img": { width: { xs: 140, md: 140 }, height: "auto" },
                                 }}
                             >
                                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -154,7 +154,15 @@ const Clinicinfo = () => {
                                 ml: { xs: 0, md: 4 },
                             }}
                         >
-                            Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur, your
+
+
+
+                            We are proud to introduce our affiliated clinic, Dr. Akshay's DentAvenue Dental Clinic, located in the vibrant neighbourhood of Chembur. Led by Dr. Akshay and his dedicated team, this clinic shares our commitment to providing exceptional dental care with a focus on patient-centred service. With cutting-edge technology and a compassionate approach, Dr. Akshay's DentAvenue Dental Clinic ensures that every smile receives the highest standard of care. Explore the excellence of dental services offered at this trusted Chembur location.
+
+
+
+
+                            {/* Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur, your
                             premier destination for high-quality dental care. Our experienced
                             team of dentist in Chembur professionals is passionate about
                             improving and maintaining your oral health. We offer a
@@ -172,7 +180,7 @@ const Clinicinfo = () => {
                             serve you. We also specialize in children's dentistry, ensuring a
                             positive dental experience for the little ones. Plus, with a
                             skilled dental surgeon near me, you can confidently explore a wide
-                            range of advanced dental treatments.
+                            range of advanced dental treatments. */}
                         </Typography>
 
                         <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>

@@ -50,32 +50,9 @@ const HomeHero = () => {
                 }}
               >
                 {' '}
-                Unleash your best
-                <Typography
-                  component="mark"
-                  sx={{
-                    position: 'relative',
-                    color: 'gold',
-                    fontSize: 'inherit',
-                    fontWeight: 'inherit',
-                    backgroundColor: 'unset',
-                  }}
-                >
-                  &nbsp;Smile{' '}
-                  <Box
-                    sx={{
-                      position: 'absolute',
-                      top: { xs: 24, md: 25 },
-                      left: 2,
-                      transform: 'rotate(3deg)',
-                      '& img': { width: { xs: 146, md: 160 }, height: 'auto' },
-                    }}
-                  >
-                    {/* eslint-disable-next-line */}
-                    <img src="/images/headline-curve.svg" alt="Headline curve" />
-                  </Box>
-                </Typography>
-                with our expert team of dental professionals.
+                Welcome to Family Dental Care
+
+
                 <Typography
                   component="span"
                   sx={{
@@ -91,22 +68,7 @@ const HomeHero = () => {
                     },
                   }}
                 >
-                  {/* <svg version="1.1" viewBox="0 0 3183 3072">
-                    <g id="Layer_x0020_1">
-                      <path
-                        fill="#ffc221"
-                        d="M2600 224c0,0 0,0 0,0 236,198 259,562 52,809 -254,303 -1849,2089 -2221,1776 -301,-190 917,-1964 1363,-2496 207,-247 570,-287 806,-89z"
-                      />
-                      <path
-                        fill="#ffc221"
-                        d="M3166 2190c0,0 0,0 0,0 64,210 -58,443 -270,516 -260,90 -1848,585 -1948,252 -104,-230 1262,-860 1718,-1018 212,-73 437,39 500,250z"
-                      />
-                      <path
-                        fill="#ffc221"
-                        d="M566 3c0,0 0,0 0,0 -219,-26 -427,134 -462,356 -44,271 -255,1921 90,1962 245,62 628,-1392 704,-1869 36,-221 -114,-424 -332,-449z"
-                      />
-                    </g>
-                  </svg> */}
+
                 </Typography>{' '}
                 <br />
               </Typography>
@@ -115,7 +77,7 @@ const HomeHero = () => {
               <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
                 <Typography variant='p' sx={{ color: 'white', lineHeight: 1.6, fontSize: 18 }} >
                   {
-                    'Visit Dr. Akshay\'s DentAvenue, a leading dental clinic in Chembur. Our compassionate team and cutting-edge techniques are dedicated to brightening your smile and lighting up every room.'
+                    'Creating Healthy Smiles, One Patient at a Time'
                   }
                 </Typography>
               </Box>
