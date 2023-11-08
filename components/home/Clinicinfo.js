@@ -5,7 +5,6 @@ import Grid from "@mui/material/Grid";
 import { styled } from "@mui/material/styles";
 import Container from "@mui/material/Container";
 import Typography from "@mui/material/Typography";
-import CircularProgress from "@mui/material/CircularProgress";
 import LinearProgress, {
     linearProgressClasses,
 } from "@mui/material/LinearProgress";
@@ -84,6 +83,22 @@ const Clinicinfo = () => {
             controls.start("visible");
         }
     }, [controls, isInView]);
+
+    // para fadeup
+    const Variants = {
+        offscreen: {
+            y: 80
+        },
+        onscreen: {
+            y: 10,
+            // rotate: -10,
+            transition: {
+                type: "spring",
+                bounce: 0.4,
+                duration: 0.8
+            }
+        }
+    };
 
     return (
         <Box
@@ -219,98 +234,109 @@ const Clinicinfo = () => {
                             {/* Enjoyable */}
                         </Typography>
 
-                        <Fadeupside para={
-                            <Typography
-                                sx={{
-                                    color: "#000000",
-                                    textAlign: "justify",
-                                    mb: 2,
-                                    ml: { xs: 0, md: 4 },
-                                }}
-                            >
-                                Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur,
-                                your premier destination for high-quality dental care. Our
-                                experienced team of dentist in Chembur professionals is
-                                passionate about improving and maintaining your oral health. We
-                                offer a comprehensive range of services, from preventive
-                                dentistry to root canal treatment and dental implant clinic
-                                procedures, all tailored to meet your unique needs. Using the
-                                latest advancements in dental technology, we ensure precise
-                                diagnoses and efficient treatments. We pride ourselves on
-                                creating a warm and welcoming dental clinic near my location,
-                                where our patients feel comfortable and relaxed. Trust us to
-                                provide you with exceptional dental care, including full mouth
-                                implant solutions, and help you achieve a healthy, beautiful
-                                smile that lasts a lifetime. Whether you're in need of a dentist
-                                appointment near me, seeking a pediatric dentist in Chembur, or
-                                looking for the best dentist in Chembur, we're here to serve
-                                you. We also specialize in children's dentistry, ensuring a
-                                positive dental experience for the little ones. Plus, with a
-                                skilled dental surgeon near me, you can confidently explore a
-                                wide range of advanced dental treatments.
-                            </Typography>
-                        }
-                        />
+
+                        <motion.div
+
+                            initial="offscreen"
+                            whileInView="onscreen"
+                            viewport={{ once: true, amount: 0.8 }}
+
+                        >
+                            <motion.div className="card" variants={Variants}>
 
 
-                        <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
-                            {data.map(({ title, description, icon }, index) => (
-                                <Grid key={String(index)} item xs={12} md={6}>
-                                    <Box
-                                        sx={{
-                                            px: 2,
-                                            py: 1.5,
-                                            boxShadow: 1,
-                                            borderRadius: 4,
-                                            border: "1px solid #E0E0E0",
-                                            display: "flex",
-                                            alignItems: "center",
-                                        }}
-                                    >
-                                        <Box
-                                            sx={{
-                                                mr: 1,
-                                                background: "#000000",
-                                                // backgroundColor: "primary.main",
-                                                borderRadius: "50%",
-                                                height: 36,
-                                                width: 36,
-                                                display: "flex",
-                                                alignItems: "center",
-                                                justifyContent: "center",
-                                                color: "primary.contrastText",
-                                                "& svg": {
-                                                    fontSize: 20,
-                                                },
-                                            }}
-                                        >
-                                            {icon}
-                                        </Box>
-                                        <Box
-                                            sx={{ display: "flex", flex: 1, flexDirection: "column" }}
-                                        >
-                                            <Typography
-                                                variant="h6"
+                                <Typography
+                                    sx={{
+                                        color: "#000000",
+                                        textAlign: "justify",
+                                        mb: 2,
+                                        ml: { xs: 0, md: 4 },
+                                    }}
+                                >
+                                    Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur,
+                                    your premier destination for high-quality dental care. Our
+                                    experienced team of dentist in Chembur professionals is
+                                    passionate about improving and maintaining your oral health. We
+                                    offer a comprehensive range of services, from preventive
+                                    dentistry to root canal treatment and dental implant clinic
+                                    procedures, all tailored to meet your unique needs. Using the
+                                    latest advancements in dental technology, we ensure precise
+                                    diagnoses and efficient treatments. We pride ourselves on
+                                    creating a warm and welcoming dental clinic near my location,
+                                    where our patients feel comfortable and relaxed. Trust us to
+                                    provide you with exceptional dental care, including full mouth
+                                    implant solutions, and help you achieve a healthy, beautiful
+                                    smile that lasts a lifetime. Whether you're in need of a dentist
+                                    appointment near me, seeking a pediatric dentist in Chembur, or
+                                    looking for the best dentist in Chembur, we're here to serve
+                                    you. We also specialize in children's dentistry, ensuring a
+                                    positive dental experience for the little ones. Plus, with a
+                                    skilled dental surgeon near me, you can confidently explore a
+                                    wide range of advanced dental treatments.
+                                </Typography>
+
+
+
+                                <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
+                                    {data.map(({ title, description, icon }, index) => (
+                                        <Grid key={String(index)} item xs={12} md={6}>
+                                            <Box
                                                 sx={{
-                                                    fontSize: "1rem",
-                                                    mb: 1,
-                                                    color: "secondary.main",
+                                                    px: 2,
+                                                    py: 1.5,
+                                                    boxShadow: 1,
+                                                    borderRadius: 4,
+                                                    border: "1px solid #E0E0E0",
+                                                    display: "flex",
+                                                    alignItems: "center",
                                                 }}
                                             >
-                                                {title}
-                                            </Typography>
-                                            <Typography
-                                                // sx={{ lineHeight: 1.3, color: "text.secondary" }}
-                                                sx={{ lineHeight: 1.3, color: "#000000" }}
-                                                variant="subtitle1"
-                                            >
-                                                {description}
-                                            </Typography>
-                                        </Box>
-                                    </Box>
+                                                <Box
+                                                    sx={{
+                                                        mr: 1,
+                                                        background: "#000000",
+                                                        // backgroundColor: "primary.main",
+                                                        borderRadius: "50%",
+                                                        height: 36,
+                                                        width: 36,
+                                                        display: "flex",
+                                                        alignItems: "center",
+                                                        justifyContent: "center",
+                                                        color: "primary.contrastText",
+                                                        "& svg": {
+                                                            fontSize: 20,
+                                                        },
+                                                    }}
+                                                >
+                                                    {icon}
+                                                </Box>
+                                                <Box
+                                                    sx={{ display: "flex", flex: 1, flexDirection: "column" }}
+                                                >
+                                                    <Typography
+                                                        variant="h6"
+                                                        sx={{
+                                                            fontSize: "1rem",
+                                                            mb: 1,
+                                                            color: "secondary.main",
+                                                        }}
+                                                    >
+                                                        {title}
+                                                    </Typography>
+                                                    <Typography
+                                                        // sx={{ lineHeight: 1.3, color: "text.secondary" }}
+                                                        sx={{ lineHeight: 1.3, color: "#000000" }}
+                                                        variant="subtitle1"
+                                                    >
+                                                        {description}
+                                                    </Typography>
+                                                </Box>
+                                            </Box>
+                                        </Grid>
+                                    ))}
                                 </Grid>
-                            ))}
-                        </Grid>
+                            </motion.div>
+                        </motion.div>
                     </Grid>
                 </Grid>
             </Container>
