@@ -64,7 +64,7 @@ export default function Drsudnya() {
                                         sx={{
                                             position: "absolute",
                                             top: { xs: 20, md: 28 },
-                                            transform: "rotate(3deg)",
+                                            transform: "rotate(184deg)",
                                             left: 2,
                                             "& img": { width: { xs: 140, md: 175 }, height: "auto" },
                                         }}

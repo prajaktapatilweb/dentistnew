@@ -65,10 +65,11 @@ const HomeHero = () => {
                   <Box
                     sx={{
                       position: 'absolute',
-                      top: { xs: 24, md: 25 },
-                      left: 2,
-                      transform: 'rotate(3deg)',
-                      '& img': { width: { xs: 146, md: 160 }, height: 'auto' },
+                      top: { xs: 24, md: 28 },
+                      left: 3,
+                      transform: "rotate(184deg)",
+                      // transform: 'rotate(3deg)',
+                      '& img': { width: { xs: 120, md: 145 }, height: 'auto' },
                     }}
                   >
                     {/* eslint-disable-next-line */}

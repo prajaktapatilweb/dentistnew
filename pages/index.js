@@ -26,6 +26,7 @@ import Degreesection from '../components/home/Degreesection';
 import Dentalservices from '../components/home/Dentalservices';
 import DrAkshay from '../components/home/DrAkshay';
 import Contact from '../components/home/Contact';
+import Trainer from '../components/home/Trainer';
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
@@ -45,7 +46,7 @@ export default function Home() {
       <Equipment />
       <Faq />
       <Contact></Contact>
-
+      <Trainer></Trainer>
       <Degreesection />
 
     </>

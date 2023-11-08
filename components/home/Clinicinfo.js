@@ -10,7 +10,10 @@ import LinearProgress, {
     linearProgressClasses,
 } from "@mui/material/LinearProgress";
 import { data } from "./feature.data";
-import { motion } from "framer-motion";
+import { motion, useAnimation } from "framer-motion";
+import { useInView } from "framer-motion";
+import { useRef, useEffect } from "react";
+import Fadeup from "../Animations/fadeup";
 
 const BorderLinearProgress = styled(LinearProgress, {
     shouldForwardProp: (prop) => prop !== "color",
@@ -37,7 +40,6 @@ const BorderLinearProgress = styled(LinearProgress, {
     },
 }));
 const Clinicinfo = () => {
-
     const text = " Dental Clinic in Chembur East";
     const letters = Array.from(text);
     // const words = text.split(" ");
@@ -72,6 +74,16 @@ const Clinicinfo = () => {
             },
         },
     };
+
+    const controls = useAnimation();
+    const ref = useRef(null);
+    const isInView = useInView(ref);
+
+    useEffect(() => {
+        if (isInView) {
+            controls.start("visible");
+        }
+    }, [controls, isInView]);
 
     return (
         <Box
@@ -171,7 +183,6 @@ const Clinicinfo = () => {
                             initial="hidden"
                             whileInView="visible"
                         >
-
                             {letters.map((word, index) => (
                                 <motion.span variants={child} key={index}>
                                     {word}
@@ -208,34 +219,39 @@ const Clinicinfo = () => {
                             {/* Enjoyable */}
                         </Typography>
 
-                        <Typography
-                            sx={{
-                                color: "#000000",
-                                textAlign: "justify",
-                                mb: 2,
-                                ml: { xs: 0, md: 4 },
-                            }}
-                        >
-                            Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur, your
-                            premier destination for high-quality dental care. Our experienced
-                            team of dentist in Chembur professionals is passionate about
-                            improving and maintaining your oral health. We offer a
-                            comprehensive range of services, from preventive dentistry to root
-                            canal treatment and dental implant clinic procedures, all tailored
-                            to meet your unique needs. Using the latest advancements in dental
-                            technology, we ensure precise diagnoses and efficient treatments.
-                            We pride ourselves on creating a warm and welcoming dental clinic
-                            near my location, where our patients feel comfortable and relaxed.
-                            Trust us to provide you with exceptional dental care, including
-                            full mouth implant solutions, and help you achieve a healthy,
-                            beautiful smile that lasts a lifetime. Whether you're in need of a
-                            dentist appointment near me, seeking a pediatric dentist in
-                            Chembur, or looking for the best dentist in Chembur, we're here to
-                            serve you. We also specialize in children's dentistry, ensuring a
-                            positive dental experience for the little ones. Plus, with a
-                            skilled dental surgeon near me, you can confidently explore a wide
-                            range of advanced dental treatments.
-                        </Typography>
+                        <Fadeup para={
+                            <Typography
+                                sx={{
+                                    color: "#000000",
+                                    textAlign: "justify",
+                                    mb: 2,
+                                    ml: { xs: 0, md: 4 },
+                                }}
+                            >
+                                Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur,
+                                your premier destination for high-quality dental care. Our
+                                experienced team of dentist in Chembur professionals is
+                                passionate about improving and maintaining your oral health. We
+                                offer a comprehensive range of services, from preventive
+                                dentistry to root canal treatment and dental implant clinic
+                                procedures, all tailored to meet your unique needs. Using the
+                                latest advancements in dental technology, we ensure precise
+                                diagnoses and efficient treatments. We pride ourselves on
+                                creating a warm and welcoming dental clinic near my location,
+                                where our patients feel comfortable and relaxed. Trust us to
+                                provide you with exceptional dental care, including full mouth
+                                implant solutions, and help you achieve a healthy, beautiful
+                                smile that lasts a lifetime. Whether you're in need of a dentist
+                                appointment near me, seeking a pediatric dentist in Chembur, or
+                                looking for the best dentist in Chembur, we're here to serve
+                                you. We also specialize in children's dentistry, ensuring a
+                                positive dental experience for the little ones. Plus, with a
+                                skilled dental surgeon near me, you can confidently explore a
+                                wide range of advanced dental treatments.
+                            </Typography>
+                        }
+                        />
+
 
                         <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
                             {data.map(({ title, description, icon }, index) => (

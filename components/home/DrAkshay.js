@@ -40,6 +40,7 @@ const DrAkshay = () => {
               layout="responsive"
               alt="Feature img"
               style={{ borderRadius: "50%", border: "5px  black outset" }}
+            // className="dranim"
             ></Image>
           </Grid>
           <Grid item xs={12} sm={7}>
@@ -72,7 +73,7 @@ const DrAkshay = () => {
                   sx={{
                     position: "absolute",
                     top: { xs: 20, md: 28 },
-                    transform: "rotate(3deg)",
+                    transform: "rotate(184deg)",
                     left: 2,
                     "& img": { width: { xs: 140, md: 175 }, height: "auto" },
                   }}
