@@ -26,30 +26,31 @@ import Degreesection from '../components/home/Degreesection';
 import Dentalservices from '../components/home/Dentalservices';
 import DrAkshay from '../components/home/DrAkshay';
 import Contact from '../components/home/Contact';
+import Trainer from '../components/home/Trainer';
 const Testimonial = lazy(() => import('../components/home/Testimonial'))
 
 export default function Home() {
-  return (
-    <>
-      <HomeHero />
-      <Countdown />
-      <Clinicinfo />
-      <Dentalservices></Dentalservices>
-      <DrAkshay></DrAkshay>
-      <Drsudnya />
-      <Suspense fallback=
-        {<div>Component are loading please wait...</div>}>
-        <Photogallery />
-        <Testimonial></Testimonial>
-      </Suspense>
-      <Equipment />
-      <Faq />
-      <Contact></Contact>
+    return (
+        <>
+            {/* <HomeHero />
+            <Countdown />
+            <Clinicinfo />
+            <Dentalservices></Dentalservices> */}
+            {/* <DrAkshay></DrAkshay>
+            <Drsudnya />
+            <Suspense fallback=
+                {<div>Component are loading please wait...</div>}>
+                <Photogallery />
+                <Testimonial></Testimonial>
+            </Suspense> */}
+            {/* <Equipment />
+            <Faq /> */}
+            {/* <Contact></Contact> */}
+            <Trainer></Trainer>
+            {/* <Degreesection /> */}
 
-      <Degreesection />
-
-    </>
-  )
+        </>
+    )
 }
 Home.getLayout = (page) => <MainLayout>{page}</MainLayout>;
 

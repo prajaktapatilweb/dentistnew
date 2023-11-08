@@ -12,17 +12,21 @@ export default function Trainer() {
             >
 
                 <Container>
-                    <Typography
-                        variant="h1"
-                        sx={{
-                            fontSize: { xs: 30, md: 35 },
-                            pb: 3,
-                        }}
-                        gutterBottom
-                    >
-                        Training Session at Dr. Akshay's DentAvenue
-                    </Typography>
-                    <Grid container spacing={3} alignItems="center" justifyContent="center">
+                    <Grid container spacing={3}>
+                        <Grid item xs={12} md={12}>
+                            <Typography
+                                variant="h1"
+                                sx={{
+                                    fontSize: { xs: 30, md: 35 },
+                                    pb: 3,
+                                }}
+                                gutterBottom
+                            >
+                                Training Session at Dr. Akshay's DentAvenue
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                    <Grid container spacing={3} alignItems="center" justifyContent="center" textAlign="justify">
                         <Grid item xs={12} md={6}>
 
                             One-Day Intensive Implantology Training
