@@ -13,7 +13,7 @@ import { data } from "./feature.data";
 import { motion, useAnimation } from "framer-motion";
 import { useInView } from "framer-motion";
 import { useRef, useEffect } from "react";
-import Fadeup from "../Animations/fadeup";
+import Fadeupside from "../Animations/Fadeupside";
 
 const BorderLinearProgress = styled(LinearProgress, {
     shouldForwardProp: (prop) => prop !== "color",
@@ -219,7 +219,7 @@ const Clinicinfo = () => {
                             {/* Enjoyable */}
                         </Typography>
 
-                        <Fadeup para={
+                        <Fadeupside para={
                             <Typography
                                 sx={{
                                     color: "#000000",

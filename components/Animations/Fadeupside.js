@@ -1,9 +1,7 @@
 import React from 'react'
 import { motion, Variants, useAnimation } from "framer-motion";
-import { useInView } from "framer-motion";
-import { useRef, useEffect } from "react";
 
-export default function Fadeup(props) {
+export default function Fadeupside(props) {
     const Variants = {
         offscreen: {
             y: 80
