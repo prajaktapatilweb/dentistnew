@@ -7,7 +7,7 @@ export default function Trainer() {
     return (
         <div>
             <Box
-                id="aboutus"
+                id="trainer"
                 sx={{ py: { xs: 10, md: 10 }, backgroundColor: "#ffffff" }}
             >
 

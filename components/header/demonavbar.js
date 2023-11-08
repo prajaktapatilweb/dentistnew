@@ -24,7 +24,9 @@ const pages = [
     { linkID: '/#testimonials', label: 'Testimonials' },
     { linkID: '/#gallery', label: 'Gallery' },
     { linkID: '/#faq', label: 'FAQ' },
+    { linkID: '/#trainer', label: 'Training' },
     { linkID: '/#contactform', label: 'Contact' },
+
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
