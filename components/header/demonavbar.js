@@ -26,6 +26,7 @@ const pages = [
     { linkID: '/#faq', label: 'FAQ' },
     { linkID: '/trainer', label: 'Training' },
     { linkID: '/#contactform', label: 'Contact' },
+    { linkID: '/blog', label: 'Blog' },
 
 ];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];

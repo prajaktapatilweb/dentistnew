@@ -1,10 +1,13 @@
+
 import { MainLayout } from '../components/layout';
-import Trainer from '../components/home/Trainer';
+
+import Blog from '../components/Blog';
 
 export default function Home() {
     return (
         <>
-            <Trainer></Trainer>
+            <Blog></Blog>
+
         </>
     )
 }
