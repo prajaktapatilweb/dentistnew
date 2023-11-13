@@ -17,7 +17,7 @@ export default function Blog() {
                 History<br></br>
                 Tooth loss has been a problem since ancient times as the skeletal remains of Egyptian mummies suggest. And because of the curious mind of the human race, there have been numerous attempts and experiments to replace those missing teeth with a wide variety of materials.
             </span>,
-            link: '/blogs/dentalimplant1'
+            link: '/blogs/history-of-dental-implants'
         }
     ]
     return (

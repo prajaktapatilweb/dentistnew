@@ -1,5 +1,6 @@
 import React from 'react'
 import DetailBlog from './DetailBlog'
+import { Link } from '@mui/material'
 
 export default function Blog1DentalImplant() {
     var DetailObject = [
@@ -130,7 +131,7 @@ export default function Blog1DentalImplant() {
             text: [
                 'Once the treatment is complete, patients are advised and trained to maintain the teeth. Routine follow-up with the dentist is equally essential. ',
                 'Dr. Akshay’s DentAvenue has always been at the forefront of making dental solutions more accessible and transparent for the masses. Equipped with modern technology, and led by a team of highly skilled dentists, the dental clinic emerges as a reliable destination for patients looking for dental implants.',
-                'Dr. Akshay Bandewar at this dental clinic in Chembur has been consistently delivering top-class results to his patients for over 10+ years.',
+                <span> Dr. Akshay Bandewar at this <Link href="https://www.dentavenue.in/" sx={{ color: 'blue' }}> dental clinic in Chembur</Link> has been consistently delivering top-class results to his patients for over 10+ years.'</span>,
                 'If you are in the quest for a perfect, confident, and complete smile, your search ends here. Book your consultation at Dr. Akshay’s DentAvenue and get world-class dental implant solutions.',
             ]
         }
