@@ -38,22 +38,22 @@ class MyDocument extends Document {
           <meta content="#fbfbfb" name="msapplication-navbutton-color" />
           <meta content="#fbfbfb" name="apple-mobile-web-app-status-bar-style" />
           <meta content="yes" name="apple-mobile-web-app-capable" /> */}
-          <meta name="title" content="Dentist in Chembur | Dental Clinic in Chembur Near Me"></meta>
-          <meta name='description' content="Are you in search of a trusted dentist in Chembur East? Your journey ends at Dr. Akshay's DentAvenue Dental Clinic in Chembur. With a team of seasoned professionals, we provide a wide array of dental services, encompassing general dentistry, teeth whitening, dental implants, root canal treatments, and more. Let's embark on the path to a healthy and radiant smile together. Pay a visit to our clinic today!"></meta>
-          <meta property="og:type" content="website" />
+          {/* <meta name="title" content="Dentist in Chembur | Dental Clinic in Chembur Near Me"></meta>
+          <meta name='description' content="Are you in search of a trusted dentist in Chembur East? Your journey ends at Dr. Akshay's DentAvenue Dental Clinic in Chembur. With a team of seasoned professionals, we provide a wide array of dental services, encompassing general dentistry, teeth whitening, dental implants, root canal treatments, and more. Let's embark on the path to a healthy and radiant smile together. Pay a visit to our clinic today!"></meta> */}
+          {/* <meta property="og:type" content="website" />
           <meta property="og:title" content="Premier Dental Care in Chembur" />
           <meta property="og:description" content="Experience premier dental care in Chembur for your brightest, healthiest smile." />
           <meta property="og:site_name" content="Dr. Akshay's DentAvenue" />
           <meta property="og:url" content="https://www.dentavenue.in/" />
-          <meta property="og:image" content="https://www.dentavenue.in/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" />
+          <meta property="og:image" content="https://www.dentavenue.in/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" /> */}
 
-          <meta name="twitter:card" content="summary_large_image" />
+          {/* <meta name="twitter:card" content="summary_large_image" />
           <meta name="twitter:site" content="@DentavenueM" />
           <meta name="twitter:title" content="Dr. Akshay's DentAvenue" />
           <meta name="twitter:description" content="Experience premier dental care in Chembur for your brightest, healthiest smile." />
-          <meta name="twitter:image" content="https://www.dentavenue.in/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" />
+          <meta name="twitter:image" content="https://www.dentavenue.in/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp" /> */}
 
-          <link rel="canonical" href="https://www.dentavenue.in/"></link>
+          {/* <link rel="canonical" href="https://www.dentavenue.in/"></link> */}
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="true" />
           <link
