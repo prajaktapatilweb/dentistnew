@@ -87,7 +87,7 @@ const Clinicinfo = () => {
     // para fadeup
     const Variants = {
         offscreen: {
-            y: 80
+            y: 50
         },
         onscreen: {
             y: 10,
@@ -242,7 +242,7 @@ const Clinicinfo = () => {
                             viewport={{ once: true, amount: 0.8 }}
 
                         >
-                            <motion.div className="card" variants={Variants}>
+                            <motion.div variants={Variants}>
 
 
                                 <Typography
