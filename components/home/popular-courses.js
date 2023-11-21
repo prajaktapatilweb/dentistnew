@@ -10,6 +10,8 @@ import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
 import { data } from "./popular-course.data";
 import { CourseCardItem } from "../course";
+import Heading from "./Heading";
+import { headList2 } from "../constants/titlefile";
 const SliderArrow = (props) => {
   const { onClick, type, className } = props;
   return (
@@ -86,31 +88,14 @@ const HomePopularCourse = () => {
       id="treatments"
       sx={{
         py: { xs: 7, md: 7 },
-
-        backgroundColor: "#f1efeb",
+        background: "linear-gradient(to left, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);"
+        // backgroundColor: "#f1efeb",
       }}
     >
       <Container maxWidth="lg">
         <Grid container spacing={2}>
           <Grid item xs={12} md={12}>
-            <Box
-              sx={{
-                height: "100%",
-                width: { xs: "100%", md: "90%" },
-                display: "flex",
-                alignItems: "center",
-                justifyContent: { xs: "center", md: "flex-start" },
-              }}
-            >
-              <Typography variant="h1" sx={{ fontSize: { xs: 30, md: 35 } }}>
-                Our Comprehensive Dental Services
-              </Typography>
-
-            </Box>
-            <Typography>
-              We provide a wide range of dental services to cater to all your oral health needs.
-
-            </Typography>
+            <Heading data={headList2}></Heading>
           </Grid>
 
           <Grid item xs={12} md={12}>

@@ -5,6 +5,8 @@ import AccordionDetails from '@mui/material/AccordionDetails';
 import Typography from '@mui/material/Typography';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 import { Container, Box } from '@mui/material';
+import Heading from './Heading';
+import { headList8 } from '../constants/titlefile';
 
 export default function Faq() {
     var Details = [
@@ -37,15 +39,8 @@ export default function Faq() {
             }}>
 
                 <Container maxWidth="lg" >
-                    <Typography variant="h1" sx={{
-                        fontSize: { xs: 30, md: 35 },
-                    }} gutterBottom>
-                        Frequently Asked Questions
-                    </Typography>
-                    <Typography>
-                        Here are some common questions our patients ask.
 
-                    </Typography>
+                    <Heading data={headList8}></Heading>
                     {Details.map((item, i) => (
                         <Accordion>
                             <AccordionSummary

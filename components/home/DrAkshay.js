@@ -13,6 +13,7 @@ import ListItemText from '@mui/material/ListItemText'
 import StarIcon from '@mui/icons-material/Star'
 import { StyledButton } from '../styled-button';
 import LinearProgress, { linearProgressClasses } from '@mui/material/LinearProgress'
+import { Button } from '@mui/material'
 
 
 const BorderLinearProgress = styled(LinearProgress, {
@@ -36,7 +37,7 @@ const BorderLinearProgress = styled(LinearProgress, {
     }),
   },
 }))
-const HomeFeature = () => {
+const DrAkshay = () => {
   return (
     <Box sx={{ py: { xs: 7, md: 7 }, backgroundColor: 'background.paper' }}>
       <Container>
@@ -73,26 +74,15 @@ const HomeFeature = () => {
                 component="mark"
                 sx={{
                   position: 'relative',
-                  color: '#0b1341',
-                  // color: 'primary.main',
+                  // color: '#0b1341',
+                  color: 'secondary.main',
                   fontSize: 'inherit',
                   fontWeight: 'inherit',
                   backgroundColor: 'unset',
                 }}
               >
                 Dr. Akshay Bandewar <br />
-                <Box
-                  sx={{
-                    position: 'absolute',
-                    top: { xs: 20, md: 28 },
-                    transform: 'rotate(3deg)',
-                    left: 2,
-                    '& img': { width: { xs: 140, md: 175 }, height: 'auto' },
-                  }}
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img src="/images/headline-curve.svg" alt="Headline curve" ></img>
-                </Box>
+
               </Typography>
             </Typography>
 
@@ -155,9 +145,9 @@ const HomeFeature = () => {
             <Box sx={{ '& button': { mr: 2, ml: 4, mt: 3 } }}>
               {/* <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350}> */}
 
-              <StyledButton color="primary" size="large" variant="contained" >
+              <Button color="primary" size="large" variant='contained' sx={{ background: "linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);" }} >
                 <a href="https://www.practo.com/mumbai/doctor/akshay-bandewar-dentist-2" style={{ color: 'white', textDecoration: 'none' }}> Book An Appointment </a>
-              </StyledButton>
+              </Button>
               {/* </ScrollLink> */}
 
             </Box>
@@ -168,4 +158,4 @@ const HomeFeature = () => {
     </Box>
   )
 }
-export default HomeFeature
+export default DrAkshay

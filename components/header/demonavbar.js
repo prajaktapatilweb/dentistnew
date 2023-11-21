@@ -48,8 +48,8 @@ function ResponsiveAppBar() {
     };
 
     return (
-        <AppBar position="static" sx={{ backgroundColor: '#000000' }}>
-            <Container maxWidth="xl">
+        <AppBar position="static" sx={{ backgroundColor: '#ffffff', color: 'black' }}>
+            <Container>
                 <Toolbar disableGutters sx={{ p: 1 }}>
                     {/* <Image src='/images/logo1.jpg' width={200} height={120} ></Image> */}
                     {/* <AdbIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} /> */}
@@ -123,7 +123,7 @@ function ResponsiveAppBar() {
                         </Menu>
                     </Box>
                     {/* <AdbIcon sx={{ display: { xs: 'flex', md: 'none' }, mr: 1 }} /> */}
-                    <Image src='/images/logo1.jpg' width={200} height={120} ></Image>
+                    <Image src='/images/logo1.jpg' width={100} height={50} ></Image>
                     {/* <Typography
                         variant="h5"
                         noWrap
@@ -162,7 +162,7 @@ function ResponsiveAppBar() {
                                     fontFamily: 'monospace',
                                     fontWeight: 700,
                                     letterSpacing: '.1rem',
-                                    color: 'White',
+                                    color: 'black',
                                     textDecoration: 'none',
                                 }}>
                                     <MenuItem key={page} onClick={handleCloseNavMenu}>

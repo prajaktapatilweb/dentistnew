@@ -9,6 +9,8 @@ import AppTextField from '../Formik/AppTextField';
 import { Button, FormControl, Grid, InputLabel } from '@mui/material';
 import CustomizedSelectFormik from '../Formik/CustomizedSelectFormik';
 import { useRouter } from 'next/router';
+import Heading from './Heading';
+import { headList10 } from '../constants/titlefile';
 
 const All = [
   { key: 1, text: 'Braces/ aligners', value: 'Braces/ aligners' },
@@ -66,17 +68,9 @@ const HomeNewsLetter = () => {
   };
 
   return (
-    <Box id='contactform' sx={{ backgroundColor: '#f1efeb', py: { xs: 7, md: 7 } }}>
+    <Box id='contactform' sx={{ backgroundColor: '#d2d2e6', py: { xs: 7, md: 7 } }}>
       <Container >
-        <Typography variant="h1" sx={{
-          fontSize: { xs: 30, md: 35 }, pb: {
-            xs: 3,
-            md: 3,
-          },
-        }} gutterBottom>
-          Connect with Our Expert Dentists in Chembur
-
-        </Typography>
+        <Heading data={headList10}></Heading>
         <Card
           className='box2'
           sx={{

@@ -11,6 +11,7 @@ import ListItemIcon from "@mui/material/ListItemIcon";
 import ListItemText from "@mui/material/ListItemText";
 import StarIcon from "@mui/icons-material/Star";
 import { StyledButton } from "../styled-button";
+import { Button } from "@mui/material";
 
 export default function Drsudnya() {
     return (
@@ -36,28 +37,14 @@ export default function Drsudnya() {
                                     component="mark"
                                     sx={{
                                         position: "relative",
-                                        color: "#0b1341",
+                                        color: 'secondary.main',
                                         fontSize: "inherit",
                                         fontWeight: "inherit",
                                         backgroundColor: "unset",
                                     }}
                                 >
                                     Dr. Saudnya Rudrawar<br />
-                                    <Box
-                                        sx={{
-                                            position: "absolute",
-                                            top: { xs: 20, md: 28 },
-                                            transform: "rotate(3deg)",
-                                            left: 2,
-                                            "& img": { width: { xs: 140, md: 175 }, height: "auto" },
-                                        }}
-                                    >
-                                        {/* eslint-disable-next-line @next/next/no-img-element */}
-                                        <img
-                                            src="/images/headline-curve.svg"
-                                            alt="Headline curve"
-                                        ></img>
-                                    </Box>
+
                                 </Typography>
                             </Typography>
 
@@ -134,13 +121,9 @@ export default function Drsudnya() {
                                     offset={0}
                                     duration={350}
                                 > */}
-                                <StyledButton
-                                    color="primary"
-                                    size="large"
-                                    variant="contained"
-                                >
+                                <Button color="primary" size="large" variant='contained' sx={{ background: "linear-gradient(to right, #3e2bce 0%, #2dd3aa 100%, #2dd3aa 100%, #2dd3aa 100%);" }} >
                                     <a href="https://www.practo.com/mumbai/doctor/saudnya-rudrawar-dentist" style={{ color: 'white', textDecoration: 'none' }}>Book An Appointment</a>
-                                </StyledButton>
+                                </Button>
                                 {/* </ScrollLink> */}
                             </Box>
                         </Grid>

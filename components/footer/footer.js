@@ -32,7 +32,7 @@ const Footer = () => {
                 Family Dental Care
               </Typography>
               <Typography variant="subtitle1" sx={{ letterSpacing: 1, mb: 2 }}>
-                Discover top-notch dental care at the Dr. Akshay's DentAvenue Dental Clinic, conveniently located near you in Chembur. Led by Dr. Akshay, your trusted dentist in Chembur, our dedicated team is committed to providing tailored treatments, ensuring you attain a long-lasting, radiant smile. Whether you're seeking a dental clinic near me or a dental clinic in Chembur, we've got you covered.
+                Experience exceptional dental care at Family Dental Care, situated in Dharavi near Sion. Our skilled team, led by dedicated professionals, is committed to delivering personalized treatments for a lasting, healthy smile. Whether you're in search of a nearby dental clinic or specifically in Dharavi near Sion, Family Dental Care is here to meet all your dental needs.
               </Typography>
               <Box
                 sx={{

@@ -16,90 +16,61 @@ const HomeHero = () => {
   };
 
   return (
-    <Box
-      sx={{
-        backgroundImage: `url("/images/heroimg3.webp")`,
-        backgroundRepeat: 'no-repeat',
-        backgroundSize: 'cover',
-        display: 'flex',
-        // width: '100%',
-        height: '83vh',
+    <Grid className='section section-lg section-shaped' sx={{ justifyContent: 'center', alignItems: 'center', textAlign: 'center' }}>
+      <div className='shape shape-style-u1 shape-dark'>
+        <span className='span-150' />
+        <span className='span-75' />
+        <span className='span-50' />
+        <span className='span-75' />
+        <span className='span-200' />
+        <span className='span-150' />
+      </div>
+      <Container>
 
-        alignItems: 'center',
-        justifyItems: 'center'
-
-        // py: { xs: 7, md: 14 },
-      }}
-    >
-      {/* <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}> */}
-      <Container maxWidth="lg">
-        <Grid container alignItems='center' justifyContent='center'>
-          <Grid item xs={12} md={12}>
+        <Grid container alignItems='center' justifyContent='center' sx={{ p: 10 }}>
+          <Grid item xs={12} md={12} sx={{ zIndex: 1 }}>
             <Box>
               <Typography
                 component="h2"
                 sx={{
                   // width: { md: 850 },
                   position: 'relative',
-                  fontSize: { xs: 40, md: 50 },
-                  mb: { xs: 3, sm: 0 },
+                  fontSize: { xs: 40, md: 55 },
+                  // mb: { xs: 3, sm: 0 },
                   letterSpacing: 1.5,
                   fontWeight: 'bold',
                   color: 'white',
                   lineHeight: 1.5,
+
                 }}
               >
-                {' '}
+
                 Welcome to Family Dental Care
-
-
-                <Typography
-                  component="span"
-                  sx={{
-                    fontSize: 'inherit',
-                    fontWeight: 'inherit',
-                    position: 'relative',
-                    '& svg': {
-                      position: 'absolute',
-                      top: -7,
-                      right: -20,
-                      width: { xs: 22, md: 27 },
-                      height: 'auto',
-                    },
-                  }}
-                >
-
-                </Typography>{' '}
-                <br />
               </Typography>
             </Box>
-            <Hidden smDown>
-              <Box sx={{ mb: 4, width: { xs: '100%', md: '80%' } }}>
-                <Typography variant='p' sx={{ color: 'white', lineHeight: 1.6, fontSize: 18 }} >
-                  {
-                    'Creating Healthy Smiles, One Patient at a Time'
-                  }
-                </Typography>
-              </Box>
-            </Hidden>
+            {/* <Hidden smDown> */}
+            <Box sx={{ mb: 4 }}>
+              <Typography variant='h4' sx={{ color: '#aed8df', lineHeight: 1.6, fontSize: 20 }} gutterBottom>
+                {
+                  'Creating Healthy Smiles, One Patient at a Time'
+                }
+              </Typography>
+            </Box>
+            {/* </Hidden> */}
             <Box sx={{ '& button': { mr: 2 } }}>
-              <ScrollLink to="contactform" spy={true} smooth={true} offset={0} duration={350} >
 
-                <StyledButton color="primary" size="large" variant="contained" sx={{ mb: { xs: 3, sm: 0, md: 0 }, fontSize: 17, border: "3px solid", borderColor: "secondary.main", backgroundColor: 'secondary.main', color: 'white' }}>
-                  Enquire Now
-                </StyledButton>
-              </ScrollLink>
-              {/* <ScrollLink spy={true} smooth={true} offset={0} duration={350}> */}
-              {/* <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}> */}
-              <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, fontSize: 17, border: "4px solid", borderColor: "secondary.main", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
-                Watch Video
+              <StyledButton color="white" size="large" variant="outlined" startIcon={<PlayArrow />} sx={{ mb: { xs: 3, sm: 0, md: 0 }, borderRadius: 0, fontSize: 17, border: "1px solid", borderColor: "#ffffff", color: 'white' }} onClick={() => openInNewTab('https://www.youtube.com/@drakshaysdentavenuegeneral8556')}>
+                Enquire Now
               </StyledButton>
-              {/* </ScrollLink> */}
+
             </Box>
           </Grid>
         </Grid>
       </Container>
-    </Box>
+
+
+
+    </Grid>
   )
 }
 export default HomeHero

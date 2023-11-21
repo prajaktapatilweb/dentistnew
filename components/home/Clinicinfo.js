@@ -10,6 +10,10 @@ import LinearProgress, {
     linearProgressClasses,
 } from "@mui/material/LinearProgress";
 import { data } from "./feature.data";
+import { Card } from "@mui/material";
+import Drgallery from "./Drgallery";
+import Heading from "./Heading";
+import { headList1 } from "../constants/titlefile";
 
 const BorderLinearProgress = styled(LinearProgress, {
     shouldForwardProp: (prop) => prop !== "color",
@@ -37,212 +41,108 @@ const BorderLinearProgress = styled(LinearProgress, {
 }));
 const Clinicinfo = () => {
     return (
-        <Box
-            id="aboutus"
-            sx={{ py: { xs: 10, md: 10 }, backgroundColor: "#ffffff" }}
-        >
+        <Box id="aboutus" sx={{ py: { xs: 10, md: 10 }, backgroundColor: "#ffffff" }} >
             <Container>
-                <Grid container spacing={3} alignItems="center" justifyContent="center">
-                    <Grid item xs={12} md={5}>
-                        <Box sx={{ position: "relative" }}>
-                            <Image
-                                src="/images/dr-akshays-dentavenue-dental-clinic-chembur-mumbai.webp"
-                                height={100}
-                                width={100}
-                                layout="responsive"
-                                alt="dr-akshays-dentavenue-dental-clinic-chembur-mumbai"
-                            />
-                            {/* <Box
-                                sx={{
-                                    position: "absolute",
-                                    top: -39,
-                                    right: { xs: 0, md: -35 },
-                                    boxShadow: 2,
-                                    borderRadius: 1,
-                                    px: 2.2,
-                                    py: 1.4,
-                                    zIndex: 1,
-                                    backgroundColor: "background.paper",
-                                    width: 190,
-                                }}
-                            >
-                                <Typography variant="h5" sx={{ mb: 1 }}>
-                                    Why Choose Us:
-                                </Typography>
-                                <Box sx={{ mb: 2 }}>
-                                    <Typography variant="subtitle1" color="text.secondary">
-                                        Safety & Sanitation
-                                    </Typography>
-                                    <BorderLinearProgress
-                                        variant="determinate"
-                                        color="inherit"
-                                        value={100}
-                                        order={1}
-                                    />
-                                </Box>
-                                <Box sx={{ mb: 2 }}>
-                                    <Typography variant="subtitle1" color="text.secondary">
-                                        Quality Care
-                                    </Typography>
-                                    <BorderLinearProgress
-                                        variant="determinate"
-                                        color="inherit"
-                                        value={100}
-                                        order={2}
-                                    />
-                                </Box>
-                                <Box sx={{ mb: 2 }}>
-                                    <Typography variant="subtitle1" color="text.secondary">
-                                        Patient-Focused Culture
-                                    </Typography>
-                                    <BorderLinearProgress
-                                        variant="determinate"
-                                        color="inherit"
-                                        value={100}
-                                        order={3}
-                                    />
-                                </Box>
-                                <Box sx={{ mb: 2 }}>
-                                    <Typography variant="subtitle1" color="text.secondary">
-                                        Experienced Dentist & Team
-                                    </Typography>
-                                    <BorderLinearProgress
-                                        variant="determinate"
-                                        color="inherit"
-                                        value={100}
-                                        order={4}
-                                    />
-                                </Box>
-                            </Box> */}
-                        </Box>
-                    </Grid>
-                    <Grid item xs={12} md={7}>
-                        <Typography
-                            component="h1"
-                            sx={{
-                                position: "relative",
-                                fontSize: { xs: 40, md: 30 },
-                                ml: { xs: 0, md: 4 },
-                                mt: 0,
-                                mb: 3,
-                                lineHeight: 1.3,
-                                fontWeight: "bold",
-                                color: "#0b1341",
-                            }}
-                        >
-                            Dr. Akshay's DentAvenue Dental Clinic, Chembur <br />
-                            <Box
-                                sx={{
-                                    position: "absolute",
-                                    top: { xs: 20, md: 25 },
-                                    transform: "rotate(3deg)",
-                                    left: 2,
-                                    "& img": { width: { xs: 140, md: 140 }, height: "auto" },
-                                }}
-                            >
-                                {/* eslint-disable-next-line @next/next/no-img-element */}
-                                <img src="/images/headline-curve.svg" alt="Headline curve" />
+                <Card sx={{ p: 5, marginTop: -20, zIndex: 1, position: 'relative', borderRadius: 5, boxShadow: '0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19)' }}>
+                    <Heading data={headList1}></Heading>
+
+                    <Grid container spacing={3} alignItems="center" justifyContent="center">
+
+
+                        <Grid item xs={12} md={5}>
+                            <Box sx={{ position: "relative" }}>
+                                <Drgallery></Drgallery>
+
                             </Box>
-                            {/* Enjoyable */}
-                        </Typography>
-
-                        <Typography
-                            sx={{
-                                color: "#000000",
-                                textAlign: "justify",
-                                mb: 2,
-                                ml: { xs: 0, md: 4 },
-                            }}
-                        >
+                        </Grid>
+                        <Grid item xs={12} md={7}>
 
 
+                            <Typography
+                                sx={{
+                                    color: "#000000",
+                                    textAlign: "justify",
+                                    mb: 2,
+                                    ml: { xs: 0, md: 4 },
+                                }}
+                            >
 
-                            We are proud to introduce our affiliated clinic, Dr. Akshay's DentAvenue Dental Clinic, located in the vibrant neighbourhood of Chembur. Led by Dr. Akshay and his dedicated team, this clinic shares our commitment to providing exceptional dental care with a focus on patient-centred service. With cutting-edge technology and a compassionate approach, Dr. Akshay's DentAvenue Dental Clinic ensures that every smile receives the highest standard of care. Explore the excellence of dental services offered at this trusted Chembur location.
+                                Welcome to Family Dental Care, your go-to dental clinic in Dharavi near Sion, Mumbai, where we prioritize your oral health. With experienced and dedicated professionals, Dr. Akshay and Dr. Saudnya Bandewar, our clinic is committed to providing top-notch dental care. If you're in search of a nearby dentist in Dharavi, your search ends at our conveniently located clinic in the heart of the city.
+                                <br></br>
+                                When it comes to finding a trustworthy dentist in Dharavi, look no further than Family Dental Care. We take pride in being the most reliable dental clinic in the area, offering a comprehensive range of services to address all your dental needs. From routine check-ups and cleanings to specialized procedures like fillings, extractions, root canals, teeth whitening, veneers, braces, dentures, and dental implants, our commitment is to deliver high-quality care.
+                                <br></br>
+                                Our adept dentists in Dharavi ensure a comfortable and pleasant experience, with a special focus on creating a welcoming environment for children. Conveniently situated, we are your preferred "dental clinic near me," dedicated to meeting the dental requirements of your entire family.
+                                <br></br>
+                                At Family Dental Care, we go above and beyond standard dental services. Our team comprises experts in various fields, providing specialized care as a teeth doctor, children's teeth specialist, pediatric dentist, orthodontist, endodontist, and dentist surgeon. Additionally, we offer professional teeth cleaning services at competitive rates, ensuring your oral health is entrusted to capable hands.
+
+                                Choose Family Dental Care for a comprehensive and personalized approach to your family's dental well-being. Your mission for healthy and happy smiles starts with us.
+
+                            </Typography>
 
 
-
-
-                            {/* Welcome to Dr. Akshay's DentAvenue Dental Clinic in Chembur, your
-                            premier destination for high-quality dental care. Our experienced
-                            team of dentist in Chembur professionals is passionate about
-                            improving and maintaining your oral health. We offer a
-                            comprehensive range of services, from preventive dentistry to root
-                            canal treatment and dental implant clinic procedures, all tailored
-                            to meet your unique needs. Using the latest advancements in dental
-                            technology, we ensure precise diagnoses and efficient treatments.
-                            We pride ourselves on creating a warm and welcoming dental clinic
-                            near my location, where our patients feel comfortable and relaxed.
-                            Trust us to provide you with exceptional dental care, including
-                            full mouth implant solutions, and help you achieve a healthy,
-                            beautiful smile that lasts a lifetime. Whether you're in need of a
-                            dentist appointment near me, seeking a pediatric dentist in
-                            Chembur, or looking for the best dentist in Chembur, we're here to
-                            serve you. We also specialize in children's dentistry, ensuring a
-                            positive dental experience for the little ones. Plus, with a
-                            skilled dental surgeon near me, you can confidently explore a wide
-                            range of advanced dental treatments. */}
-                        </Typography>
-
-                        <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
-                            {data.map(({ title, description, icon }, index) => (
-                                <Grid key={String(index)} item xs={12} md={6}>
-                                    <Box
-                                        sx={{
-                                            px: 2,
-                                            py: 1.5,
-                                            boxShadow: 1,
-                                            borderRadius: 4,
-                                            border: "1px solid #E0E0E0",
-                                            display: "flex",
-                                            alignItems: "center",
-                                        }}
-                                    >
+                        </Grid>
+                        <Grid item xs={12} md={12}>
+                            <Grid container spacing={2} sx={{ ml: { xs: 0, md: 2 } }}>
+                                {data.map(({ title, description, icon }, index) => (
+                                    <Grid key={String(index)} item xs={12} md={6}>
                                         <Box
                                             sx={{
-                                                mr: 1,
-                                                background: "#000000",
-                                                // backgroundColor: "primary.main",
-                                                borderRadius: "50%",
-                                                height: 36,
-                                                width: 36,
+                                                px: 2,
+                                                py: 1.5,
+                                                boxShadow: 1,
+                                                borderRadius: 4,
+                                                border: "1px solid #E0E0E0",
                                                 display: "flex",
                                                 alignItems: "center",
-                                                justifyContent: "center",
-                                                color: "primary.contrastText",
-                                                "& svg": {
-                                                    fontSize: 20,
-                                                },
                                             }}
                                         >
-                                            {icon}
-                                        </Box>
-                                        <Box
-                                            sx={{ display: "flex", flex: 1, flexDirection: "column" }}
-                                        >
-                                            <Typography
-                                                variant="h6"
+                                            <Box
                                                 sx={{
-                                                    fontSize: "1rem",
-                                                    mb: 1,
-                                                    color: "secondary.main",
+                                                    mr: 1,
+                                                    background: "#1b1075",
+                                                    // backgroundColor: "primary.main",
+                                                    borderRadius: "50%",
+                                                    height: 36,
+                                                    width: 36,
+                                                    display: "flex",
+                                                    alignItems: "center",
+                                                    justifyContent: "center",
+                                                    color: "primary.contrastText",
+                                                    "& svg": {
+                                                        fontSize: 20,
+                                                    },
                                                 }}
                                             >
-                                                {title}
-                                            </Typography>
-                                            <Typography
-                                                // sx={{ lineHeight: 1.3, color: "text.secondary" }}
-                                                sx={{ lineHeight: 1.3, color: "#000000" }}
-                                                variant="subtitle1"
+                                                {icon}
+                                            </Box>
+                                            <Box
+                                                sx={{ display: "flex", flex: 1, flexDirection: "column" }}
                                             >
-                                                {description}
-                                            </Typography>
+                                                <Typography
+                                                    variant="h6"
+                                                    sx={{
+                                                        fontSize: "1rem",
+                                                        mb: 1,
+                                                        color: "secondary.main",
+                                                    }}
+                                                >
+                                                    {title}
+                                                </Typography>
+                                                <Typography
+                                                    // sx={{ lineHeight: 1.3, color: "text.secondary" }}
+                                                    sx={{ lineHeight: 1.3, color: "#000000" }}
+                                                    variant="subtitle1"
+                                                >
+                                                    {description}
+                                                </Typography>
+                                            </Box>
                                         </Box>
-                                    </Box>
-                                </Grid>
-                            ))}
+                                    </Grid>
+                                ))}
+                            </Grid>
                         </Grid>
                     </Grid>
-                </Grid>
+                </Card>
             </Container>
         </Box>
     );

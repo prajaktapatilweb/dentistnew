@@ -5,6 +5,8 @@ import Container from "@mui/material/Container";
 import IconButton, { iconButtonClasses } from "@mui/material/IconButton";
 import Image from "next/image";
 import { Typography } from "@mui/material";
+import Heading from "./Heading";
+import { headList3 } from "../constants/titlefile";
 
 export default function Equipment() {
     var Details = [
@@ -34,13 +36,12 @@ export default function Equipment() {
             <Box
                 sx={{
                     py: { xs: 6, md: 6 },
-                    backgroundColor: "#f1efeb",
+                    backgroundColor: "#d2d2e6",
                 }}
             >
                 <Container maxWidth="lg">
-                    <Typography variant="h1" sx={{ pb: 3, fontSize: { xs: 30, md: 35 } }}>
-                        Equipments
-                    </Typography>
+                    <Heading data={headList3}></Heading>
+
                     <Grid container spacing={1}>
                         {Details.map((item, i) => (
                             <Grid item xs={12} md={3} key={i}>

@@ -1,18 +1,11 @@
 import React from "react";
 import Box from "@mui/material/Box";
-import { Grid } from "@mui/material";
 import Slider from "react-slick";
-import Container from "@mui/material/Container";
-import Typography from "@mui/material/Typography";
-import IconButton from "@mui/material/IconButton";
-import useMediaQuery from "@mui/material/useMediaQuery";
 import { useTheme, styled } from "@mui/material/styles";
+import { IconButton, useMediaQuery } from "@mui/material";
 import IconArrowBack from "@mui/icons-material/ArrowBack";
 import IconArrowForward from "@mui/icons-material/ArrowForward";
-import { MentorCardItem } from "../mentor";
-import { data } from "./mentors.data";
-import Heading from "./Heading";
-import { headList6 } from "../constants/titlefile";
+import Drgalleryitem from "./Drgalleryitem";
 const SliderArrow = (props) => {
     const { onClick, type, className } = props;
     return (
@@ -24,7 +17,7 @@ const SliderArrow = (props) => {
                     backgroundColor: "primary.main",
                     color: "primary.contrastText",
                 },
-                bottom: "-28px !important",
+                bottom: { xs: "-70px !important", md: "-28px !important" },
                 left: "unset !important",
                 right: type === "prev" ? "60px !important" : "0 !important",
                 zIndex: 10,
@@ -36,9 +29,9 @@ const SliderArrow = (props) => {
             className={className}
         >
             {type === "next" ? (
-                <IconArrowForward sx={{ fontSize: 22 }} />
+                <IconArrowForward sx={{ fontSize: 0 }} />
             ) : (
-                <IconArrowBack sx={{ fontSize: 22 }} />
+                <IconArrowBack sx={{ fontSize: 0 }} />
             )}
         </IconButton>
     );
@@ -49,7 +42,7 @@ const StyledDots = styled("ul")(({ theme }) => ({
         left: 0,
         bottom: -20,
         paddingLeft: theme.spacing(1),
-        textAlign: "left",
+        textAlign: "center",
         "& li": {
             marginRight: theme.spacing(2),
             "&.slick-active>div": {
@@ -58,14 +51,15 @@ const StyledDots = styled("ul")(({ theme }) => ({
         },
     },
 }));
-const HomeOurMentors = () => {
+const Drgallery = () => {
     const { breakpoints } = useTheme();
-    const matchMobileView = useMediaQuery(breakpoints.down("sm"));
+    const matchMobileView = useMediaQuery(breakpoints.down("md"));
     const sliderConfig = {
         infinite: true,
-        // autoplay: true,
+        autoplay: true,
+        adaptiveheight: false,
         speed: 300,
-        slidesToShow: matchMobileView ? 1 : 3,
+        slidesToShow: matchMobileView ? 1 : 1,
         slidesToScroll: 1,
         prevArrow: <SliderArrow type="prev" />,
         nextArrow: <SliderArrow type="next" />,
@@ -77,30 +71,24 @@ const HomeOurMentors = () => {
                     height: 8,
                     width: 30,
                     backgroundColor: "divider",
-                    display: "inline-block",
+                    display: "flex",
                     borderRadius: 4,
                 }}
             />
         ),
     };
     return (
-        <Box
-            id="testimonials"
-            sx={{
-                py: { xs: 7, md: 7 },
-                backgroundColor: "#fafafa",
-            }}
-        >
-            <Container maxWidth="lg">
-                <Heading data={headList6}></Heading>
+        <Box>
 
-                <Slider {...sliderConfig}>
-                    {data.map((item) => (
-                        <MentorCardItem key={String(item.id)} item={item} />
-                    ))}
-                </Slider>
-            </Container>
+
+            <Slider {...sliderConfig}>
+                {/* {data.map((item) => (<PhotoCardItem key={String(item.id)} item={item} />))} */}
+                {[...Array(3)].slice(0).map((e, i) => (
+                    <Drgalleryitem key={i} item={i + 1} />
+                ))}
+            </Slider>
+
         </Box>
     );
 };
-export default HomeOurMentors;
+export default Drgallery;

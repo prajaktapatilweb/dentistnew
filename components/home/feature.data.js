@@ -9,23 +9,23 @@ import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 import Diversity3Icon from '@mui/icons-material/Diversity3';
 export const data = [
     {
-        title: 'Comprehensive Care:',
-        description: 'Enjoy a full range of dental services for the whole family under one roof.',
+        title: 'Holistic Family Care:',
+        description: 'Elevate your family\'s dental well-being with our comprehensive services at Family Dental Care. From pediatric to adult dentistry, we cover all your family\'s oral health needs in one convenient location.',
         icon: <VolunteerActivismIcon />,
     },
     {
-        title: 'Advanced Technology:',
-        description: 'A Benefit from state-of-the-art tools and techniques for precise and comfortable treatments.',
+        title: 'Cutting-Edge Technology:',
+        description: 'Experience dentistry at its finest with advanced tools and techniques at Family Dental Care. Our commitment to staying at the forefront of dental technology ensures precise, comfortable, and state-of-the-art treatments for every patient.',
         icon: <BiotechIcon />,
     },
     {
-        title: 'Exceptional Experience:',
-        description: 'Our friendly team creates a welcoming environment, focusing on your comfort and satisfaction.',
+        title: 'Patient-Centric Approach:',
+        description: 'Embark on an exceptional dental journey with Family Dental Care. Our warm and welcoming team is dedicated to ensuring your comfort and satisfaction throughout your visit, providing an unmatched level of personalized care.',
         icon: <Diversity3Icon />,
     },
     {
-        title: 'Skilled Professionals:',
-        description: 'Trust our highly trained experts to deliver top-notch care using the latest practices and techniques.',
+        title: 'Expertise You Can Trust:',
+        description: 'Rely on the skills of our highly trained professionals at Family Dental Care. With a commitment to excellence, our team employs the latest practices and techniques to deliver top-notch care, ensuring your oral health is in capable and caring hands.',
         icon: <AccountCircleIcon />,
     },
 ];
