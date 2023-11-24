@@ -153,7 +153,7 @@ function ResponsiveAppBar() {
                             )}
                         </Menu>
                     </Box>
-                    <Image src='/images/logo1.jpg' width={200} height={120} ></Image>
+                    <Image src='/images/logo1.jpg' width={150} height={100} ></Image>
 
                     {/* dekstop menu */}
                     <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex', textDecoration: "none" } }}>
@@ -168,7 +168,7 @@ function ResponsiveAppBar() {
                                     // aria-expanded={open ? 'true' : undefined}
                                     >
                                         <Typography sx={{
-                                            mx: 2,
+                                            // mx: 2,
                                             display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex' },
                                             fontWeight: 700,
                                             letterSpacing: '.1rem',
@@ -200,7 +200,7 @@ function ResponsiveAppBar() {
                                         ))} */}
                                         {page?.submenu?.map((item, i) => (
                                             < Link key={i} href={item.linkID} sx={{
-                                                mr: 2,
+                                                // mr: 2,
                                                 fontWeight: 800,
                                                 letterSpacing: '.1rem',
                                                 color: 'black',
@@ -218,7 +218,7 @@ function ResponsiveAppBar() {
                             } else {
                                 return (
                                     <Link key={i} href={page.linkID} sx={{
-                                        mx: 2,
+
                                         display: { xs: 'none', sm: 'none', md: 'none', lg: 'flex' },
                                         fontWeight: 700,
                                         letterSpacing: '.1rem',
@@ -226,7 +226,7 @@ function ResponsiveAppBar() {
                                         textDecoration: 'none',
                                     }}>
                                         <MenuItem key={page} onClick={handleCloseNavMenu}>
-                                            <Typography variant='h5'>
+                                            <Typography variant='h5' sx={{ fontSize: { md: 15, lg: 16, xl: 19 }, mx: { md: 0, lg: 0, xl: 2 }, }}>
                                                 {page.label}</Typography>
                                         </MenuItem>
                                     </Link>)
