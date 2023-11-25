@@ -30,7 +30,6 @@ const pages = [
             { linkID: '/services/teeth-whitening-in-chembur', label: 'Teeth Whitening' },
             { linkID: '/services/dental-fillings-in-chembur', label: 'Dental Fillings' },
             { linkID: '/services/crown-and-bridges-treatment-in-chembur', label: 'Crown And Bridges ' },
-
         ]
     },
     { linkID: '/#testimonials', label: 'Testimonials' },
