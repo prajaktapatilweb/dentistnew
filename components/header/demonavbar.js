@@ -110,27 +110,23 @@ function ResponsiveAppBar() {
                                 // } else {
                                 return (
                                     <>
-                                        < Link key={i} href={page.linkID} sx={{
-                                            mr: 2,
-                                            fontWeight: 800,
-                                            letterSpacing: '.1rem',
-                                            color: 'black',
-                                            textDecoration: 'none',
-                                            textAlign: "center"
+                                        <Link key={i} href={page.linkID} sx={{
+                                            fontWeight: 800, letterSpacing: '.1rem', color: 'black', textDecoration: 'none', textAlign: "center"
                                         }}>
-                                            <MenuItem key={page} onClick={page.submenu ? handleOpenMobileSubMenu : handleCloseNavMenu}>
-                                                <Grid container direction="row" alignItems="center">
+                                            < MenuItem key={page} onClick={page.submenu ? handleOpenMobileSubMenu : handleCloseNavMenu}>
+                                                <Grid container direction="row" alignItems="center" >
                                                     {page.label} {page.submenu && <KeyboardArrowRight />}
                                                 </Grid>
-                                            </MenuItem>
+
+                                            </MenuItem >
                                         </Link>
-                                        <Card sx={{ background: '#F0F0F0', m: 2 }}>
-                                            {page.submenu && flag && page.submenu.map(item => {
-                                                return (
+                                        {page.submenu && flag && page.submenu.map(item => {
+                                            return (
+                                                <Card sx={{ background: '#F0F0F0', }}>
 
                                                     < Link key={i} href={item.linkID} sx={{
 
-                                                        p: 1,
+                                                        // p: 1,
                                                         fontWeight: 800,
                                                         letterSpacing: '.1rem',
                                                         color: 'black',
@@ -142,12 +138,12 @@ function ResponsiveAppBar() {
                                                             <Typography sx={{ pl: 5, }}>{item.label}</Typography>
                                                         </MenuItem>
                                                     </Link>
-                                                )
-                                            })}
-                                        </Card>
-                                    </>
+                                                </Card>
+                                            )
+                                        })}
+                                    </ >
                                 )
-                                // }
+
                             }
                             )}
                         </Menu>
@@ -237,7 +233,7 @@ function ResponsiveAppBar() {
 
 
                 </Toolbar>
-            </Container>
+            </Container >
         </AppBar >
     );
 }

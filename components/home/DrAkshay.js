@@ -9,6 +9,7 @@ import ListItem from "@mui/material/ListItem";
 import StarIcon from "@mui/icons-material/Star";
 import { StyledButton } from "../styled-button";
 import { motion } from "framer-motion";
+import { Link } from "@mui/material";
 
 const DrAkshay = () => {
   const variants = {
@@ -101,7 +102,7 @@ const DrAkshay = () => {
               field of Dentistry, Dr. Akshay has completed his MDS in
               Prosthodontics (Crown, Bridge, and Implantology) from Government
               Dental College, Mumbai. He specializes in Full Mouth
-              Rehabilitation, Smile Designing, Implants, Complete and Partial
+              Rehabilitation, <Link href='https://www.dentavenue.in/services/smile-designing-in-chembur' sx={{ color: '#551a8b' }}> Smile Designing </Link>, Implants, Complete and Partial
               Dentures, Laminates, and Veneers. If you're looking for a skilled
               dentist near me, Dr. Akshay is your go-to expert. He also served
               as an ex-assistant professor at Government Dental College, Mumbai.

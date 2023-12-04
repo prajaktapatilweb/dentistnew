@@ -1,3 +1,5 @@
+import { Link } from "@mui/material";
+
 export const data = [
     {
 
@@ -33,7 +35,7 @@ export const data = [
         photo: '/images/mentors/testi2.jpeg',
         name: ' Aarti Maurya',
         category: ' ',
-        description: 'Hello, this is Dr. Aarti (I am a dentist myself). I had problems with my front teeth for a long time as they were decayed. I got fillings done multiple times, but I was never satisfied with the results. So, I finally decided to go ahead with a permanent solution. I chose to get Laminates (smile designing) done. I had complete trust in Dr. Akshay, and I am amazed at the results. I got my natural smile back. As a dentist, I have high expectations, and I was not disappointed. Thanks to Dr. Akshay for the wonderful job.',
+        description: <span>Hello, this is Dr. Aarti (I am a dentist myself). I had problems with my front teeth for a long time as they were decayed. I got <Link href='https://www.dentavenue.in/services/dental-fillings-in-chembur' sx={{ color: '#551a8b' }}> fillings </Link> done multiple times, but I was never satisfied with the results. So, I finally decided to go ahead with a permanent solution. I chose to get Laminates (smile designing) done. I had complete trust in Dr. Akshay, and I am amazed at the results. I got my natural smile back. As a dentist, I have high expectations, and I was not disappointed. Thanks to Dr. Akshay for the wonderful job.</span>,
 
     },
 ];

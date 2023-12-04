@@ -10,7 +10,7 @@ class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
-          <script
+          {/* <script
             type="text/javascript"
             async
             dangerouslySetInnerHTML={{
@@ -25,6 +25,18 @@ class MyDocument extends Document {
                     j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl
                     f.parentNode.insertBefore(j, f)
                   })(window,document,'script','dataLayer',"GTM-W3MMK948")`,
+            }}
+          /> */}
+
+          <script
+            type="text/javascript"
+            async
+            dangerouslySetInnerHTML={{
+              __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-N9GFXCQ7')`,
             }}
           />
 
@@ -63,6 +75,9 @@ class MyDocument extends Document {
           {/* Inject MUI styles first to match with the prepend: true configuration. */}
           {this.props.emotionStylesTags}
         </Head>
+
+
+
         <Script src="https://www.googletagmanager.com/gtag/js?id=G-YZSBD74SC9" />
         <Script id="google-analytics">
           {`
@@ -74,14 +89,21 @@ class MyDocument extends Document {
         `}
         </Script>
         <body>
-          <noscript>
+          {/* <!-- Google Tag Manager (noscript) --> */}
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N9GFXCQ7"
+            height="0" width="0"
+            style={{ display: "none", visibility: "hidden" }}
+          ></iframe></noscript>
+          {/* <!-- End Google Tag Manager (noscript) --> */}
+          {/* <noscript>
+      
             <iframe
               src={`https://www.googletagmanager.com/ns.html?id=GTM-W3MMK948`}
               height="0"
               width="0"
               style={{ display: "none", visibility: "hidden" }}
             ></iframe>
-          </noscript>
+          </noscript> */}
 
           <Main />
           <NextScript />

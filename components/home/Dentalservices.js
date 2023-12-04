@@ -88,6 +88,7 @@ const Dentalservices = () => {
         py: { xs: 7, md: 7 },
 
         backgroundColor: "#f1efeb",
+        // background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);
       }}
     >
       <Container maxWidth="lg">
