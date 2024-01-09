@@ -8,6 +8,9 @@ import { Link as ScrollLink } from 'react-scroll'
 import { StyledButton } from '../styled-button';
 import { PlayArrow } from '@mui/icons-material'
 import Hidden from '@mui/material/Hidden';
+import Contact from './Contact'
+import Herocontact from './Herocontacts'
+import Herocontacts from './Herocontacts'
 
 
 const HomeHero = () => {
@@ -23,25 +26,26 @@ const HomeHero = () => {
         backgroundSize: 'cover',
         display: 'flex',
         // width: '100%',
-        height: '83vh',
+        height: 'auto',
+
 
         alignItems: 'center',
-        justifyItems: 'center'
+        justifyItems: 'center',
 
-        // py: { xs: 7, md: 14 },
+        p: { xs: 2, sm: 3, md: 5, lg: 10, xl: 20 },
       }}
     >
       {/* <Box id="hero" sx={{ backgroundColor: 'background.paper', position: 'relative', pt: 4, pb: { xs: 8, md: 10 } }}> */}
       <Container maxWidth="lg">
-        <Grid container alignItems='center' justifyContent='center'>
-          <Grid item xs={12} md={12}>
+        <Grid container alignItems='center' justifyContent='center' spacing={1}>
+          <Grid item xs={12} md={12} lg={7} sx={{ pb: { xs: 3, md: 5, lg: 0, }, }}>
             <Box>
               <Typography
                 component="h2"
                 sx={{
                   // width: { md: 850 },
                   position: 'relative',
-                  fontSize: { xs: 40, md: 50 },
+                  fontSize: { xs: 35, md: 40, lg: 45 },
                   mb: { xs: 3, sm: 0 },
                   letterSpacing: 1.5,
                   fontWeight: 'bold',
@@ -135,6 +139,10 @@ const HomeHero = () => {
               </StyledButton>
               {/* </ScrollLink> */}
             </Box>
+          </Grid>
+          <Grid item xs={12} md={12} lg={5}>
+            <Herocontacts></Herocontacts>
+
           </Grid>
         </Grid>
       </Container>
