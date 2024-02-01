@@ -37,7 +37,7 @@ export default function Structure({ DetailObject }) {
                                                     <Image
                                                         src={item.img}
                                                         width={100}
-                                                        height={100}
+                                                        height={70}
                                                         layout="responsive"
                                                     ></Image>
                                                 );
