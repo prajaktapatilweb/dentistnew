@@ -9,6 +9,7 @@ import { FooterSocialLinks } from "../footer";
 import Link from "next/link";
 import Whatsappnew from "./Whatsappnew";
 import CallIcon from '@mui/icons-material/Call';
+import { UpgradeRounded, WhatsApp } from "@mui/icons-material";
 const Footer = () => {
   const contactno1 = "+917900074487";
 
@@ -183,11 +184,20 @@ const Footer = () => {
                 <Image src="/images/telephone.png" width={45} height={45} style={{ padding: 5 }} alt="phone" />
               </Link>
             </div>
-
+            <div style={{ position: 'fixed', right: '40px', bottom: '40px', zIndex: 996 }}>
+              <Link
+                href={`https://wa.me/${contactno1}`}
+                target="_blank"
+                className="footermenu"
+                style={{ textDecoration: "underline", display: "inline-block" }}
+              >
+                <Image src="/images/whatsapp.webp" width={45} height={45} />
+              </Link>
+            </div>
           </Box>
 
 
-          <Whatsappnew />
+          {/* <Whatsappnew /> */}
           <Grid item xs={12} sx={{ textAlign: 'center' }}>
 
             {/* Designed by <b>Prajakta Bhushankumar Patil</b> */}

@@ -36,7 +36,7 @@ export default async function handler(req, res) {
                 client.sendMail(
                     {
                         from: `Web Developer <${process.env.EMAILID}>`,
-                        to: "dentavenuemumbai@gmail.com",
+                        to: "dentavenuemumbai@gmail.com,chemburd@gmail.com",
                         subject: emailSubject,
                         text: emailContent
                     }
