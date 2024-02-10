@@ -181,7 +181,7 @@ const Footer = () => {
                 style={{ textDecoration: "underline", display: "inline-block" }}
               >
 
-                <Image src="/images/telephone.png" width={45} height={45} style={{ padding: 5 }} alt="phone" />
+                <Image src="/images/telephone.png" width={45} height={45} style={{ paddingInline: 5, paddingTop: 5 }} alt="phone" />
               </Link>
             </div>
             <div style={{ position: 'fixed', right: '40px', bottom: '40px', zIndex: 996 }}>
