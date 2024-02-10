@@ -43,6 +43,36 @@ export default function MyApp(props) {
                                 <meta name="twitter:image" content="https://www.dentavenue.in/_next/image?url=%2Fimages%2Fblog%2Fimg1.jpg&w=1920&q=75" />
                                 <link rel="canonical" href="https://www.dentavenue.in/blogs/history-of-dental-implants" />
                             </>)
+                        case 'trainer':
+                            return (<>
+                                <title>
+                                    One-Day Intensive Implantology Training Session - Dr. Akshay's DentAvenue
+                                </title>
+                                <meta name="title" content="One-Day Intensive Implantology Training Session - Dr. Akshay's DentAvenue"></meta>
+                                <meta name='description' content="Explore our successful one-day training session on basic Implantology at Dr. Akshay's DentAvenue. Gain practical insights and access cutting-edge materials through expert-led lectures and hands-on experience with HIOSSEN Implants."></meta>
+                                <link rel="canonical" href="https://www.dentavenue.in/trainer" />
+                                <meta property="og:type" content="Training Session" />
+                                <meta property="og:title" content="One-Day Intensive Implantology Training Session at Dr. Akshay's DentAvenue" />
+                                <meta property="og:description" content="Explore our successful one-day training session on basic Implantology at Dr. Akshay's DentAvenue. Gain practical insights and access cutting-edge materials through expert-led lectures and hands-on experience with HIOSSEN Implants." />
+                                <meta property="og:site_name" content="Dr. Akshay's DentAvenue" />
+                                <meta property="og:url" content="https://www.dentavenue.in/trainer" />
+                                <meta property="og:image" content="https://www.dentavenue.in/_next/image?url=%2Fimages%2Ftranies%2Ftrainers1.jpeg&w=1920&q=75" />
+                            </>)
+                        case 'blog':
+                            return (<>
+                                <title>
+                                    Discover the Latest Insights in Dental Care at Our Blog
+                                </title>
+                                <meta name="title" content="Discover the Latest Insights in Dental Care at Our Blog"></meta>
+                                <meta name='description' content="Stay informed and educated on all things dental with our blog. Explore informative articles, helpful tips, and expert advice to maintain your oral health and enhance your smile."></meta>
+                                <link rel="canonical" href="https://www.dentavenue.in/blog" />
+                                <meta property="og:type" content="Website Blogs" />
+                                <meta property="og:title" content="Discover the Latest Insights in Dental Care at Our Blog" />
+                                <meta property="og:description" content="Stay informed and educated on all things dental with our blog. Explore informative articles, helpful tips, and expert advice to maintain your oral health and enhance your smile." />
+                                <meta property="og:site_name" content="Dr. Akshay's DentAvenue" />
+                                <meta property="og:url" content="https://www.dentavenue.in/blog" />
+                                <meta property="og:image" content="https://www.dentavenue.in/_next/image?url=%2Fimages%2Flogo1.jpg&w=256&q=75" />
+                            </>)
                         case 'services':
                             switch (asPath.split('/')[2]) {
                                 case 'dental-implants-in-chembur':
