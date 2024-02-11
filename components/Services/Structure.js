@@ -36,9 +36,15 @@ export default function Structure({ DetailObject }) {
                                                 return (
                                                     <Image
                                                         src={item.img}
-                                                        width={100}
-                                                        height={70}
-                                                        layout="responsive"
+                                                        width={0}
+                                                        height={0}
+                                                        sizes="100vw"
+                                                        style={{ border: '1px solid lightgrey', width: '100%', height: '400px' }}
+                                                    // width={100}
+                                                    // height={100}
+                                                    // layout="responsive"
+                                                    // sizes="100vw"
+                                                    // style={{  height: "200px" }}
                                                     ></Image>
                                                 );
                                             case "subtitle":

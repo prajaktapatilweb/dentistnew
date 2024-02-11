@@ -21,7 +21,7 @@ export default function DentalImplantsInChembur() {
         },
         {
             type: 'para',
-            text: [<span><iframe width="560" height="315" src="https://www.youtube.com/embed/WH1QRHDb2BY?si=FvoPE5L773bLZ5np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>]
+            text: [<span><iframe width="100%" height="400" src="https://www.youtube.com/embed/WH1QRHDb2BY?si=FvoPE5L773bLZ5np" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe></span>]
         },
 
 
@@ -35,7 +35,7 @@ export default function DentalImplantsInChembur() {
         },
         {
             type: 'images',
-            img: '/images/services/dentalimplant2.jpeg'
+            img: '/images/services/dentalimplant25.jpg'
         },
 
 
@@ -64,7 +64,7 @@ export default function DentalImplantsInChembur() {
         },
         {
             type: 'images',
-            img: '/images/services/dentalimplant3.jpeg'
+            img: '/images/services/dentalimplant31.jpg'
         },
 
         {
